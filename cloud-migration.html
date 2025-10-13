@@ -28,7 +28,7 @@
   <!-- Favicon -->
   <link rel="icon" href="assets/images/icons/icon.png">
   <!-- Site Title -->
-  <title>Fiscal Ox | Solutions</title>
+  <title>On‑Premise → Cloud Migration | Fiscal Ox</title>
   <!-- Bootstrap 5 Core CSS -->
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom Styles -->
@@ -43,6 +43,7 @@
   <style>
     :root {
       --primary-color: #2f56a6;
+      --theme-blue: #3f4ff8;
       --secondary-color: #61b2d8;
       --accent-color: #f6921e;
       --text-color: #333;
@@ -62,7 +63,7 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Barlow', Tahoma, Geneva, Verdana, sans-serif;
     }
 
     body {
@@ -81,6 +82,10 @@
       color: var(--accent-color);
     }
 
+    .hero{
+      height: 90vh;
+      width: 100%;
+    }
 
     .cta-button {
       background-color: var(--primary-color);
@@ -416,7 +421,7 @@
     :root{
       --bg: #ffffff;
       --ink: #0f172a;
-      --muted: #475569;
+      --muted: #b4bbc4;
       --primary: #172554; /* Fiscal Ox navy */
       --primary-ink: #ffffff;
       --accent: #fbbf24; /* Fiscal Ox yellow */
@@ -425,17 +430,17 @@
       --radius: 12px;
       --shadow: 0 10px 24px rgba(2,6,23,0.08), 0 2px 6px rgba(2,6,23,0.06);
     }
-    *{box-sizing:border-box}
+    *{box-sizing:border-box; font-family: "Barlow",sans-serif;}
     html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif}
     a{color:var(--primary);text-decoration:none}
     img{max-width:100%;display:block}
-    .wrap{max-width:1200px;margin-inline:auto;padding:24px}
+    .wrap{max-width:1320px;margin-inline:auto;}
     .grid{display:grid;gap:24px}
     .row{display:flex;gap:12px;flex-wrap: nowrap;}
     .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:calc(var(--radius) - 2px);border:1px solid transparent;font-weight:600}
     .btn.primary{background:var(--primary);color:var(--primary-ink)}
     .btn.ghost{border-color:var(--border);color:var(--ink);background:#fff}
-    .chip{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);padding:6px 10px;border-radius:999px;color:var(--muted);font-weight:600;background:#fff;width: auto;}
+    .chip{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);padding:6px 10px;border-radius:999px;color:var(--muted);font-weight:600;background:#fff;width: auto;transition: all 0.3s ease;}
 
     nav.topnav{background:#fff;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:10}
     nav.topnav .wrap{display:flex;justify-content:space-between;align-items:center}
@@ -444,42 +449,81 @@
     nav.topnav li a{font-weight:600;color:var(--ink)}
     nav.topnav li a:hover{color:var(--primary)}
 
-    header.hero{background:linear-gradient(180deg,#f0f9ff 0,#ffffff 100%);border-bottom:1px solid var(--border)}
+    header.hero{background:linear-gradient(180deg,#f0f9ff 0,#ffffff 100%);}
     .hero-inner{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center}
-    .eyebrow{letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-size:.82rem;font-weight:700}
+    .eyebrow{letter-spacing:.08em;text-transform:uppercase;color:black;font-size:.7rem;font-weight:700; background-color: #fdca40;width: max-content;padding: 5px 10px;}
     h1{font-size:clamp(2rem,4vw,3rem);line-height:1.1;margin:.25em 0}
-    .lead{font-size:1.1rem;color:var(--muted)}
+    .lead{font-size:20px;color:#111;font-weight: 400;}
     .hero-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px}
 
     .content{grid-template-columns:1.2fr .8fr}
     .sticky{position:sticky;top:16px}
-    .card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow)}
-    .card .section{padding:20px;border-bottom:1px solid var(--border)}
+    .card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);transition: all 0.2s ease; box-shadow:var(--shadow)}
+    .card:hover{transform:translateY(-10px);}
+    .card .section{padding:20px;border-bottom:1px solid var(--border);}
+    .card .section strong{ color: var(--primary-color);}
     .card .section:last-child{border-bottom:none}
 
     .features{grid-template-columns:repeat(3,1fr)}
-    .feat{padding:18px;border:1px solid var(--border);border-radius:var(--radius);background:#fff;transition:transform .2s ease, box-shadow .2s ease}
-    .feat:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
-    .feat h4{margin:10px 0 6px}
-    .feat p{color:var(--muted);margin:0}
+    .feat{padding:30px;border:1px solid var(--border);border-radius:var(--radius);background:#fff;transition:transform .2s ease, box-shadow .2s ease;box-shadow:var(--shadow)}
+    .feat:hover{transform:translateY(-10px);}
+    .feat h4{margin:10px 0 15px; color: var(--primary-color);}
+    .feat p{color:#111;margin-bottom: 15px; letter-spacing: 0.02rem; font-size: 1rem;}
+    #compare{min-width: 1320px; margin: 0 auto;}
+    #compare h2{letter-spacing: 0.02rem;margin-bottom: 15px;}
 
     table{width:100%;border-collapse:separate;border-spacing:0;overflow:hidden;border-radius:var(--radius);border:1px solid var(--border)}
     th,td{padding:14px;border-bottom:1px solid var(--border);text-align:left}
     thead th{background:#f1f5f9}
     tr:last-child td{border-bottom:none}
 
-    .tabs{display:flex;gap:8px;flex-wrap:wrap;border-bottom:1px solid var(--border);margin-top:6px}
-    .tab{padding:10px 14px;border:1px solid var(--border);border-bottom:none;border-top-left-radius:10px;border-top-right-radius:10px;background:#fff;cursor:pointer;font-weight:600;color:var(--muted)}
+    .tabs{display:flex;gap:8px;flex-wrap:wrap;border-bottom:1px solid var(--border);margin-top:6px;}
+    .tab{padding:10px 14px;border:1px solid var(--border);border-bottom:none;border-top-left-radius:10px;border-top-right-radius:10px;background:#fff;cursor:pointer;font-weight:600;color:var(--muted); font-size: 1rem;transition: all 0.2s ease;}
     .tab.active{color:var(--ink);background:#fefefe}
     .tabpanes > section{display:none;padding:18px;border:1px solid var(--border);border-radius:0 0 var(--radius) var(--radius)}
     .tabpanes > section.active{display:block}
+    .providers h4 {color: var(--primary-color) !important; }
+
+    #leadForm label{font-size: 0.875;}
+    #leadForm label input{width: 100%; padding: 15px 20px; border: 1px solid #c2c7cd; border-radius: 0.25rem; transition: all 0.3s ease;}
+    #leadForm label select{width: 100%; padding: 16px 20px; border: 1px solid #c2c7cd; border-radius: 0.25rem; transition: all 0.3s ease;}
+    #leadForm label input:focus{border-color: #3f4ff8 !important; }
+    #leadForm label textarea{width: 100%; height: 300px; padding: 15px 20px; border: 1px solid #c2c7cd; transition: all 0.3s ease;}
+    #leadForm label textarea:focus{border-color: #3f4ff8 !important;}
+
 
     details{border:1px solid var(--border);border-radius:var(--radius);padding:14px;background:#fff}
     details+details{margin-top:12px}
     summary{cursor:pointer;font-weight:700}
 
+    #deliver .grid ul{list-style-type: disc;}
+    #deliver .grid ul li{font-size: 1rem;}   
+    
+    #tco {text-align: center;letter-spacing: 0.02rem;}
     .cta{background:linear-gradient(90deg,#172554,#1e293b);color:#fff;border-radius:var(--radius);padding:24px;display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center}
-    .cta .btn{background:#fff;color:#172554}
+    .cta h2::selection, .cta p::selection{background: #fff; color: var(--dark);}
+    .cta .btn{background:#fff;color:#172554;position:relative;overflow: hidden;}
+
+    #tcoForm label{font-size: 0.875; text-align: left !important;}
+    #tcoForm label input{width: 100%; padding: 15px 20px; border: 1px solid #c2c7cd; border-radius: 0.25rem; transition: all 0.3s ease;}
+    #tcoForm label input:focus{border-color: #3f4ff8 !important; }
+    #tcoForm label select{width: 100%; padding: 16px 20px; border: 1px solid #c2c7cd; border-radius: 0.25rem;}
+
+
+    .chip:hover{cursor: pointer;}
+    .chip.oracle:hover {background-color: #f8000080; color: white;}
+
+    .chip.sqlserver:hover {background-color: #a4373a80; color: white;}
+
+    .chip.postgresql:hover {background-color: #33679180;color: white;}
+
+    .chip.mysql:hover {background-color: #00758f80; color: white;}
+
+    .chip.mongodb:hover {background-color: #4db33d80;color: white;}
+
+    .chip.fileserver:hover {background-color: #6c757d80;color: white;}
+
+    #fiveBluePrint > *{max-width: 1320px; margin: 0 auto;}
 
     footer{border-top:1px solid var(--border);padding:30px 0;color:var(--muted)}
 
@@ -499,22 +543,21 @@
 
 <header class="hero">
   <div class="wrap hero-inner">
-    <div>
+    <div data-aos="fade-right">
       <div class="eyebrow">Fiscal Ox Solution</div>
-      <h1>On‑Premise → Cloud <span style="color:var(--accent)">Modernize</span> without disruption</h1>
+      <h1 style="font-size: 44px;">On‑Premise → Cloud <span style="color:var(--theme-blue)">Modernize</span> without disruption</h1>
       <p class="lead">We move your databases, apps, and file stores from datacenter to cloud with near‑zero downtime, airtight security, and a clear business case. From readiness to hypercare, Fiscal Ox owns the outcome.</p>
       <div class="row" style="margin-top:14px">
         <span class="chip">🔒 TLS 1.2+</span>
         <span class="chip">☁️ AWS • Azure • GCP</span>
         <span class="chip">⏱️ CDC Cutovers</span>
-<!--        <span class="chip">📊 ROI & TCO model</span>-->
       </div>
       <div class="row" style="margin-top:18px">
-        <a class="btn primary" href="#contact" style="width: auto;">Get a migration plan</a>
-        <a class="btn ghost" href="/data-migration.html" style="width: auto;">See Data Migration</a>
+        <a class="btn btn-primary-light" href="#contact" style="width: auto; color:var(--theme-blue);">Get a migration plan</a>
+        <a class="btn ghost" href="/data-migration.html" style="width: auto; color: var(--theme-blue);">See Data Migration</a>
       </div>
     </div>
-    <div class="hero-card">
+    <div class="hero-card" data-aos="fade-left">
       <h3 style="margin-top:0">Quick Readiness Check</h3>
       <form id="readyForm" class="grid" style="grid-template-columns:1fr 1fr;gap:12px">
         <label class="col">Primary DB<br><select class="form-control" name="db" required>
@@ -547,7 +590,7 @@
           <option>Flexible</option>
         </select></label>
         <div class="col" style="grid-column:1 / -1">
-          <button class="btn primary" type="submit">Check</button>
+          <button class="btn primary" style="background: var(--theme-blue);" type="submit">Check</button>
           <span id="readyOut" class="muted" style="margin-left:10px"></span>
         </div>
       </form>
@@ -555,12 +598,12 @@
   </div>
 </header>
 
-<main class="wrap grid content" style="margin-top:24px">
+<main style="margin-top:24px" >
   <!-- original sections preserved below -->
   <article class="grid" style="gap:24px">
-    <section>
-      <h2>Why move from on‑prem to cloud</h2>
-      <div class="grid features" style="margin-top:12px">
+    <section style="background-color: var(--light-gray);">
+      <h2 style="letter-spacing: 0.05rem; max-width: 1320px; margin: 0 auto;" class="mb-4" data-aos="fade-up">Why Move From On‑prem To Cloud</h2>
+      <div class="grid features" style="margin-top:12px; max-width: 1320px; margin: 0 auto;" data-aos="fade-up" data-aos-delay="150">
         <div class="feat"><h4>Elastic scale</h4><p>Right‑size compute and storage; scale for peaks without buying hardware.</p></div>
         <div class="feat"><h4>Lower ops burden</h4><p>Patching, backups, and HA handled by managed services with SLAs.</p></div>
         <div class="feat"><h4>Faster delivery</h4><p>Dev/test environments spin up in minutes with templates and IaC.</p></div>
@@ -571,8 +614,8 @@
     </section>
 
     <section id="compare">
-      <h2>Cloud vs On‑Prem: what changes</h2>
-      <table aria-label="Cloud vs On‑Prem comparison">
+      <h2 data-aos="fade-up">Cloud vs On‑Prem: what changes</h2>
+      <table aria-label="Cloud vs On‑Prem comparison" data-aos="fade-up" data-aos-delay="150">
         <thead>
         <tr><th>Dimension</th><th>On‑Prem</th><th>Cloud</th></tr>
         </thead>
@@ -587,7 +630,7 @@
       </table>
     </section>
 
-    <section>
+    <section id="fiveBluePrint" data-aos="fade-up">
       <div class="tabs" role="tablist">
         <button class="tab active" data-tab="blueprint" role="tab" aria-selected="true">Migration blueprint</button>
         <button class="tab" data-tab="providers" role="tab" aria-selected="false">Cloud providers</button>
@@ -606,17 +649,17 @@
         </section>
         <section id="providers" role="tabpanel">
           <div class="grid" style="grid-template-columns:repeat(3,1fr)">
-            <div class="card"><div class="section"><h4 style="margin:0">AWS</h4></div><div class="section"><ul>
+            <div class="card"><div class="section"><h4 style="margin:0; color:var(--primary-color) !important; font-size: 24px;">AWS</h4></div><div class="section"><ul>
               <li>RDS/Aurora, DMS, S3, EKS</li>
               <li>IAM, KMS, PrivateLink, GuardDuty</li>
               <li>CloudWatch, Cost Explorer</li>
             </ul></div></div>
-            <div class="card"><div class="section"><h4 style="margin:0">Azure</h4></div><div class="section"><ul>
+            <div class="card"><div class="section"><h4 style="margin:0; color:var(--primary-color) !important; font-size: 24px;">Azure</h4></div><div class="section"><ul>
               <li>Azure SQL/Cosmos, DMS, AKS</li>
               <li>AD, Key Vault, Private Link, Defender</li>
               <li>Monitor, Cost Management</li>
             </ul></div></div>
-            <div class="card"><div class="section"><h4 style="margin:0">GCP</h4></div><div class="section"><ul>
+            <div class="card"><div class="section"><h4 style="margin:0; color:var(--primary-color) !important; font-size: 24px;">GCP</h4></div><div class="section"><ul>
               <li>Cloud SQL/AlloyDB, DMS, GKE</li>
               <li>IAM, CMEK, VPC‑SC</li>
               <li>Cloud Monitoring, FinOps tools</li>
@@ -638,42 +681,53 @@
           </div>
         </section>
       </div>
-    </section>
+    </sections>
 
     <section id="tco">
-      <h2>Estimate your 12‑month TCO savings</h2>
-      <div class="card">
+      <h2 data-aos="fade-up">Estimate your 12‑month TCO savings</h2>
+      <div class="card" data-aos="fade-up" data-aos-delay="150" >
         <div class="section">
-          <form id="tcoForm" class="grid" style="grid-template-columns:repeat(4,1fr);gap:12px">
-            <label>Servers (count)<br><input type="number" min="0" step="1" name="servers" value="10" required></label>
-            <label>Avg CPU/RAM tier<br>
-              <select name="tier">
-                <option value="small">Small</option>
-                <option value="medium" selected>Medium</option>
-                <option value="large">Large</option>
-              </select>
-            </label>
-            <label>Storage (TB)<br><input type="number" min="0" step="0.1" name="storage" value="5" required></label>
-            <label>Ops FTEs<br><input type="number" min="0" step="1" name="fte" value="2" required></label>
-            <div style="grid-column:1/-1">
-              <button class="btn primary" type="submit">Calculate</button>
+          <form id="tcoForm">
+            <div class="grid" style="grid-template-columns:repeat(2,1fr);gap:12px">
+           
+              <label>Servers (count)<br>
+                <input type="number" min="0" step="1" name="servers" value="10" required>
+              </label>
+              <label>Avg CPU/RAM tier<br>
+                <select name="tier">
+                  <option value="small">Small</option>
+                  <option value="medium" selected>Medium</option>
+                  <option value="large">Large</option>
+                </select>
+              </label>
+
+              <label>Storage (TB)<br>
+                <input type="number" min="0" step="0.1" name="storage" value="5" required>
+              </label>
+              <label>Ops FTEs<br>
+                <input type="number" min="0" step="1" name="fte" value="2" required>
+              </label>
+            </div>
+
+            <div class="my-2">
               <span id="tcoOut" class="muted" style="margin-left:10px"></span>
             </div>
+            <button class="btn primary" type="submit" style="margin-top:16px;background: var(--theme-blue);">Calculate</button>
           </form>
         </div>
       </div>
     </section>
 
     <section>
-      <h2>Security & compliance built‑in</h2>
-      <div class="grid" style="grid-template-columns:repeat(3,1fr)">
-        <div class="card"><div class="section"><h4 style="margin:0">Identity & Access</h4></div><div class="section"><p class="muted">SSO/SAML/OIDC, least‑privilege roles, break‑glass procedures, just‑in‑time access.</p></div></div>
-        <div class="card"><div class="section"><h4 style="margin:0">Data Protection</h4></div><div class="section"><p class="muted">TLS 1.2+, envelope encryption (CMEK), masking/tokenization for non‑prod.</p></div></div>
-        <div class="card"><div class="section"><h4 style="margin:0">Governance</h4></div><div class="section"><p class="muted">Policies via IaC, audit trails, CIS benchmarks, evidence packs for SOC 2/GDPR/HIPAA.</p></div></div>
+      <h2 class="text-center mb-10 my-3" data-aos="fade-up">Security & compliance built‑in</h2>
+      <div class="grid" style="grid-template-columns:repeat(3,1fr)" data-aos="fade-up" data-aos-delay="150">
+        <div class="card" style="background-color: rgba(189,224,254,0.3);"><div class="section"><h4 style="margin:0; color: #111; ">Identity & Access</h4></div><div class="section"><p class="muted">SSO/SAML/OIDC, least‑privilege roles, break‑glass procedures, just‑in‑time access.</p></div></div>
+        <div class="card" style="background-color: rgba(189,224,254,0.3);"><div class="section"><h4 style="margin:0; color: #111;">Data Protection</h4></div><div class="section"><p class="muted">TLS 1.2+, envelope encryption (CMEK), masking/tokenization for non‑prod.</p></div></div>
+        <div class="card" style="background-color: rgba(189,224,254,0.3);"><div class="section"><h4 style="margin:0; color: #111; ">Governance</h4></div><div class="section"><p class="muted">Policies via IaC, audit trails, CIS benchmarks, evidence packs for SOC 2/GDPR/HIPAA.</p></div></div>
       </div>
     </section>
 
-    <section id="faq">
+    <section id="faq" data-aos="fade-up">
       <h2>FAQs</h2>
       <details>
         <summary>How much downtime should we expect?</summary>
@@ -689,18 +743,18 @@
       </details>
     </section>
 
-    <section class="cta" id="contact">
+    <section class="cta" id="contact" data-aos="fade-up">
       <div>
-        <h2 style="margin:.2em 0">Kick‑off your cloud journey</h2>
-        <p class="muted" style="margin:0">Share basics and receive a draft migration plan within 24 hours.</p>
+        <h2 style="margin:.2em 0; color: var(--light)">Kick‑off your cloud journey</h2>
+        <p class="muted" style="margin:0; color: var(--muted)">Share basics and receive a draft migration plan within 24 hours.</p>
       </div>
       <a class="btn" href="#contact-form">Get started</a>
     </section>
 
     <section id="contact-form">
       <div class="card">
-        <div class="section"><h3 style="margin:0">Request a tailored plan</h3></div>
-        <div class="section">
+        <div class="section" data-aos="fade-up"><h3 style="margin:0; text-align: center;">Request a tailored plan</h3></div>
+        <div class="section" data-aos="fade-up" data-aos-delay="150">
           <form id="leadForm" class="grid" style="grid-template-columns:1fr 1fr;gap:16px">
             <label class="col">Full Name<br><input type="text" name="name" required placeholder="Jane Doe"></label>
             <label class="col">Work Email<br><input type="email" name="email" required placeholder="jane@company.com"></label>
@@ -730,14 +784,15 @@
             <label class="col" style="grid-column:1/-1">Notes
               <textarea name="notes" rows="3" placeholder="Compliance constraints, must‑haves…"></textarea>
             </label>
-            <div class="col" style="grid-column:1/-1;display:flex;align-items:center;gap:10px">
+            <div class="col" style="grid-column:1/-1; display:flex;justify-content: center; align-items:center; gap:10px;">
               <input type="checkbox" id="nda" name="nda" />
               <label for="nda" class="muted">I’d like to sign an NDA before sharing details</label>
             </div>
-            <div class="col" style="grid-column:1/-1">
-              <button class="btn primary" type="submit">Send request</button>
-              <span id="leadOut" class="muted" style="margin-left:10px"></span>
+            <div class="col" style="grid-column:1/-1; display:flex; flex-direction:column; align-items:center;">
+              <span id="leadOut" class="muted" style="margin-bottom:10px; text-align:center;"></span>
+              <button class="btn btn-primary-light" type="submit">Send request</button>
             </div>
+
           </form>
         </div>
       </div>
@@ -745,53 +800,40 @@
 
   </article>
 
-  <aside class="sticky">
+  <aside class="sticky" style="max-width: 1320px; margin: 0 auto;">
     <div class="card">
-      <div class="section">
-        <h3 style="margin:0">At a glance</h3>
-        <ul class="muted" style="margin:10px 0 0; padding-left:18px">
-          <li>Hot/Near‑hot cutovers</li>
-          <li>Secure landing zone + IaC</li>
-          <li>Validation & sign‑off pack</li>
-          <li>30‑day hypercare</li>
-        </ul>
-      </div>
-      <div class="section">
-        <h4 style="margin:0 0 8px">Supported workloads</h4>
-        <div class="row">
-          <span class="chip">Oracle</span>
-          <span class="chip">SQL Server</span>
-          <span class="chip">PostgreSQL</span>
-          <span class="chip">MySQL</span>
-          <span class="chip">MongoDB</span>
-          <span class="chip">File Servers</span>
+      <div style="display: flex; justify-content: space-between;">
+        <div class="section" style="width: 50%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+          <h3 style="margin:0; color: var(--primary-color);  margin-bottom: 15px;">At a glance</h3>
+          <ul class="muted" style="margin:10px 0 0; padding-left:18px; text-align: center;">
+            <li>Hot/Near‑hot cutovers</li>
+            <li>Secure landing zone + IaC</li>
+            <li>Validation & sign‑off pack</li>
+            <li>30‑day hypercare</li>
+          </ul>
+        </div>
+        <div class="section" style="width: 50%;">
+          <h4 style="margin:0 0 8px;color: var(--primary-color); text-align: center; margin-bottom: 15px;">Supported workloads</h4>
+          <div class="row" style="flex-wrap:wrap; justify-content: center;">
+             <span class="chip oracle">Oracle</span>
+            <span class="chip sqlserver">SQL Server</span>
+            <span class="chip postgresql">PostgreSQL</span>
+            <span class="chip mysql">MySQL</span>
+            <span class="chip mongodb">MongoDB</span>
+            <span class="chip fileserver">File Servers</span>
+          </div>
         </div>
       </div>
-      <div class="section">
-        <h4 style="margin:0 0 8px">Need a quick call?</h4>
-        <a class="btn primary" href="#contact">Book 15‑min consult</a>
+      <div>
+        <div class="section" style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+          <h4 style="margin:0 0 8px">Need a quick call?</h4>
+          <a class="btn btn-primary-light" href="#contact">Book 15‑min consult</a>
+        </div>
       </div>
     </div>
   </aside>
 </main>
 
-
-<section class="challenges-section lg">
-  <h2>Cloud vs On‑Prem: what changes</h2>
-  <table aria-label="Cloud vs On‑Prem comparison">
-    <thead>
-    <tr><th>Dimension</th><th>On‑Prem</th><th>Cloud</th></tr>
-    </thead>
-    <tbody>
-    <tr><td>Capex/Opex</td><td>Up‑front hardware, refresh cycles</td><td>Opex pay‑as‑you‑go, reserved options</td></tr>
-    <tr><td>Scaling</td><td>Procure & install weeks/months</td><td>Minutes via APIs & autoscale</td></tr>
-    <tr><td>Availability</td><td>Single DC; DR complex</td><td>Multi‑AZ/Region primitives</td></tr>
-    <tr><td>Security</td><td>Perimeter‑focused</td><td>Identity‑centric, least privilege</td></tr>
-    <tr><td>Ops</td><td>Manual runbooks</td><td>Managed services & automation</td></tr>
-    <tr><td>Cost control</td><td>Limited visibility</td><td>Tags, budgets, alerts, per‑service</td></tr>
-    </tbody>
-  </table>
-</section>
 <section class="integration-section xl">
   <div class="container">
     <h2 class="Intsection-title">A <span>NABL Compliant</span> & Validated System</h2>
@@ -817,48 +859,44 @@
 <section class="cta-section">
   <div class="container">
     <h2 class="text-center">Ready to Transform Your Laboratory Management?</h2>
-    <p>Experience how LIMS can revolutionize your laboratory processes, ensure regulatory compliance, and improve overall efficiency in your organization.</p>
-    <div class="row v-center">
+    <p class="text-center">Experience how LIMS can revolutionize your laboratory processes, ensure regulatory compliance, and improve overall efficiency in your organization.</p>
+    <div class="row v-center" style="margin: 0 auto;">
       <div class="col-lg-6 tablet-lg-top-45">
 
         <div class="promo-box p-y-12 p-x-0 promo-left bg-transparent mb-4 no-shadow no-blur relative"
              data-aos="fade-up" data-aos-delay="300">
-          <div class="promo-container-big-sm">
+          <div class="promo-container-big-sm" style="font-size: 18px;">
             <div class="promo-big icon-sm promo-icon-bg circle b-0 bg-primary raised-sm mb-25">
               <i class="far fa-envelope-open promo-icon text-white"></i>
             </div><!-- / promo-icon-bg -->
             <h6 class="box-title mb-4">Contact Info</h6>
-            <p class="box-description mb-5">
-              <span>Email: </span> <a href="mailto:info@fiscalox.com"
-                                      class="title-link primary-hover">info@fiscalox.com</a>
+            <p class="box-description mb-5" style="font-size: 18px">
+              <span>Email: </span> <a href="mailto:info@fiscalox.com" class="title-link primary-hover">info@fiscalox.com</a>
             </p>
-            <h6 class="box-title mb-4">Fiscal Ox, India</h6>
-            <p class="box-description mb-5">
-              <span>Innovation Center (Head Office): </span> <a href="javascript:void(0)"
-                                                                class="title-link primary-hover">341 SWC Hub, Vasna-Bhayli Main Road, Bhayli,
+            <h6 class="box-title mb-4" style="font-size: 20px">Fiscal Ox, India</h6>
+            <p class="box-description mb-5" style="font-size: 18px">
+              <span>Innovation Center (Head Office): </span> <a href="javascript:void(0)" class="title-link primary-hover">341 SWC Hub, Vasna-Bhayli Main Road, Bhayli,
               Vadodara, Gujarat 391412</a>
             </p>
-            <p class="box-description mb-5">
-              <span>Phone | Whatsapp: </span> <a href="https://wa.me/917778091350"
-                                                 class="title-link primary-hover">+91 7778091350</a>
+            <p class="box-description mb-5" style="font-size: 18px">
+              <span>Phone | Whatsapp: </span> <a href="https://wa.me/917778091350" class="title-link primary-hover">+91 7778091350</a>
             </p>
             <br>
-            <p class="box-description">
-              <span>Regional Office (Hyderabad): </span> <a href="javascript:void(0)"
-                                                            class="title-link primary-hover">T-Hub, Plot No 1/C, Sy No 83/1, Raidurgam, Knowledge City Rd, panmaktha, Hyderabad, Serilingampalle (M), Telangana 500081</a>
+            <p class="box-description" style="font-size: 18px">
+              <span>Regional Office (Hyderabad): </span> <a href="javascript:void(0)" class="title-link primary-hover">T-Hub, Plot No 1/C, Sy No 83/1, Raidurgam, Knowledge City Rd, panmaktha, Hyderabad, Serilingampalle (M), Telangana 500081</a>
             </p>
-            <p class="box-description mb-5">
+            <p class="box-description mb-5" style="font-size: 18px">
               <span>Phone | Whatsapp: </span> <a href="https://wa.me/917778091350"
                                                  class="title-link primary-hover">+91 9054031350</a>
             </p>
             <br>
-            <p class="box-description">
+            <p class="box-description" style="font-size: 18px">
               <span>Regional Office (Chennai): </span> <a href="javascript:void(0)"
                                                           class="title-link primary-hover">Coming Soon</a>
             </p>
             <br>
-            <h6 class="box-title mb-4">Fiscal Ox Inc, United States</h6>
-            <p class="box-description">
+            <h6 class="box-title mb-4" style="font-size: 20px">Fiscal Ox Inc, United States</h6>
+            <p class="box-description" style="font-size: 18px">
               <span>Address: </span> <a href="javascript:void(0)"
                                         class="title-link primary-hover">5900 Balcones Dr Suit 100, Austin, TX 78731, United States</a>
               <span>Phone: </span><a href="javascript:void(0)" class="title-link primary-hover">+1 970 232 0403</a>
@@ -898,7 +936,7 @@
                                           placeholder="Message - Include details about your requirements"
                                           required=""></textarea>
             </div>
-            <button type="button" class="btn btn-primary btn-submit" id="requestBtn">Book A
+            <button type="button" class="btn btn-primary btn-submit" id="requestBtn" style="justify-content: center;">Book A
               Demo</button>
           </form><!-- / form-group -->
         </div><!-- / promo-box -->

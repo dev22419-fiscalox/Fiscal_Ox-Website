@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Fiscal Ox Laboratory ERP – Complete end-to-end software solution for laboratory testing companies. Manage samples, analysis, reports, and invoicing.">
+  <title>Fiscal Ox | Laboratory ERP App</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/icons/icon.png">
+
+  <!-- Core CSS -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/aos.css" rel="stylesheet">
+  <link href="assets/css/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  
+  <!-- Fonts & Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <script src="assets/js/jquery.min.js"></script>
+
+  <style>
+    :root {
+      --primary:#2f56a6;
+      --accent:#f6921e;
+      --light:#f8fbfd;
+    }
+    body { font-family:'Segoe UI',sans-serif; color:#1f364b; }
+
+    header.hero {
+      background: linear-gradient(120deg, #deeff9, #ffffff);
+      padding: 80px 0;
+    }
+
+    .hero h1 {
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    .cta-button {
+      background: var(--primary);
+      color: #fff;
+      padding: 12px 26px;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    .cta-button:hover {
+      background: #ffffff;
+    }
+
+    .features-section {
+      background: var(--light);
+      padding: 80px 0;
+    }
+
+    .feature-card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+      height: 100%;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .feature-icon {
+      font-size: 2rem;
+      color: var(--accent);
+      margin-bottom: 15px;
+    }
+
+    .screenshots {
+      padding: 80px 0;
+      background: #fff;
+      text-align: center;
+    }
+
+    .screenshots img {
+      border-radius: 16px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    }
+
+    .play-btn img {
+      height: 60px;
+      margin-top: 20px;
+      transition: transform .2s;
+    }
+
+    .play-btn:hover img {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#nav-scroll">
+<!-- 
+  Loader -->
+  <div id="navbar-container"></div>
+  <!-- Navbar
+  <div id="navbar-container"></div> -->
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6" data-aos="fade-right">
+          <h1>Fiscal Ox Laboratory ERP</h1>
+          <p class="lead mt-3 mb-4">
+            Complete end-to-end software solution for laboratory testing companies – manage samples, analysis, reports, and invoicing seamlessly.
+          </p>
+          <ul class="list-unstyled">
+            <li><i class="fa fa-check text-success me-2"></i> Sample receipt & analysis requests</li>
+            <li><i class="fa fa-check text-success me-2"></i> Sampling schedule planning</li>
+            <li><i class="fa fa-check text-success me-2"></i> Automated job card creation</li>
+            <li><i class="fa fa-check text-success me-2"></i> Equipment calibration management</li>
+          </ul>
+          <a href="https://play.google.com/store/apps/details?id=com.Fiscalox&pcampaignid=web_share" class="cta-button">
+            <i class="fab fa-google-play me-2"></i> Download on Play Store
+          </a>
+          <a href="https://apps.apple.com/in/app/fiscal-ox/id6504179778" class="cta-button" style="margin-left: 30px;">
+            <i class="fab fa-apple me-2"></i> Download on App Store
+          </a>
+        </div>
+        <div class="col-md-6 text-center" data-aos="fade-left">
+          <img src="assets/images/erp/home2-Photoroom.png" alt="Laboratory ERP App" class="img-fluid" style="max-height: 500px;width: auto;">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Features -->
+  <section class="features-section" style="background-color: #ffffff;">
+    <div class="container text-center">
+      <h2 class="mb-5" data-aos="fade-up">All-in-One Laboratory Management</h2>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="fade-up">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa fa-inbox"></i></div>
+            <h5>Sample Reception</h5>
+            <p>Receive and manage customer samples with detailed analysis requests.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa fa-calendar-alt"></i></div>
+            <h5>Schedule Planning</h5>
+            <p>Plan and organize sampling schedules with full transparency and control.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa fa-tasks"></i></div>
+            <h5>Job Card Creation</h5>
+            <p>Auto-generate job cards for analysis with real-time tracking.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa fa-flask"></i></div>
+            <h5>Results Management</h5>
+            <p>Record and manage test results with quality control compliance.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa fa-wrench"></i></div>
+            <h5>Equipment Calibration</h5>
+            <p>Track equipment maintenance and calibration schedules automatically.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa fa-file-pdf"></i></div>
+            <h5>Report & Invoicing</h5>
+            <p>Generate professional reports and print/email invoices instantly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshots Carousel -->
+  <section class="screenshots" style="background-color: #e5f3fb;">
+    <div class="container">
+      <h2 class="mb-4" data-aos="fade-up">App Screenshots</h2>
+      <div class="swiper" id="erp-swiper" data-aos="fade-up">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="assets/images/erp/login.webp" alt="Login" class="img-fluid rounded-4" style="max-height: 800px;width: auto;"></div>
+          <div class="swiper-slide"><img src="assets/images/erp/home.webp" alt="Home" class="img-fluid rounded-4" style="max-height: 800px;width: auto;"></div>
+          <div class="swiper-slide"><img src="assets/images/erp/list.webp" alt="Sample Reception" class="img-fluid rounded-4" style="max-height: 800px;width: auto;"></div>
+          <div class="swiper-slide"><img src="assets/images/erp/save.webp" alt="Job Card" class="img-fluid rounded-4" style="max-height: 800px;width: auto;"></div>
+          <div class="swiper-slide"><img src="assets/images/erp/remark.webp" alt="Analysis" class="img-fluid rounded-4" style="max-height: 800px;width: auto;"></div>
+          <!-- <div class="swiper-slide"><img src="assets/images/erp/report.webp" alt="Report" class="img-fluid rounded-4" style="max-height: 800px;width: auto;"></div>
+          <div class="swiper-slide"><img src="assets/images/erp/invoice.webp" alt="Invoice" class="img-fluid rounded-4" style="max-height: 800px;width: auto;"></div> -->
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <a href="https://play.google.com/store/apps/details?id=com.Fiscalox&pcampaignid=web_share" class="play-btn">
+        <!-- <img src="assets/images/icons/playstore-badge.png" alt="Get it on Google Play"> -->
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+  <script>
+    // fetch('footer.html')
+    //   .then(res => res.text())
+    //   .then(data => { document.getElementById('footer').innerHTML = data; });
+    $("#footer").load("footer.html");
+    $("#navbar-container").load("navbar.html");
+    window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar-custom');
+        if (navbar) {  // Only proceed if navbar element exists
+            if (window.scrollY > 50) {
+                navbar.style.padding = '10px 0';
+                navbar.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+            } else {
+                navbar.style.padding = '20px 0';
+                navbar.style.boxShadow = 'none';
+            }
+        }
+    });
+  </script>
+
+  <!-- Back to Top -->
+  <button type="button" id="back-top" class="btn btn-icon btn-circle btn-primary btn-floating raised-sm"
+    style="height:40px;width:40px;">
+    <i class="fas fa-chevron-up" style="margin-top:-8px;"></i>
+  </button>
+
+  <!-- JS Scripts -->
+  <!-- <script src="assets/js/jquery.min.js"></script> -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/aos.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/nav-fixed.js"></script>
+  <script src="assets/js/scroll-top.js"></script>
+
+  <script>
+    AOS.init({ duration: 1200 });
+    new Swiper('#erp-swiper', {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: { el: '.swiper-pagination', clickable: true },
+      autoplay: { delay: 2000, disableOnInteraction: false }
+    });
+  </script>
+</body>
+</html>
