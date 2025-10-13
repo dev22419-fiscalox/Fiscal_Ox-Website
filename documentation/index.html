@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Documentation">
+    <meta name="author" content="kingstudio.ro">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.png">
+    <!-- Site Title -->
+    <title>Documentation</title>
+    <!-- Bootstrap 5 Core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/prism.css">
+    <link rel="stylesheet" href="assets/css/doc.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" type="text/css">
+</head>
+
+<body class="doc-body doc-style2" data-bs-spy="scroll" data-bs-target="#nav-scroll">
+
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
+    <div id="#top"></div>
+
+    <nav class="side-nav left-nav navbar-expand-lg nav nav-style2 bg-body">
+
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggle" aria-controls="navbar-toggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+        </button><!-- / navbar-toggler -->
+
+        <div class="collapse navbar-collapse" id="navbar-toggle">
+            <ul class="pl-0" id="main-collapse">
+                <li class="sidenav-logo">
+                    <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link has-collapse collapsed" href="#side-dropdown" data-bs-toggle="collapse" data-bs-target="#side-dropdown" aria-expanded="false" aria-controls="side-dropdown"><span>Getting Started</span></a>
+                    <div class="collapse" id="side-dropdown" data-bs-parent="#main-collapse">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="#introduction">Introduction</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="#file-structure">File Structure</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="#starter-template">Starter Template</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="#setup-sass">Setup Sass</a>
+                            </li><!-- / nav-item -->
+                        </ul><!-- nav -->
+                    </div><!-- / collapse -->
+                </li><!-- / nav-item -->
+
+                <li class="nav-item">
+                    <a class="nav-link has-collapse collapsed" href="#side-dropdown2" data-bs-toggle="collapse" data-bs-target="#side-dropdown2" aria-expanded="false" aria-controls="side-dropdown2"><span>Content</span></a>
+                    <div class="collapse" id="side-dropdown2" data-bs-parent="#main-collapse">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="content.html#typography">Typography</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="content.html#icons">Icons</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="content.html#code">Code</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="content.html#tables">Tables</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="content.html#images">Images</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="content.html#videos">Videos</a>
+                            </li><!-- / nav-item -->
+                        </ul><!-- nav -->
+                    </div><!-- / collapse -->
+                </li><!-- / nav-item -->
+
+                <li class="nav-item">
+                    <a class="nav-link has-collapse collapsed" href="#side-dropdown3" data-bs-toggle="collapse" data-bs-target="#side-dropdown3" aria-expanded="false" aria-controls="side-dropdown3"><span>Components</span></a>
+                    <div class="collapse" id="side-dropdown3" data-bs-parent="#main-collapse">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="components/accordions.html">Accordions</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="components/alerts.html">Alerts</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="components/buttons.html">Buttons</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="components/cards.html">Cards</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="components/modals.html">Modals</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="components/navigation.html">Navigation</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="components/progress.html">Progress</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="components/promo-box.html">Promo Box</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="components/widgets.html">Widgets</a>
+                            </li><!-- / nav-item -->
+                        </ul><!-- nav -->
+                    </div><!-- / collapse -->
+                </li><!-- / nav-item -->
+            </ul><!-- / main-collapse -->
+        </div><!-- / collapse -->
+    </nav><!-- / nav-scroll -->
+    <!-- / side-nav -->
+
+    <div class="doc-top-header">
+        <div class="doc-top-bar">
+            <div class="row">
+                <div class="col-lg-6">
+                    <a href="index.html" class="btn btn-icon btn-primary btn-doc"><i class="far fa-file fs-18"></i></a>
+                </div><!-- / column -->
+                <div class="col-lg-6 text-right">
+                    <a href="https://kingstudio.ro/contact.html" class="btn btn-primary top-page-button"><i class="far fa-envelope-open mr-5"></i> <span>Contact</span></a>
+                </div><!-- / column -->
+            </div><!-- / row -->
+        </div><!-- / top-header-nav -->
+    </div><!-- / doc-top-header -->
+
+    <div class="page-container">
+        <div class="doc-container container-fluid">
+            <div class="row">
+                <div class="col-lg-9">
+                    <h4 id="getting-started" class="doc-main-title">Getting Started <a href="#getting-started"><i class="fas fa-link"></i></a></h4>
+                    <div id="introduction" class="doc-wrapper">
+                        <h6 class="doc-title">Introduction <a href="#introduction"><i class="fas fa-link"></i></a></h6>
+                        <div class="doc-preview">
+                            <img src="assets/images/theme-preview.jpg" alt="preview" class="introduction-img">
+                        </div>
+                        <h4>MiOne - Minimal Landing Page Theme</h4>
+                        <p class="doc-preview-text"><b>MiOne</b> is a responsive, clean and minimal Landing Page Theme. <b>MiOne Landing Page Theme</b> includes 12 Landing Page Templates for Agency, Photographer, Personal Portfolio, Restaurant, Food Ordering, App, Saas, Events, Wedding, Travel, Fitness & Products and 12 Page templates.</p>
+                        <h6 id="main-features" class="mt-30 doc-sub-title">Main Features <a href="#main-features"><i class="fas fa-link"></i></a></h6>
+                        <div class="row">
+                            <div class="col-md-4 col-lg-12 col-xl-4 tablet-xl-top">
+                                <ul class="list-unstyled features-list list-icon list-check list-success">
+                                    <li>Bootstrap 5</li>
+                                    <li>HTML5 & CSS3</li>
+                                    <li>SASS files included</li>
+                                    <li>Fully Responsive</li>
+                                    <li>Cross-Browser Compatible</li>
+                                </ul><!-- / features-list -->
+                            </div><!-- / column -->
+                            <div class="col-md-4 col-lg-12 col-xl-4 tablet-xl-top">
+                                <ul class="list-unstyled features-list list-icon list-check list-success">
+                                    <li>Valid HTML</li>
+                                    <li>No jQuery Dependencies</li>
+                                    <li>Font Awesome 5</li>
+                                    <li>Bootstrap Icons</li>
+                                    <li>Google Fonts</li>
+                                </ul><!-- / features-list -->
+                            </div><!-- / column -->
+                            <div class="col-md-4 col-lg-12 col-xl-4">
+                                <ul class="list-unstyled features-list list-icon list-check list-success">
+                                    <li>100+ UI Components</li>
+                                    <li>12 Landing Pages</li>
+                                    <li>12 Page Templates</li>
+                                    <li>Light / Dark Theme</li>
+                                    <li>24/7 Support</li>
+                                </ul><!-- / features-list -->
+                            </div><!-- / column -->
+                        </div><!-- / row -->
+                    </div><!-- / doc-wrapper -->
+
+                    <div id="file-structure" class="doc-wrapper">
+                        <h6 class="doc-title">File Structure <a href="#file-structure"><i class="fas fa-link"></i></a></h6>
+                        <p>*Click on the folders to open / close them.</p>
+                        <div class="file-structure-wrapper">
+                            <p class="parent-folder">
+                                <a data-bs-toggle="collapse" data-parent="#accordion" href="#collapse-folder" aria-expanded="true" aria-controls="collapse-folder" class="folder-wrap">
+                                    <i class="fas fa-folder"></i><span class="folder-text">assets</span>
+                                </a>
+                            </p><!-- / parent-folder -->
+                            <div id="collapse-folder" class="collapsed show" role="tabpanel" aria-labelledby="collapse-folder">
+                                <p class="sub-folders">
+                                    <a data-bs-toggle="collapse" data-parent="#accordion" href="#collapse-css" aria-expanded="true" aria-controls="collapse-css" class="collapsed folder-wrap">
+                                        <i class="fas fa-folder"></i><span class="folder-text">css</span>
+                                    </a>
+                                </p><!-- / sub-folders -->
+                                <div id="collapse-css" class="collapse" role="tabpanel" aria-labelledby="collapse-css">
+                                    <ul class="file-structure-list second-level">
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">animate.css</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">aos.css</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">bootstrap.min.css</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">bootstrap.min.css.map</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">bootstrap.rtl.css</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">bootstrap.rtl.css.map</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">fontawesome-all.min.css</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">glightbox.min.css</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">style.css</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">swiper-bundle.min.css</span></li>
+                                    </ul><!-- / file-structure-sub -->
+                                </div><!-- / collapse-css -->
+
+                                <p class="sub-folders">
+                                    <a data-bs-toggle="collapse" data-parent="#accordion" href="#collapse-images" aria-expanded="true" aria-controls="collapse-images" class="collapsed folder-wrap">
+                                        <i class="fas fa-folder"></i><span class="folder-text">images</span>
+                                    </a>
+                                </p><!-- / sub-folders -->
+                                <div id="collapse-images" class="collapse" role="tabpanel" aria-labelledby="collapse-images">
+                                    <ul class="file-structure-list second-level">
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">favicon.png</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">logo-light.png</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">logo-white.png</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">logo.png</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">ph-bg.jpg</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">ph-big.jpg</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">ph-mini.jpg</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">ph-square.jpg</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">ph-tall.jpg</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">ph-taller.jpg</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">ph-wide.jpg</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">ph.jpg</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-plus-circle text-grey"></i> <span class="va-bottom">Demo Images</span></li>
+                                    </ul><!-- / file-structure-sub -->
+                                </div><!-- / collapse-images -->
+
+                                <p class="sub-folders">
+                                    <a data-bs-toggle="collapse" data-parent="#accordion" href="#collapse-js" aria-expanded="true" aria-controls="collapse-js" class="collapsed folder-wrap">
+                                        <i class="fas fa-folder"></i><span class="folder-text">js</span>
+                                    </a>
+                                </p><!-- / sub-folders -->
+                                <div id="collapse-js" class="collapse" role="tabpanel" aria-labelledby="collapse-js">
+                                    <ul class="file-structure-list second-level">
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">aos.js</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">bootstrap.bundle.min.js</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">bootstrap.bundle.min.js.map</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">glightbox.min.js</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">isotope-filter.js</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">isotope.min.js</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">jarallax.video.min.js</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">jarallax.min.video.js.map</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">jarallax.min.js</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">jarallax.min.js.map</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">nav-fixed.js</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">rellax.min.js</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">scroll-top.js</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">swiper-bundle.min.js</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">swiper-bundle.min.js.map</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">theme.js</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">typewriter.js</span></li>
+                                    </ul><!-- / file-structure-sub -->
+                                </div><!-- / collapse-js -->
+
+                                <p class="sub-folders">
+                                    <a data-bs-toggle="collapse" data-parent="#accordion" href="#collapse-scss" aria-expanded="true" aria-controls="collapse-scss" class="collapsed folder-wrap">
+                                        <i class="fas fa-folder"></i><span class="folder-text">scss</span>
+                                    </a>
+                                </p><!-- / sub-folders -->
+                                <div id="collapse-scss" class="collapse" role="tabpanel" aria-labelledby="collapse-scss">
+                                    <ul class="file-structure-list second-level">
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">_components.scss</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">_dark-mode.scss</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">_media-screens.scss</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">_mixins.scss</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">_sections.scss</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">_ui.scss</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">_utility.scss</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">_variables.scss</span></li>
+                                        <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">style.scss</span></li>
+                                    </ul><!-- / file-structure-sub -->
+                                </div><!-- / collapse-scss -->
+
+                                <p class="sub-folders">
+                                    <a data-bs-toggle="collapse" data-parent="#accordion" href="#collapse-webfonts" aria-expanded="true" aria-controls="collapse-webfonts" class="collapsed folder-wrap">
+                                        <i class="fas fa-folder"></i><span class="folder-text">webfonts</span>
+                                    </a>
+                                </p><!-- / sub-folders -->
+                                <div id="collapse-webfonts" class="collapse" role="tabpanel" aria-labelledby="collapse-webfonts">
+                                    <ul class="file-structure-list second-level">
+                                        <li class="files-list single-file"><i class="fas fa-plus-circle text-grey"></i> <span class="va-bottom">All Font Files</span></li>
+                                    </ul><!-- / file-structure-sub -->
+                                </div><!-- / collapse-webfonts -->
+                            </div><!-- / collapse -->
+                            <ul class="file-structure-list parent-level">
+                                <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">components.html</span></li>
+                                <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">index.html</span></li>
+                                <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">index2.html</span></li>
+                                <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">index3.html</span></li>
+                                <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">index4.html</span></li>
+                                <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">index5.html</span></li>
+                                <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">index6.html</span></li>
+                                <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">index7.html</span></li>
+                                <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">index8.html</span></li>
+                                <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">index9.html</span></li>
+                                <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">index10.html</span></li>
+                                <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">index11.html</span></li>
+                                <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">index12.html</span></li>
+                            </ul><!-- / file-structure-sub -->
+
+                            <p class="parent-folder">
+                                <a data-bs-toggle="collapse" data-parent="#accordion1" href="#page-folder" aria-expanded="false" aria-controls="page-folder" class="folder-wrap collapsed">
+                                    <i class="fas fa-folder"></i><span class="folder-text">pages</span>
+                                </a>
+                            </p><!-- / parent-folder -->
+                            <div id="page-folder" class="collapsed collapse" role="tabpanel" aria-labelledby="page-folder">
+                                <ul class="file-structure-list second-level">
+                                    <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">about-us.html</span></li>
+                                    <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">about-me.html</span></li>
+                                    <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">services.html</span></li>
+                                    <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">services2.html</span></li>
+                                    <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">blog.html</span></li>
+                                    <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">blog-post.html</span></li>
+                                    <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">portfolio.html</span></li>
+                                    <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">portfolio2.html</span></li>
+                                    <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">pricing.html</span></li>
+                                    <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">contact.html</span></li>
+                                    <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">login-register.html</span></li>
+                                    <li class="files-list single-file"><i class="fas fa-file text-grey"></i> <span class="va-bottom">404.html</span></li>
+                                </ul><!-- / file-structure-sub -->
+                            </div><!-- / collapse-folder -->
+                        </div><!-- / file-structure -->
+                    </div><!-- doc-wrapper -->
+
+                    <div id="starter-template" class="doc-wrapper">
+                        <h6 class="doc-title">Starter Template <a href="#starter-template"><i class="fas fa-link"></i></a></h6>
+                        <p>To get started with just the base files and scripts added, please copy the below code:</p>
+                        <div id="doc-starter-template" class="doc-holder">
+                            <div class="doc-info">
+                                <img src="assets/images/doc-preview.jpg" alt="" class="rounded">
+                            </div><!-- / doc-info -->
+                            <div class="doc-result-footer text-center">
+                                <button class="btn btn-primary btn-code" type="button" data-bs-toggle="collapse" data-bs-target="#code-starter" aria-expanded="false" aria-controls="code-starter"><i class="fas fa-code fs-16 va-middle mr-5"></i> <span>View Code</span></button>
+                            </div><!-- / doc-result-footer -->
+                            <div class="collapse" id="code-starter">
+                                <div class="doc-code">
+                                    <pre><button class="btn btn-copy" data-clipboard-action="copy" data-clipboard-target="#start-html"><i class="far fa-clone mr-5"></i> Copy</button><code id="start-html" class="language-markup">&lt;!DOCTYPE html>
+&lt;html lang="en">
+
+&lt;head>
+    &lt;!-- Meta -->
+    &lt;meta charset="utf-8">
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge">
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    &lt;!-- Site Title -->
+    &lt;title>Site Title&lt;/title>
+    &lt;!-- Bootstrap 5 Core CSS -->
+    &lt;link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    &lt;!-- Custom Styles -->
+    &lt;link rel="stylesheet" href="assets/css/style.css">
+&lt;/head>
+
+&lt;body>
+    &lt;!-- The website content starts here -->
+
+    &lt;!-- Core JavaScript -->
+    &lt;script src="assets/js/bootstrap.bundle.min.js">&lt;/script>
+    &lt;script src="assets/js/theme.js">&lt;/script>
+&lt;/body>
+&lt;/html></code></pre><!-- / code -->
+                                </div><!-- / doc-code -->
+                            </div><!-- / collapse -->
+                        </div><!-- / starter-template -->
+                    </div><!-- doc-wrapper -->
+
+                    <div id="setup-sass" class="doc-wrapper">
+                        <h6 class="doc-title">Setup Sass <a href="#setup-sass"><i class="fas fa-link"></i></a></h6>
+                        <p class="mb-30">To use SASS you will have to use a SASS Processor application, like <a href="https://scout-app.io/" target="_blank">Scout App</a>, it is available for Linux 32 / 64bit, Mac and Windows, it requires project setup in order to process the SASS files from a set folder or you can also use <a href="https://prepros.io/" target="_blank">Prepros</a>, it is also available for Linux, Mac and Windows and it is a bit easier to setup this application.</p>
+
+                        <h6 id="change-variables-link" class="doc-sub-title">Change Variables <a href="#change-variables-link"><i class="fas fa-link"></i></a></h6>
+                        <p>To edit any theme file you will need a Text or Code Editor, we recommend using <a href="https://www.sublimetext.com/" target="_blank">Sublime Text</a>, as it is the Text Editor of our choice to write code, but every Text or Code Editor will work fine to edit any theme files.</p>
+                        <p>To change the theme's fonts, colors and other variables, please open the _variables.scss file from assets / scss folder and modify the font-family to your preferred font, font-weights, the letter-spacing values, change color codes and you can also add custom variables of any type if needed:</p>
+                        <div class="doc-holder">
+                            <div class="doc-result-footer text-center b-1">
+                                <button class="btn btn-primary btn-code" type="button" data-bs-toggle="collapse" data-bs-target="#variables-scss-collapse" aria-expanded="false" aria-controls="variables-scss-collapse"><i class="fas fa-code fs-16 va-middle mr-5"></i> <span>View Code</span></button>
+                            </div><!-- / doc-result-footer -->
+                            <div class="collapse" id="variables-scss-collapse">
+                                <div class="doc-code">
+                                    <pre><button class="btn btn-copy" data-clipboard-action="copy" data-clipboard-target="#variables-scss"><i class="far fa-clone mr-5"></i> Copy</button><code id="variables-scss" class="language-markup">// Typography
+
+$title-font: 'Barlow', sans-serif;
+$primary-font: 'Barlow', sans-serif;
+$secondary-font: 'Barlow', sans-serif;
+$thin: 100;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$bold: 700;
+$lsp: 0.02rem;
+$lsp-2x: 0.0375rem;
+$lsp-big: 0.075rem;
+$lsp-extra: 0.175rem;
+
+...
+</code></pre><!-- / code -->
+                                </div><!-- / doc-code -->
+                            </div><!-- / collapse -->
+                        </div><!-- doc-holder -->
+                    </div><!-- / doc-wrapper -->
+                    <!-- / getting-started -->
+                </div><!-- / column -->
+
+                <div class="col-lg-3">
+                    <div class="doc-sidebar">
+                        <ul id="nav-scroll" class="nav flex-column doc-sidebar-nav sticky-top top-25">
+                            <li class="nav-item">
+                                <a class="nav-link disabled nav-title" href="#x">On this page</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#introduction">Introduction</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#file-structure">File Structure</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#starter-template">Starter Template</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#setup-sass">Setup Sass</a>
+                            </li><!-- / nav-item -->
+                        </ul>
+                    </div><!-- / sticky-top -->
+                </div><!-- / column -->
+            </div><!-- / row -->
+        </div><!-- / doc-container -->
+    </div><!-- / page-container -->
+
+    <!-- Core JavaScript -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+
+    <!-- aos -->
+    <script src="assets/js/aos.js"></script>
+    <script>
+        AOS.init({
+          duration: 1200,
+        })
+    </script>
+    <!-- / aos -->
+
+    <!-- prism -->
+    <script src="assets/js/prism.js"></script>
+    <!-- / prism -->
+
+    <!-- copy-to-clipboard -->
+    <script src="assets/js/clipboard.min.js"></script>
+    <script>
+        var clipboard = new ClipboardJS('.btn');
+
+        clipboard.on('success', function(e) {
+            console.log(e);
+            e.clearSelection();
+        });
+
+        clipboard.on('error', function(e) {
+            console.log(e);
+            e.clearSelection();
+        });
+    </script>
+    <!-- / copy-to-clipboard -->
+
+</body>
+</html>

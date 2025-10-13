@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Documentation">
+    <meta name="author" content="kingstudio.ro">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.png">
+    <!-- Site Title -->
+    <title>Documentation</title>
+    <!-- Bootstrap 5 Core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/prism.css">
+    <link rel="stylesheet" href="assets/css/doc.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" type="text/css">
+</head>
+
+<body class="doc-body doc-style2" data-bs-spy="scroll" data-bs-target="#nav-scroll">
+
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
+    <div id="#top"></div>
+
+    <nav class="side-nav left-nav navbar-expand-lg nav nav-style2 bg-body">
+
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggle" aria-controls="navbar-toggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+        </button><!-- / navbar-toggler -->
+
+        <div class="collapse navbar-collapse" id="navbar-toggle">
+            <ul class="pl-0" id="main-collapse">
+                <li class="sidenav-logo">
+                    <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link has-collapse collapsed" href="#side-dropdown" data-bs-toggle="collapse" data-bs-target="#side-dropdown" aria-expanded="false" aria-controls="side-dropdown"><span>Getting Started</span></a>
+                    <div class="collapse" id="side-dropdown" data-bs-parent="#main-collapse">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="index.html#introduction">Introduction</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="index.html#file-structure">File Structure</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="index.html#starter-template">Starter Template</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="index.html#setup-sass">Setup Sass</a>
+                            </li><!-- / nav-item -->
+                        </ul><!-- nav -->
+                    </div><!-- / collapse -->
+                </li><!-- / nav-item -->
+
+                <li class="nav-item">
+                    <a class="nav-link has-collapse collapsed" href="#side-dropdown2" data-bs-toggle="collapse" data-bs-target="#side-dropdown2" aria-expanded="false" aria-controls="side-dropdown2"><span>Content</span></a>
+                    <div class="collapse" id="side-dropdown2" data-bs-parent="#main-collapse">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="#typography">Typography</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="#icons">Icons</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="#code">Code</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="#tables">Tables</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="#images">Images</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="#videos">Videos</a>
+                            </li><!-- / nav-item -->
+                        </ul><!-- nav -->
+                    </div><!-- / collapse -->
+                </li><!-- / nav-item -->
+
+                <li class="nav-item">
+                    <a class="nav-link has-collapse collapsed" href="#side-dropdown3" data-bs-toggle="collapse" data-bs-target="#side-dropdown3" aria-expanded="false" aria-controls="side-dropdown3"><span>Components</span></a>
+                    <div class="collapse" id="side-dropdown3" data-bs-parent="#main-collapse">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="components/accordions.html">Accordions</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="components/alerts.html">Alerts</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="components/buttons.html">Buttons</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="components/cards.html">Cards</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="components/modals.html">Modals</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="components/navigation.html">Navigation</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="components/progress.html">Progress</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="components/promo-box.html">Promo Box</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="components/widgets.html">Widgets</a>
+                            </li><!-- / nav-item -->
+                        </ul><!-- nav -->
+                    </div><!-- / collapse -->
+                </li><!-- / nav-item -->
+            </ul><!-- / main-collapse -->
+        </div><!-- / collapse -->
+    </nav><!-- / nav-scroll -->
+    <!-- / side-nav -->
+
+    <div class="doc-top-header">
+        <div class="doc-top-bar">
+            <div class="row">
+                <div class="col-lg-6">
+                    <a href="index.html" class="btn btn-icon btn-primary btn-doc"><i class="far fa-file fs-18"></i></a>
+                </div><!-- / column -->
+                <div class="col-lg-6 text-right">
+                    <a href="https://kingstudio.ro/contact.html" class="btn btn-primary top-page-button"><i class="far fa-envelope-open mr-5"></i> <span>Contact</span></a>
+                </div><!-- / column -->
+            </div><!-- / row -->
+        </div><!-- / top-header-nav -->
+    </div><!-- / doc-top-header -->
+
+    <div class="page-container">
+        <div class="doc-container container-fluid">
+            <div class="row">
+                <div class="col-lg-9">
+                    <h4 id="content" class="doc-main-title">Content <a href="#content"><i class="fas fa-link"></i></a></h4>
+                    <div id="typography" class="doc-wrapper">
+                        <h6 class="doc-title">Typography <a href="#typography"><i class="fas fa-link"></i></a></h6>
+                        <p>Documentation and examples for typography, including global settings, headings, body text, lists and more. Set your font-family by including the font's <code class="highlighter-rouge">@import</code> code into the style.scss or style.css file:</p>
+                        <div class="doc-code">
+                            <pre><button class="btn btn-copy" data-clipboard-action="copy" data-clipboard-target="#font-link"><i class="far fa-clone mr-5"></i> Copy</button><code id="font-link" class="language-markup">@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;300;400;500;700&display=swap');</code></pre>
+                        </div><!-- / doc-code -->
+
+                        <p class="mt-30">After embedding the font-family code, the font-family must be specified in CSS, in the theme's assets / scss / _variables.scss file:</p>
+                        <div class="doc-code">
+                            <pre><button class="btn btn-copy" data-clipboard-action="copy" data-clipboard-target="#font-css"><i class="far fa-clone mr-5"></i> Copy</button><code id="font-css" class="language-markup">$title-font: 'Barlow', sans-serif;
+$primary-font: 'Barlow', sans-serif;
+$secondary-font: 'Barlow', sans-serif;</code></pre>
+                        </div><!-- / doc-code -->
+
+                        <h6 id="headings-link" class="pt-50 doc-sub-title">Headings <a href="#headings-link"><i class="fas fa-link"></i></a></h6>
+                        <p>All HTML headings, <code class="highlighter-rouge">h1</code> through <code class="highlighter-rouge">h6</code>, are available, also <code class="highlighter-rouge">.h1</code> through <code class="highlighter-rouge">.h6</code> classes are available, for when you want to match the font styling of a heading but cannot use the associated HTML element.</p>
+                        <div class="doc-holder">
+                            <div class="doc-info">
+                                <h1>H1 Heading</h1>
+                                <h2>H2 Heading</h2>
+                                <h3>H3 Heading</h3>
+                                <h4>H4 Heading</h4>
+                                <h5>H5 Heading</h5>
+                                <h6>H6 Heading</h6>
+                            </div><!-- / doc-info -->
+                            <div class="doc-result-footer text-center">
+                                <button class="btn btn-primary btn-code" type="button" data-bs-toggle="collapse" data-bs-target="#code-headings-collapse" aria-expanded="false" aria-controls="code-headings-collapse"><i class="fas fa-code va-middle mr-5"></i> <span>View Code</span></button>
+                            </div><!-- / doc-result-footer -->
+
+                            <div class="collapse" id="code-headings-collapse" style="">
+                                <div class="doc-code">
+                                    <pre class="language-markup"><button class="btn btn-copy" data-clipboard-action="copy" data-clipboard-target="#code-headings"><i class="far fa-clone mr-5"></i> Copy</button><code id="code-headings" class="language-markup" style="">&lt;h1>H1 Heading&lt;/h1>
+&lt;h2>H2 Heading&lt;/h2>
+&lt;h3>H3 Heading&lt;/h3>
+&lt;h4>H4 Heading&lt;/h4>
+&lt;h5>H5 Heading&lt;/h5>
+&lt;h6>H6 Heading&lt;/h6></code></pre><!-- / code -->
+                                </div><!-- / doc-code -->
+                            </div><!-- / collapse -->
+                        </div><!-- / doc-holder -->
+
+                        <h6 id="paragraphs-link" class="pt-50 doc-sub-title">Paragraphs <a href="#paragraphs-link"><i class="fas fa-link"></i></a></h6>
+                        <p>Make a paragraph stand out by adding <code class="highlighter-rouge">.lead</code>, smaller size with <code class="highlighter-rouge">.text-sm</code> or extra small with <code class="highlighter-rouge">.text-xs</code> class.</p>
+                        <div class="doc-holder">
+                            <div class="doc-info">
+                                <p class="lead">Large Paragraph (lead).</p>
+                                <p>Regular Paragraph.</p>
+                                <p class="text-sm">Small Paragraph.</p>
+                                <p class="text-xs">XS Paragraph.</p>
+                                <p>
+                                    <span class="text-primary mr-5">.text-primary</span>
+                                    <span class="text-secondary mr-5">.text-secondary</span>
+                                    <span class="text-success mr-5">.text-success</span>
+                                    <span class="text-info mr-5">.text-info</span>
+                                    <span class="text-warning mr-5">.text-warning</span>
+                                    <span class="text-danger mr-5">.text-danger</span>
+                                </p>
+                            </div><!-- / doc-info -->
+
+                            <div class="doc-result-footer text-center">
+                                <button class="btn btn-primary btn-code" type="button" data-bs-toggle="collapse" data-bs-target="#code-paragraph-collapse" aria-expanded="false" aria-controls="code-paragraph-collapse"><i class="fas fa-code va-middle mr-5"></i> <span>View Code</span></button>
+                            </div><!-- / doc-result-footer -->
+
+                            <div class="collapse" id="code-paragraph-collapse" style="">
+                                <div class="doc-code">
+                                    <pre class="language-markup"><button class="btn btn-copy" data-clipboard-action="copy" data-clipboard-target="#code-paragraph"><i class="far fa-clone mr-5"></i> Copy</button><code id="code-paragraph" class="language-markup" style="">&lt;p class="lead">Large Paragraph (lead).&lt;/p>
+&lt;p>Regular Paragraph.&lt;/p>
+&lt;p class="text-sm">Small Paragraph.&lt;/p>
+&lt;p class="text-xs">XS Paragraph.&lt;/p>
+&lt;p>
+    &lt;span class="text-primary mr-5">.text-primary&lt;/span>
+    &lt;span class="text-secondary mr-5">.text-secondary&lt;/span>
+    &lt;span class="text-success mr-5">.text-success&lt;/span>
+    &lt;span class="text-info mr-5">.text-info&lt;/span>
+    &lt;span class="text-warning mr-5">.text-warning&lt;/span>
+    &lt;span class="text-danger mr-5">.text-danger&lt;/span>
+&lt;/p></code></pre><!-- / code -->
+                                </div><!-- / doc-code -->
+                            </div><!-- / collapse -->
+                        </div><!-- / doc-holder -->
+
+                        <h6 id="lists-link" class="pt-50 doc-sub-title">Lists <a href="#lists-link"><i class="fas fa-link"></i></a></h6>
+                        <p>We replaced the default list with a featured list by using <code class="highlighter-rouge">.list-featured</code> CSS class and also created many custom icon lists by using <code class="highlighter-rouge">.list-unstyled.list-icon</code> class and additional classes of the icon types <code class="highlighter-rouge">.list-arrow</code>, <code class="highlighter-rouge">.list-check</code>, <code class="highlighter-rouge">.list-close</code>, <code class="highlighter-rouge">.list-bullet</code>, <code class="highlighter-rouge">.list-star</code> and <code class="highlighter-rouge">.list-dollar</code> and also added classes to change color of the list icons, the color utility classes are: <code class="highlighter-rouge">.list-primary</code>, <code class="highlighter-rouge">.list-secondary</code>, <code class="highlighter-rouge">.list-success</code>, <code class="highlighter-rouge">.list-info</code>, <code class="highlighter-rouge">.list-warning</code> and <code class="highlighter-rouge">.list-danger</code></p>
+
+                        <div class="doc-holder">
+                            <div class="doc-info">
+                                <ul class="list-unstyled list-icon list-bullet list-primary mb-25">
+                                    <li>List Item 1</li>
+                                    <li>List Item 2</li>
+                                </ul>
+
+                                <ul class="list-unstyled list-icon list-check list-success mb-25">
+                                    <li>List Item 3</li>
+                                    <li>List Item 4</li>
+                                </ul>
+
+                                <ul class="list-unstyled list-icon list-arrow list-info mb-25">
+                                    <li>List Item 5</li>
+                                    <li>List Item 6</li>
+                                </ul>
+
+                                <ul class="list-unstyled list-icon list-star list-warning">
+                                    <li>List Item 7</li>
+                                    <li>List Item 8</li>
+                                </ul>
+                            </div><!-- / doc-info -->
+
+                            <div class="doc-result-footer text-center">
+                                <button class="btn btn-primary btn-code" type="button" data-bs-toggle="collapse" data-bs-target="#code-lists-collapse" aria-expanded="false" aria-controls="code-lists-collapse"><i class="fas fa-code va-middle mr-5"></i> <span>View Code</span></button>
+                            </div><!-- / doc-result-footer -->
+
+                            <div class="collapse" id="code-lists-collapse" style="">
+                                <div class="doc-code">
+                                    <pre class="language-markup"><button class="btn btn-copy" data-clipboard-action="copy" data-clipboard-target="#code-lists"><i class="far fa-clone mr-5"></i> Copy</button><code id="code-lists" class="language-markup" style="">&lt;ul class="list-unstyled list-icon list-bullet list-primary mb-25">
+    &lt;li>List Item 1&lt;/li>
+    &lt;li>List Item 2&lt;/li>
+&lt;/ul>
+
+&lt;ul class="list-unstyled list-icon list-check list-success mb-25">
+    &lt;li>List Item 3&lt;/li>
+    &lt;li>List Item 4&lt;/li>
+&lt;/ul>
+
+&lt;ul class="list-unstyled list-icon list-arrow list-info mb-25">
+    &lt;li>List Item 5&lt;/li>
+    &lt;li>List Item 6&lt;/li>
+&lt;/ul>
+
+&lt;ul class="list-unstyled list-icon list-star list-warning">
+    &lt;li>List Item 7&lt;/li>
+    &lt;li>List Item 8&lt;/li>
+&lt;/ul></code></pre><!-- / code -->
+                                </div><!-- / doc-code -->
+                            </div><!-- / collapse -->
+                        </div><!-- / doc-holder -->
+
+                        <h6 id="blockquotes-link" class="pt-50 doc-sub-title">Blockquotes <a href="#blockquotes-link"><i class="fas fa-link"></i></a></h6>
+                        <p>We've created a custom blockquote design for this template; with an icon placed in the background of the blockquote paragraph:</p>
+                        <div class="doc-holder">
+                            <div class="doc-info">
+                                <blockquote class="blockquote">
+                                    <i class="fas fa-quote-right blockquote-bg-icon"></i>
+                                    <div class="blockquote-content has-icon">
+                                        <p class="mb-0">Quisque in tortor dolor. In hac habitasse platea dictumst. Vivamus dictum, libero vel hendrerit iaculis, nunc eros posuere diam, id tempus velit nibh eget nisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus mauris iaculis ullamcorper venenatis.</p>
+                                    </div><!--/ blockquote-content -->
+                                </blockquote>
+                            </div><!-- / doc-info -->
+
+                            <div class="doc-result-footer text-center">
+                                <button class="btn btn-primary btn-code" type="button" data-bs-toggle="collapse" data-bs-target="#code-blockquote-collapse" aria-expanded="false" aria-controls="code-blockquote-collapse"><i class="fas fa-code va-middle mr-5"></i> <span>View Code</span></button>
+                            </div><!-- / doc-result-footer -->
+
+                            <div class="collapse" id="code-blockquote-collapse" style="">
+                                <div class="doc-code">
+                                    <pre class="language-markup"><button class="btn btn-copy" data-clipboard-action="copy" data-clipboard-target="#code-blockquote"><i class="far fa-clone mr-5"></i> Copy</button><code id="code-blockquote" class="language-markup" style="">&lt;blockquote class="blockquote">
+    &lt;i class="fas fa-quote-right blockquote-bg-icon">&lt;/i>
+    &lt;div class="blockquote-content has-icon">
+        &lt;p class="mb-0">Quisque in tortor dolor. In hac habitasse platea dictumst. Vivamus dictum, libero vel hendrerit iaculis, nunc eros posuere diam, id tempus velit nibh eget nisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus mauris iaculis ullamcorper venenatis urna vel aliquet. Vestibulum aliquam commodo egestas. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.&lt;/p>
+    &lt;/div>&lt;!--/ blockquote-content -->
+&lt;/blockquote></code></pre><!-- / code -->
+                                </div><!-- / doc-code -->
+                            </div><!-- / collapse -->
+                        </div><!-- / doc-holder -->
+                    </div><!-- / doc-wrapper -->
+
+                    <div id="icons" class="doc-wrapper">
+                        <h6 class="doc-title">Icons <a href="#icons"><i class="fas fa-link"></i></a></h6>
+                        <p class="mb-30">The integrated fonts in this theme are <b>Font Awesome 5</b> and <b>Bootstrap Icons</b>, the font files can be found in the theme's assets / webfonts folder, the CSS files can be found in assets / css folder.</p>
+
+                        <h6 id="font-awesome-5" class="doc-sub-title">Font Awesome 5 <a href="#font-awesome-5"><i class="fas fa-link"></i></a></h6>
+                        <p>To use Font Awesome, please paste this code into the <code class="highlighter-rouge">&lt;head&gt;</code> of your HTML document:</p>
+
+                        <div class="doc-code">
+                            <pre><button class="btn btn-copy" data-clipboard-action="copy" data-clipboard-target="#fa-link"><i class="far fa-clone mr-5"></i> Copy</button><code id="fa-link" class="language-markup">&lt;link rel="stylesheet" href="assets/css/fontawesome-all.min.css" type="text/css"></code></pre>
+                        </div><!-- / doc-code -->
+                        <p class="mt-30">To add a regular Font Awesome icon to your content, please use <code class="highlighter-rouge">fas</code> CSS class in an <code class="highlighter-rouge">&lt;i&gt;</code> tag, some Font Awesome icons are also available in Regular font-weight which requires <code class="highlighter-rouge">far</code> class and for branding icons, like Facebook, Twitter, Apple, etc. the <code class="highlighter-rouge">fab</code> class should be used as seen in the below example:</p>
+                        <div class="doc-holder">
+                            <div class="doc-info">
+                                <div class="icon-item-inner">
+                                    <div class="icon-wrapper">
+                                        <i class="fas fa-lightbulb"></i>
+                                    </div><!-- / icon-wrapper -->
+                                    <div class="icon-item-caption caption-sm">fas fa-lightbulb</div>
+                                </div><!-- / icon-item-inner -->
+
+                                <div class="icon-item-inner">
+                                    <div class="icon-wrapper">
+                                        <i class="far fa-lightbulb"></i>
+                                    </div><!-- / icon-wrapper -->
+                                    <div class="icon-item-caption caption-sm">far fa-lightbulb</div>
+                                </div><!-- / icon-item-inner -->
+
+                                <div class="icon-item-inner">
+                                    <div class="icon-wrapper">
+                                        <i class="fab fa-apple"></i>
+                                    </div><!-- / icon-wrapper -->
+                                    <div class="icon-item-caption caption-sm">fab fa-apple</div>
+                                </div><!-- / icon-item-inner -->
+                            </div><!-- / doc-info -->
+                        </div><!-- / doc-holder -->
+
+                        <h6 id="bootstrap-icons" class="pt-50 doc-sub-title">Bootstrap Icons <a href="#bootstrap-icons"><i class="fas fa-link"></i></a></h6>
+                        <p>To use Bootstrap Icons, please paste this code to the top section of your style.css or style.scss file of your website ( the code must go before the first line of your CSS ):</p>
+
+                        <div class="doc-code">
+                            <pre><button class="btn btn-copy" data-clipboard-action="copy" data-clipboard-target="#bi-import"><i class="far fa-clone mr-5"></i> Copy</button><code id="bi-import" class="language-markup">@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css");</code></pre>
+                        </div><!-- / doc-code -->
+                        <p class="mt-30">To add a Bootstrap icon to your content, please use <code class="highlighter-rouge">bi bi-[icon-name]</code> CSS class on an <code class="highlighter-rouge">&lt;i&gt;</code> or <code class="highlighter-rouge">&lt;span&gt;</code> tag as seen in the below example:</p>
+                        <div class="doc-holder">
+                            <div class="doc-info">
+                                <div class="icon-item-inner">
+                                    <div class="icon-wrapper">
+                                        <i class="bi bi-lightbulb-fill"></i>
+                                    </div><!-- / icon-wrapper -->
+                                    <div class="icon-item-caption caption-sm">bi bi-lightbulb-fill</div>
+                                </div><!-- / icon-item-inner -->
+
+                                <div class="icon-item-inner">
+                                    <div class="icon-wrapper">
+                                        <i class="bi bi-lightbulb"></i>
+                                    </div><!-- / icon-wrapper -->
+                                    <div class="icon-item-caption caption-sm">bi bi-lightbulb</div>
+                                </div><!-- / icon-item-inner -->
+
+                                <div class="icon-item-inner">
+                                    <div class="icon-wrapper">
+                                        <i class="bi bi-lightbulb-off"></i>
+                                    </div><!-- / icon-wrapper -->
+                                    <div class="icon-item-caption caption-sm">bi bi-lightbulb-off</div>
+                                </div><!-- / icon-item-inner -->
+                            </div><!-- / doc-info -->
+                        </div><!-- / doc-holder -->
+                    </div><!-- / doc-wrapper -->
+
+                    <div id="code" class="doc-wrapper">
+                        <h6 class="doc-title">Code <a href="#code"><i class="fas fa-link"></i></a></h6>
+                        <h6 id="inline-code-blocks-link" class="doc-sub-title">Inline Code <a href="#inline-code-blocks-link"><i class="fas fa-link"></i></a></h6>
+                        <p>For example, <code>&lt;section&gt;</code> should be wrapped as inline code.</p>
+                        <div class="doc-code">
+                             <pre class="language-markup"><button class="btn btn-copy" data-clipboard-action="copy" data-clipboard-target="#code-inline"><i class="far fa-clone mr-5"></i> Copy</button><code id="code-inline" class="language-markup" style="">For example, <span class="nt">&lt;code&gt;</span><span class="ni">&amp;lt;</span>section<span class="ni">&amp;gt;</span><span class="nt">&lt;/code&gt;</span> should be wrapped as inline code.</code></pre>
+                        </div><!-- / doc-code -->
+
+                        <h6 id="code-blocks-link" class="pt-50 doc-sub-title">Code Blocks <a href="#code-blocks-link"><i class="fas fa-link"></i></a></h6>
+                        <p>Use <code class="highlighter-rouge">&lt;pre&gt;</code>s for multiple lines of code. Once again, be sure to escape any angle brackets in the code for proper rendering. You may optionally add the <code class="highlighter-rouge">.pre-scrollable</code> class, which will set a max-height of 340px and provide a y-axis scrollbar.</p>
+                        <div class="doc-holder">
+                            <div class="doc-info"><pre class="language-markup"><code class="language-markup" style="">&lt;p&gt;Sample text here...&lt;/p&gt;
+&lt;p&gt;And another line of sample text here...&lt;/p&gt;
+</code></pre>
+                            </div><!-- / doc-info -->
+                            <div class="doc-result-footer text-center">
+                                <button class="btn btn-primary btn-code" type="button" data-bs-toggle="collapse" data-bs-target="#code-blocks-collapse" aria-expanded="false" aria-controls="code-blocks-collapse"><i class="fas fa-code va-middle mr-5"></i> <span>View Code</span></button>
+                            </div><!-- / doc-result-footer -->
+                            <div class="collapse" id="code-blocks-collapse" style="">
+                                <div class="doc-code">
+                                    <pre class="language-markup"><button class="btn btn-copy" data-clipboard-action="copy" data-clipboard-target="#code-blocks"><i class="far fa-clone mr-5"></i> Copy</button><code id="code-blocks" class="language-markup" style=""><span class="nt">&lt;pre class="language-markup"&gt;&lt;code class="language-markup" style=""&gt;</span><span class="ni">&amp;lt;</span>p<span class="ni">&amp;gt;</span>Sample text here...<span class="ni">&amp;lt;</span>/p<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>p<span class="ni">&amp;gt;</span>And another line of sample text here...<span class="ni">&amp;lt;</span>/p<span class="ni">&amp;gt;</span>
+<span class="nt">&lt;/code&gt;&lt;/pre&gt;</span></code></pre><!-- / code -->
+
+
+                                </div><!-- / doc-code -->
+                            </div><!-- / collapse -->
+                        </div><!-- / doc-holder -->
+                    </div><!-- / doc-wrapper -->
+
+                    <div id="tables" class="doc-wrapper">
+                        <h6 class="doc-title">Tables <a href="#tables"><i class="fas fa-link"></i></a></h6>
+                        <p>Due to the widespread use of tables across third-party widgets like calendars and date pickers, we’ve designed our tables to be <strong>opt-in</strong>. Just add the base class <code class="highlighter-rouge">.table</code> to any <code class="highlighter-rouge">&lt;table&gt;</code>, then extend with custom styles or our various included modifier classes.</p>
+                        <p>Using the most basic table markup, here’s how <code class="highlighter-rouge">.table</code>-based tables look in Bootstrap. <strong>All table styles are inherited in Bootstrap 5</strong>, meaning any nested tables will be styled in the same manner as the parent.</p>
+                        <p>You can also invert the colors with light text on dark backgrounds with <code class="highlighter-rouge">.table-inverse</code>.</p>
+                        <h6 id="bordered-table-link" class="doc-sub-title">Bordered Table <a href="#bordered-table-link"><i class="fas fa-link"></i></a></h6>
+                        <div class="doc-holder">
+                            <div class="doc-info">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Handle</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Larry</td>
+                                            <td>The Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table><!-- / table -->
+                            </div><!-- / doc-info -->
+                            <div class="doc-result-footer text-center">
+                                <button class="btn btn-primary btn-code" type="button" data-bs-toggle="collapse" data-bs-target="#bordered-table-collapse" aria-expanded="false" aria-controls="bordered-table-collapse"><i class="fas fa-code va-middle mr-5"></i> <span>View Code</span></button>
+                            </div><!-- / doc-result-footer -->
+                            <div class="collapse" id="bordered-table-collapse" style="">
+                                <div class="doc-code">
+                                    <pre class="language-markup"><button class="btn btn-copy" data-clipboard-action="copy" data-clipboard-target="#bordered-table"><i class="far fa-clone mr-5"></i> Copy</button><code id="bordered-table" class="language-markup" style="">&lt;table class="table">
+    &lt;thead>
+        &lt;tr>
+            &lt;th scope="col">#&lt;/th>
+            &lt;th scope="col">First&lt;/th>
+            &lt;th scope="col">Last&lt;/th>
+            &lt;th scope="col">Handle&lt;/th>
+        &lt;/tr>
+    &lt;/thead>
+    &lt;tbody>
+        &lt;tr>
+            &lt;th scope="row">1&lt;/th>
+            &lt;td>Mark&lt;/td>
+            &lt;td>Otto&lt;/td>
+            &lt;td>@mdo&lt;/td>
+        &lt;/tr>
+        &lt;tr>
+            &lt;th scope="row">2&lt;/th>
+            &lt;td>Jacob&lt;/td>
+            &lt;td>Thornton&lt;/td>
+            &lt;td>@fat&lt;/td>
+        &lt;/tr>
+        &lt;tr>
+            &lt;th scope="row">3&lt;/th>
+            &lt;td>Larry&lt;/td>
+            &lt;td>The Bird&lt;/td>
+            &lt;td>@twitter&lt;/td>
+        &lt;/tr>
+    &lt;/tbody>
+&lt;/table>&lt;!-- / table --></code></pre><!-- / code -->
+                                </div><!-- / doc-code -->
+                            </div><!-- / collapse -->
+                        </div><!-- / doc-holder -->
+
+                        <h6 id="striped-table-link" class="pt-50 doc-sub-title">Striped Table <a href="#striped-table-link"><i class="fas fa-link"></i></a></h6>
+                        <div class="doc-holder">
+                            <div class="doc-info">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Handle</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Larry</td>
+                                            <td>The Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table><!-- / table -->
+                            </div><!-- / doc-info -->
+                            <div class="doc-result-footer text-center">
+                                <button class="btn btn-primary btn-code" type="button" data-bs-toggle="collapse" data-bs-target="#striped-table-collapse" aria-expanded="false" aria-controls="striped-table-collapse"><i class="fas fa-code va-middle mr-5"></i> <span>View Code</span></button>
+                            </div><!-- / doc-result-footer -->
+                            <div class="collapse" id="striped-table-collapse" style="">
+                                <div class="doc-code">
+                                    <pre class="language-markup"><button class="btn btn-copy" data-clipboard-action="copy" data-clipboard-target="#striped-table"><i class="far fa-clone mr-5"></i> Copy</button><code id="striped-table" class="language-markup" style="">&lt;table class="table table-striped">
+    &lt;thead>
+        &lt;tr>
+            &lt;th scope="col">#&lt;/th>
+            &lt;th scope="col">First&lt;/th>
+            &lt;th scope="col">Last&lt;/th>
+            &lt;th scope="col">Handle&lt;/th>
+        &lt;/tr>
+    &lt;/thead>
+    &lt;tbody>
+        &lt;tr>
+            &lt;th scope="row">1&lt;/th>
+            &lt;td>Mark&lt;/td>
+            &lt;td>Otto&lt;/td>
+            &lt;td>@mdo&lt;/td>
+        &lt;/tr>
+        &lt;tr>
+            &lt;th scope="row">2&lt;/th>
+            &lt;td>Jacob&lt;/td>
+            &lt;td>Thornton&lt;/td>
+            &lt;td>@fat&lt;/td>
+        &lt;/tr>
+        &lt;tr>
+            &lt;th scope="row">3&lt;/th>
+            &lt;td>Larry&lt;/td>
+            &lt;td>The Bird&lt;/td>
+            &lt;td>@twitter&lt;/td>
+        &lt;/tr>
+    &lt;/tbody>
+&lt;/table>&lt;!-- / table --></code></pre><!-- / code -->
+                                </div><!-- / doc-code -->
+                            </div><!-- / collapse -->
+                        </div><!-- / doc-holder -->
+                    </div><!-- / doc-wrapper -->
+
+                    <div id="images" class="doc-wrapper">
+                        <h6 class="doc-title">Images <a href="#images"><i class="fas fa-link"></i></a></h6>
+                        <h6 id="responsive-images" class="doc-sub-title">Responsive Images <a href="#responsive-images"><i class="fas fa-link"></i></a></h6>
+                        <p>Images in Bootstrap are made responsive with <code class="highlighter-rouge">.img-fluid</code>. <code class="highlighter-rouge">max-width: 100%;</code> and <code class="highlighter-rouge">height: auto;</code> are applied to the image so that it scales with the parent element.</p>
+                        <div class="doc-holder">
+                            <div class="doc-info">
+                                <img src="assets/images/ph-bg.jpg" class="img-fluid" alt="Responsive image">
+                            </div><!-- / doc-info -->
+                            <div class="doc-result-footer text-center">
+                                <button class="btn btn-primary btn-code" type="button" data-bs-toggle="collapse" data-bs-target="#code-img-collapse" aria-expanded="false" aria-controls="code-img-collapse"><i class="fas fa-code va-middle mr-5"></i> <span>View Code</span></button>
+                            </div><!-- / doc-result-footer -->
+                            <div class="collapse" id="code-img-collapse" style="">
+                                <div class="doc-code">
+                                    <pre class="language-markup"><button class="btn btn-copy" data-clipboard-action="copy" data-clipboard-target="#code-img"><i class="far fa-clone mr-5"></i> Copy</button><code id="code-img" class="language-markup" style="">&lt;img src="assets/images/ph-bg.jpg" class="img-fluid" alt="Responsive image"></code></pre><!-- / code -->
+                                </div><!-- / doc-code -->
+                            </div><!-- / collapse -->
+                        </div><!-- / doc-holder -->
+
+                        <h6 id="image-shapes" class="pt-50 doc-sub-title">Image Shapes <a href="#image-shapes"><i class="fas fa-link"></i></a></h6>
+                        <p>You can shape images with the helper <code class="highlighter-rouge">.rectangle</code>, <code class="highlighter-rouge">.rounded</code>, <code class="highlighter-rouge">.pill</code>, <code class="highlighter-rouge">.circle</code> and <code class="highlighter-rouge">.rounded-[value]</code> utility classes, the rounded values are from 5 to 30, increasing in steps of 5 (px).</p>
+                        <div class="doc-holder">
+                            <div class="doc-info">
+                                <img style="max-width: 150px; margin-right: 15px;" src="assets/images/ph-mini.jpg" alt="rectangle image" class="img-thumbnail rectangle">
+                                <img style="max-width: 150px; margin-right: 15px;" src="assets/images/ph-mini.jpg" alt="rounded image" class="img-thumbnail rounded-20">
+                                <img style="max-width: 150px; margin-right: 15px;" src="assets/images/ph-mini.jpg" alt="pill image" class="img-thumbnail pill">
+                                <img style="max-width: 150px;" src="assets/images/ph-mini.jpg" alt="circle image" class="img-thumbnail circle">
+                            </div><!-- / doc-info -->
+                            <div class="doc-result-footer text-center">
+                                <button class="btn btn-primary btn-code" type="button" data-bs-toggle="collapse" data-bs-target="#code-img-shapes-collapse" aria-expanded="false" aria-controls="code-img-shapes-collapse"><i class="fas fa-code va-middle mr-5"></i> <span>View Code</span></button>
+                            </div><!-- / doc-result-footer -->
+                            <div class="collapse" id="code-img-shapes-collapse" style="">
+                                <div class="doc-code">
+                                    <pre class="language-markup"><button class="btn btn-copy" data-clipboard-action="copy" data-clipboard-target="#code-img-shapes"><i class="far fa-clone mr-5"></i> Copy</button><code id="code-img-shapes" class="language-markup" style="">&lt;img style="max-width: 150px; margin-right: 15px;" src="assets/images/ph-mini.jpg" alt="rectangle image" class="img-thumbnail rectangle">
+&lt;img style="max-width: 150px; margin-right: 15px;" src="assets/images/ph-mini.jpg" alt="rounded image" class="img-thumbnail rounded-20">
+&lt;img style="max-width: 150px; margin-right: 15px;" src="assets/images/ph-mini.jpg" alt="pill image" class="img-thumbnail pill">
+&lt;img style="max-width: 150px;" src="assets/images/ph-mini.jpg" alt="circle image" class="img-thumbnail circle"></code></pre><!-- / code -->
+                                </div><!-- / doc-code -->
+                            </div><!-- / collapse -->
+                        </div><!-- / doc-holder -->
+                    </div><!-- / doc-wrapper -->
+
+                    <div id="videos" class="doc-wrapper">
+                        <h6 class="doc-title">Videos <a href="#videos"><i class="fas fa-link"></i></a></h6>
+                        <h6 id="embedded-videos" class="doc-sub-title">Embedded Videos <a href="#embedded-videos"><i class="fas fa-link"></i></a></h6>
+                        <p>You can embed videos from <b>Youtube</b> , <b>Vimeo</b> or any other videos sharing service that offers embed links, in our example below we've mebedding a Vimeo video:</p>
+                        <div class="doc-holder">
+                            <div class="doc-info">
+                                <div class="embed-responsive ratio ratio-16x9">
+                                    <iframe src="https://player.vimeo.com/video/311013580?title=0&byline=0&portrait=0" allowfullscreen></iframe>
+                                </div><!-- / embed-responsive -->
+                            </div><!-- / doc-info -->
+                            <div class="doc-result-footer text-center">
+                                <button class="btn btn-primary btn-code" type="button" data-bs-toggle="collapse" data-bs-target="#embedded-video-collapse" aria-expanded="false" aria-controls="embedded-video-collapse"><i class="fas fa-code va-middle mr-5"></i> <span>View Code</span></button>
+                            </div><!-- / doc-result-footer -->
+                            <div class="collapse" id="embedded-video-collapse" style="">
+                                <div class="doc-code">
+                                    <pre class="language-markup"><button class="btn btn-copy" data-clipboard-action="copy" data-clipboard-target="#embedded-video"><i class="far fa-clone mr-5"></i> Copy</button><code id="embedded-video" class="language-markup" style="">&lt;div class="embed-responsive ratio ratio-16x9">
+    &lt;iframe src="https://player.vimeo.com/video/311013580?title=0&byline=0&portrait=0" allowfullscreen>&lt;/iframe>
+&lt;/div>&lt;!-- / embed-responsive --></code></pre><!-- / code -->
+                                </div><!-- / doc-code -->
+                            </div><!-- / collapse -->
+                        </div><!-- / doc-holder -->
+
+                        <h6 id="self-hosted-videos" class="pt-50 doc-sub-title">Self-hosted Videos <a href="#self-hosted-videos"><i class="fas fa-link"></i></a></h6>
+                        <p>You can embed your own self-hosted videos by using the below example code:</p>
+                        <div class="doc-holder">
+                            <div class="doc-info text-center">
+                                <div class="video-player-wrapper">
+                                    <video src="https://kingstudio.ro/uploads/video-embed/fog.mp4" controls></video>
+                                </div><!-- / video-player-wrapper -->
+                            </div><!-- / doc-info -->
+                            <div class="doc-result-footer text-center">
+                                <button class="btn btn-primary btn-code" type="button" data-bs-toggle="collapse" data-bs-target="#self-video-collapse" aria-expanded="false" aria-controls="self-video-collapse"><i class="fas fa-code va-middle mr-5"></i> <span>View Code</span></button>
+                            </div><!-- / doc-result-footer -->
+                            <div class="collapse" id="self-video-collapse" style="">
+                                <div class="doc-code">
+                                    <pre class="language-markup"><button class="btn btn-copy" data-clipboard-action="copy" data-clipboard-target="#self-video"><i class="far fa-clone mr-5"></i> Copy</button><code id="self-video" class="language-markup" style="">&lt;div class="video-player-wrapper">
+    &lt;video src="your-video-url-here" controls>&lt;/video>
+&lt;/div>&lt;!-- / video-player-wrapper --></code></pre><!-- / code -->
+                                </div><!-- / doc-code -->
+                            </div><!-- / collapse -->
+                        </div><!-- / doc-holder -->
+                    </div><!-- / doc-wrapper -->
+                    <!-- / content -->
+                </div><!-- / column -->
+
+                <div class="col-lg-3">
+                    <div class="doc-sidebar">
+                        <ul id="nav-scroll" class="nav flex-column doc-sidebar-nav sticky-top top-25">
+                            <li class="nav-item">
+                                <a class="nav-link disabled nav-title" href="#x">On this page</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#typography">Typography</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#icons">Icons</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#code">Code</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#tables">Tables</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#images">Images</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#videos">Videos</a>
+                            </li><!-- / nav-item -->
+                        </ul>
+                    </div><!-- / sticky-top -->
+                </div><!-- / column -->
+            </div><!-- / row -->
+        </div><!-- / doc-container -->
+    </div><!-- / page-container -->
+    
+    <!-- Core JavaScript -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+
+    <!-- aos -->
+    <script src="assets/js/aos.js"></script>
+    <script>
+        AOS.init({
+          duration: 1200,
+        })
+    </script>
+    <!-- / aos -->
+
+    <!-- prism -->
+    <script src="assets/js/prism.js"></script>
+    <!-- / prism -->
+
+    <!-- copy-to-clipboard -->
+    <script src="assets/js/clipboard.min.js"></script>
+    <script>
+        var clipboard = new ClipboardJS('.btn');
+
+        clipboard.on('success', function(e) {
+            console.log(e);
+            e.clearSelection();
+        });
+
+        clipboard.on('error', function(e) {
+            console.log(e);
+            e.clearSelection();
+        });
+    </script>
+    <!-- / copy-to-clipboard -->
+
+</body>
+</html>

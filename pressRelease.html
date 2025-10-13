@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-40W2JXLVDL"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments); }
+          gtag('js', new Date());
+      
+          gtag('config', 'G-40W2JXLVDL');
+        </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Press Release</title>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/icons/icon.png">
+    <!-- Bootstrap 5 Core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/glightbox.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body ata-bs-spy="scroll" data-bs-target="#nav-scroll" class="bg-transparent">
+
+    <div id="home"></div>
+    <div id="navbar-container"></div>
+    <script src="assets/js/script.js"></script>
+
+    <section id="home" class="hero-section bg-grey">
+        <div class="container hero-content">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-4">
+                        Press Release
+                    </h1>
+                    <p class="hero-subtitle">
+                        Stay updated with our latest news, announcements, and company developments
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="press-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Latest News & Updates</h2>
+                <p>Discover our most recent press releases, company announcements, and industry insights</p>
+            </div>
+            <div id="pressContainer">
+                <div class="press-wrapper">
+                    <div class="press-box fade-in">
+                        <div class="press-date" data-date="2025-06-01"></div>
+                        <div class="press-img">
+                            <div class="img">
+                                <img src="/assets/images/press release/universiti.jpg">
+                            </div>
+                        </div>
+                        <div class="press-excerpt">
+                            <h4>Vicrum Vuppalapaty Inspires at UM's Machine Learning Forum</h4>
+                            <p>Vicrum Vuppalapaty shared key insights on machine learning and entrepreneurship at Universiti Malaya’s industry forum.</p>
+                            <a href="/news/malaya.html" class="read-more-btn" target="_blank">Read More →</a>
+                        </div>
+                    </div>
+                    <div class="press-box fade-in">
+                        <div class="press-date" data-date="2025-04-29"></div>
+                        <div class="press-img">
+                            <div class="img">
+                                <img src="/assets/images/press release/chemExpo2025.jpg">
+                            </div>
+                        </div>
+                        <div class="press-excerpt">
+                            <h4>Fiscal Ox Participates in ChemExpo Mumbai 2025</h4>
+                            <p>Strengthening Connections Across the Chemical and Pharma Ecosystem</p>
+                            <a href="/news/chemExpo2025.html" class="read-more-btn" target="_blank">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const container = document.querySelector("#pressContainer .press-wrapper");
+            const boxes = Array.from(container.querySelectorAll(".press-box"));
+
+            boxes.sort((a,b) =>{
+                const dateA = new Date(a.querySelector(".press-date").getAttribute("data-date"))
+                const dateB = new Date(b.querySelector(".press-date").getAttribute("data-date"))
+
+                return dateB - dateA;
+            })
+
+            container.innerHTML = "";
+            boxes.forEach((box) =>{
+                container.appendChild(box);
+            })
+
+            boxes.forEach((box) =>{
+                const dateEl = box.querySelector(".press-date");
+                const rawDate = dateEl.getAttribute("data-date");
+                if(rawDate){
+                    const date = new Date(rawDate);
+                    const options = {year: "numeric", month: "long", day:"numeric"};
+                    dateEl.textContent = date.toLocaleDateString(undefined, options);
+                }
+            });
+        });
+    </script>
+
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/theme.js"></script>
+  
+    <!-- aos -->
+    <script src="../assets/js/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1200,
+      })
+    </script>
+    <!-- / aos -->
+  
+    <!-- Nav-Scroll -->
+    <script src="../assets/js/nav-fixed.js"></script>
+    <script src="../assets/js/scroll-top.js"></script>
+
+</body>
+</html>

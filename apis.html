@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-40W2JXLVDL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-40W2JXLVDL');
+    </script>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Fiscal Ox offers a cloud software for Laboratory (LIMS), Clinical Research (CRO), Sales Cloud (CRM), HRMS and Manufacturing">
+    <meta name="description" content="Developer Ox | Getting Started">
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/images/icons/DevOx-icon.png"> 
+    <!-- Site Title -->
+    <title>Developer Ox | Getting Started</title>
+    <!-- Bootstrap 5 Core CSS -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../assets/css/animate.min.css">
+    <link rel="stylesheet" href="../assets/css/aos.css">
+    <link rel="stylesheet" href="../assets/css/glightbox.min.css">
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../assets/css/fontawesome-all.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+
+<body ata-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true">
+    <nav id="nav-scroll" class="navbar navbar-expand-lg navbar-light bg-white border-light-grey fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../">
+                <img src="../assets/images/icons/devox.png" alt="">
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Learn
+                            <i class="fa-solid fa-caret-down ms-3 my-1" style="position: relative; top: 1px;"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="getting-started.html">Getting Started</a></li>
+                            <li><a class="dropdown-item active" href="apis.html">APIs</a></li>
+                            <li><a class="dropdown-item" href="move-to-production.html">Move to Production</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">
+                            Events
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sandbox.html">Request a Sandbox</a>
+                    </li>                  
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://secure.fiscalox.com">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        
+        <!-- Main Content -->
+        <div class="fh main-container">
+            <div class="row min-vh-100">
+                <div class="col-lg-2 col-md-3 d-none d-md-block border-end">
+                    <nav id="navbar-example3" class="d-flex flex-column align-items-stretch position-sticky top-0 p-3">
+                        <nav class="nav nav-pills flex-column margt-4">
+                            <a class="nav-link text-dark fw-bold" href="#about">Data API</a>
+                            <a class="nav-link ms-3 my-1" href="#dataCreate">Create</a>
+                            <a class="nav-link ms-3 my-1" href="#dataUpdate">Update</a>
+                            <a class="nav-link ms-3 my-1" href="#dataMulti">Create multiple</a>
+                            <a class="nav-link ms-3 my-1" href="#dataCUMult">Create or Update multiple</a>
+                            <a class="nav-link ms-3 my-1" href="#dataFetch">Fetch</a>
+                            <a class="nav-link ms-3 my-1" href="#dataDel">Delete</a>
+                            <a class="nav-link ms-3 my-1" href="#dataDelMul">Delete multiple</a>
+                
+                            <a class="nav-link custom-bg text-dark fw-bold mt-3" href="#document">Document API</a>
+                            <!-- <a class="nav-link ms-3 my-1" href="#docDel123">Create</a>
+                            <a class="nav-link ms-3 my-1" href="#docUpl123">Upload</a>
+                            <a class="nav-link ms-3 my-1" href="#docGet123">Get</a> -->
+                        </nav>
+                    </nav>
+                </div>
+
+
+                <div class="content col-lg-10 col-md-9 col-12">
+                    <div id="content-scroll" data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+                        
+                        <!-- Data API Create -->
+                        <section id="dataCreate" class="mb-0">
+                            <h2 class="pb-1 text-dark border-secondary border-bottom fs-1 mb-4">Data API</h2>
+                            <h5 class=" h6 pb-1 text-dark border-bottom border-secondary fs-5 ms-3">Create a record</h5>
+                            <p class="mt-4 text-dark ms-3">
+                                To create a record, use the below API. It accepts a JSON Payload as shown in the below.
+                            </p>
+                            <p class=" text-dark ms-3">For any linked parent example:</p>
+                            <div class="code-editor overflow-auto ms-3">
+                                <div class="header">
+                                    <span class="title">JSON</span>
+                                </div>
+                                <div class="editor-content">
+                                    <code class="code language-json">
+                                        <p><span>{</span></p>
+                                      
+                                        <p class="property">
+                                          <span class="color-2">"name"</span><span> :</span>
+                                          <span class="color-1">"FedEx Transport Services"</span><span>,</span>
+                                        </p>
+                                      
+                                        <p class="property">
+                                          <span class="color-2">"parent"</span><span> :</span>
+                                          <span class="color-1">{</span>
+                                        </p>
+                                      
+                                        <p class="property">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="color-2">"id"</span><span> :</span>
+                                          <span class="color-1">1011</span>
+                                        </p>
+                                      
+                                        <p class="property">
+                                          <span class="color-1">}</span>
+                                        </p>
+                                      
+                                        <p><span>}</span></p>
+                                    </code>
+                                </div>
+                            </div>
+                            <p class="mt-4 text-dark ms-3">Example Data API:</p>
+                            <div class="code-editor ms-3">
+                                <div class="header1">
+                                </div>
+                                <div class="editor-content">
+                                    <code class="code language-json">
+                                      
+                                        <p>
+                                          <span class="color-2">POST</span>&nbsp;&nbsp;
+                                          <span class="color-1">/data/&lt;DataObject&gt;/create</span>
+                                        </p>
+                                        
+                                    </code>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Data API Update -->
+                        <section id="dataUpdate" class="mb-0">
+                            <h5 class=" h6 pb-1 text-dark border-bottom border-secondary fs-5 ms-3">Update a record</h5>
+                            <p class="mt-4 text-dark ms-3">
+                                To update a record, use the below API. It accepts a JSON Payload as shown in the below example. Make sure to include ID as url variable.
+                            </p>
+                            <div class="code-editor overflow-auto ms-3">
+                                <div class="header">
+                                    <span class="title">JSON</span>
+                                </div>
+                                <div class="editor-content">
+                                    <code class="code language-json">
+                                        <p><span>{</span></p>
+                                      
+                                        <p class="property">
+                                          <span class="color-2">"id"</span><span> :</span>
+                                          <span class="color-1">"101189"</span><span>,</span>
+                                        </p>
+                                      
+                                        <p class="property">
+                                            <span class="color-2">"name"</span><span> :</span>
+                                            <span class="color-1">"FedEx Transport Services"</span>
+                                          </p>
+                                      
+                                        <p><span>}</span></p>
+                                    </code>
+                                </div>
+                            </div>
+                            <p class="mt-4 text-dark ms-3">Example Data API:</p>
+                            <div class="code-editor ms-3">
+                                <div class="header1">
+                                </div>
+                                <div class="editor-content">
+                                    <code class="code language-json">
+                                      
+                                        <p>
+                                          <span class="color-2">POST</span>&nbsp;&nbsp;
+                                          <span class="color-1">/data/&lt;DataObject&gt;/update/&lt;id&gt;</span>
+                                        </p>
+                                        
+                                    </code>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Data API Create Multiple -->
+                        <section id="dataMulti" class="mb-0">
+                            <h5 class=" h6 pb-1 text-dark border-bottom border-secondary fs-5 ms-3">Create multiple records</h5>
+                            <p class="mt-4 text-dark ms-3">
+                                To create multiple records, use the below API. It accepts a JSON Payload as shown in the below.
+                            </p>
+                            <p class=" text-dark ms-3">For any linked parent example:</p>
+                            <div class="code-editor overflow-auto ms-3">
+                                <div class="header">
+                                    <span class="title">JSON</span>
+                                </div>
+                                <div class="editor-content">
+                                    <code class="code language-json">
+                                        <p><span>[</span></p>
+                                        <p class="property">
+                                            <span class="color-1">{</span>
+                                        </p>
+                                    
+                                        <p class="property">
+                                            <span class="color-2">"name"</span><span> :</span>
+                                            <span class="color-1">"FedEx Transport Services"</span><span>,</span>
+                                        </p>
+                                    
+                                        <p class="property">
+                                            <span class="color-2">"parent"</span><span> :</span>
+                                            <span class="color-1">{</span>
+                                        </p>
+                                    
+                                        <p class="property">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="color-2">"id"</span><span> :</span>
+                                            <span class="color-1">1011</span>
+                                        </p>
+                                    
+                                        <p class="property">
+                                            <span class="color-1">}</span>
+                                        </p>
+                                    
+                                        <p><span>]</span></p>
+                                    </code>
+                                </div>
+                            </div>
+                            <p class="mt-4 text-dark ms-3">Example Data API:</p>
+                            <div class="code-editor ms-3">
+                                <div class="header1">
+                                </div>
+                                <div class="editor-content">
+                                    <code class="code language-json">
+                                      
+                                        <p>
+                                          <span class="color-2">POST</span>&nbsp;&nbsp;
+                                          <span class="color-1">/data/&lt;DataObject&gt;/create_multiple</span>
+                                        </p>
+                                        
+                                    </code>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Data API Create/Update Multiple -->
+                        <section id="dataCUMult" class="mb-0">
+                            <h5 class=" h6 pb-1 text-dark border-bottom border-secondary fs-5 ms-3">Create or Update multiple records</h5>
+                            <p class="mt-4 text-dark ms-3">
+                                To create or update multiple records, use the below API. It accepts a JSON Payload as shown in the below.
+                            </p>
+                            <p class=" text-dark ms-3">For any linked parent example:</p>
+                            <div class="code-editor overflow-auto ms-3">
+                                <div class="header">
+                                    <span class="title">JSON</span>
+                                </div>
+                                <div class="editor-content">
+                                    <code class="code language-json">
+                                        <p><span>[</span></p>
+                                        <p class="property">
+                                            <span class="color-1">{</span>
+                                        </p>
+                                    
+                                        <p class="property">
+                                            <span class="color-2">"name"</span><span> :</span>
+                                            <span class="color-1">"FedEx Transport Services"</span><span>,</span>
+                                        </p>
+                                    
+                                        <p class="property">
+                                            <span class="color-2">"parent"</span><span> :</span>
+                                            <span class="color-1">{</span>
+                                        </p>
+                                    
+                                        <p class="property">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="color-2">"id"</span><span> :</span>
+                                            <span class="color-1">1011</span>
+                                        </p>
+                                    
+                                        <p class="property">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="color-1">}</span>
+                                        </p>
+
+                                        <p class="property">
+                                            <span class="color-1">}</span>
+                                        </p>
+                                    
+                                        <p><span>]</span></p>
+                                    </code>
+                                </div>
+                            </div>
+                            <p class="mt-4 text-dark ms-3">Example Data API:</p>
+                            <div class="code-editor ms-3">
+                                <div class="header1">
+                                </div>
+                                <div class="editor-content">
+                                    <code class="code language-json">
+                                      
+                                        <p>
+                                          <span class="color-2">POST</span>&nbsp;&nbsp;
+                                          <span class="color-1">/data/&lt;DataObject&gt;/upsert_multiple</span>
+                                        </p>
+                                        
+                                    </code>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Data API Fetch -->
+                        <section id="dataFetch" class="mb-0">
+                            <h5 class=" h6 pb-1 text-dark border-bottom border-secondary fs-5 ms-3">Fetch records</h5>
+                            <p class="mt-4 text-dark ms-3">
+                                To fetch records
+                            </p>
+                            <div class="code-editor overflow-auto ms-3">
+                                <div class="header">
+                                    <span class="title">JSON</span>
+                                </div>
+                                <div class="editor-content">
+                                    <code class="code language-json">
+                                        <p><span>{</span></p>
+                                      
+                                        <p class="property">
+                                          <span class="color-2">"fields"</span><span> :</span>
+                                          <span class="color-1">"Name;Type;Parent.Id"</span>
+                                          <span>,</span>
+                                        </p>
+                                      
+                                        <p class="property">
+                                            <span class="color-2">"conditions"</span><span> :</span>
+                                            <span class="color-1">["Parent.Id = 1011001”, “Type = ‘Normal’"]</span>
+                                            <span>,</span>
+                                        </p>
+
+
+                                        <p class="property">
+                                            <span class="color-2">"logic"</span><span> :</span>
+                                            <span class="color-1">"({0} AND {1}) OR {2}"</span>
+                                        </p>
+                                      
+                                        <p><span>}</span></p>
+                                    </code>
+                                </div>
+                            </div>
+                            <p class="mt-4 text-dark ms-3">Example Data API:</p>
+                            <div class="code-editor ms-3">
+                                <div class="header1">
+                                </div>
+                                <div class="editor-content">
+                                    <code class="code language-json">
+                                      
+                                        <p>
+                                          <span class="color-2">POST</span>&nbsp;&nbsp;
+                                          <span class="color-1">/data/&lt;DataObject&gt;/list</span>
+                                        </p>
+                                        
+                                    </code>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Data API delete -->
+                        <section id="dataDel" class="mb-0">
+                            <h5 class=" h6 pb-1 text-dark border-bottom border-secondary fs-5 ms-3">Delete a record</h5>
+                            <p class="mt-4 text-dark ms-3">Example Data API:</p>
+                            <div class="code-editor ms-3">
+                                <div class="header1">
+                                </div>
+                                <div class="editor-content">
+                                    <code class="code language-json">
+                                      
+                                        <p>
+                                          <span class="color-2">POST</span>&nbsp;&nbsp;
+                                          <span class="color-1">/data/&lt;DataObject&gt;/delete?id=xx</span>
+                                        </p>
+                                        
+                                    </code>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Data API delete multiple -->
+                        <section id="dataDelMul" class="mb-0">
+                            <h5 class=" h6 pb-1 text-dark border-bottom border-secondary fs-5 ms-3">Delete Multiple records</h5>
+                            <p class="mt-4 text-dark ms-3">Example Data API:</p>
+                            <div class="code-editor ms-3">
+                                <div class="header1">
+                                </div>
+                                <div class="editor-content">
+                                    <code class="code language-json">
+                                      
+                                        <p>
+                                          <span class="color-2">POST</span>&nbsp;&nbsp;
+                                          <span class="color-1">/data/&lt;DataObject&gt;/delete_multiple</span>
+                                        </p>
+                                        
+                                    </code>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Document API -->
+                        <section id="document" class="mb-0">
+                            <h2 class="pb-1 text-dark border-secondary border-bottom fs-1 mb-4">Document API</h2>
+
+                            <h5 id="docDel" class="h6 pb-1 text-dark border-bottom border-secondary fs-5 ms-3">Delete an Uploaded File</h5>
+                            <p class="mt-4 text-dark ms-3">To delete an uploaded file. Make sure to include id as a url parameter.</p>
+                            <div class="code-editor ms-3">
+                                <div class="header1">
+                                </div>
+                                <div class="editor-content">
+                                    <code class="code language-json">
+                                      
+                                        <p>
+                                          <span class="color-2">POST</span>&nbsp;&nbsp;
+                                          <span class="color-1">/document/upload/delete?id=xx</span>
+                                        </p>
+                                        
+                                    </code>
+                                </div>
+                            </div>
+
+                            <h5 id="docUpl" class="h6 pb-1 text-dark border-bottom border-secondary fs-5 ms-3 mt-4">Upload a File</h5>
+                            <p class="mt-4 text-dark ms-3">To upload a file. Include type, referenceNumber and additionalInfo as url parameters.</p>
+                            <div class="code-editor ms-3">
+                                <div class="header1">
+                                </div>
+                                <div class="editor-content">
+                                    <code class="code language-json">
+                                      
+                                        <p>
+                                          <span class="color-2">POST</span>&nbsp;&nbsp;
+                                          <span class="color-1">/document/upload/&lt;type&gt;?referenceNumber=xx&additionalInfo=xx</span>
+                                        </p>
+                                        
+                                    </code>
+                                </div>
+                            </div>
+
+                            <h5 id="docGet" class="h6 pb-1 text-dark border-bottom border-secondary fs-5 ms-3 mt-4">Get a File</h5>
+                            <p class="mt-4 text-dark ms-3">To get a  file. Include type, referenceNumber and additionalInfo as url parameters.</p>
+                            <div class="code-editor ms-3">
+                                <div class="header1">
+                                </div>
+                                <div class="editor-content">
+                                    <code class="code language-json">
+                                      
+                                        <p>
+                                          <span class="color-2">GET</span>&nbsp;&nbsp;
+                                          <span class="color-1">/document/upload/documents?referenceNumber=x&type=&lt;type&gt;&additionalInfo=x</span>
+                                        </p>
+                                        
+                                    </code>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <div id="footer-container"></div>
+    <script> 
+        fetch('../footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        });
+    </script>
+    
+    <button type="button" id="back-top" class="btn btn-icon btn-circle btn-primary btn-floating raised-sm">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    <!-- jQuery -->
+    <script src="../assets/js/jquery.min.js"></script>
+
+    <!-- Core JavaScript -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/theme.js"></script>
+
+    <!-- aos -->
+    <script src="../assets/js/aos.js"></script>
+    <script>
+        AOS.init({
+        duration: 1200,
+        })
+    </script>
+    <!-- / aos -->
+
+    <!-- Nav-Scroll -->
+    <script src="../assets/js/nav-fixed.js"></script>
+    <script src="../assets/js/scroll-top.js"></script>
+    <!-- / Nav-Scroll -->
+
+    <!-- Jarallax -->
+    <script src="../assets/js/jarallax.min.js"></script>
+    <!-- / Jarallax -->
+
+    <!-- Rellax -->
+    <script src="../assets/js/rellax.min.js"></script>
+    <script>
+        var rellax = new Rellax('.rellax');
+    </script>
+    <!-- / Rellax -->
+
+    <!-- GLightbox -->
+    <script src="../assets/js/glightbox.min.js"></script>
+    <script>
+        var lightboxVideo = GLightbox({
+            selector: '.glightbox-video'
+        });
+    </script>
+    <!-- / GLightbox -->
+
+    <!-- Swiper Slider -->
+    <script src="../assets/js/swiper-bundle.min.js"></script>
+    <!-- swiper-init -->
+    <script>
+        var swiper = new Swiper('#logo-swiper', {
+        slidesPerView: 5,
+        spaceBetween: 100,
+        loop: true,
+        speed: 1200,
+        pagination: false,
+        autoplay: {
+            delay: 3500,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            '@0.25': {
+            slidesPerView: 2,
+            },
+            '@0.5': {
+            slidesPerView: 3,
+            },
+            '@1.00': {
+            slidesPerView: 5,
+            },
+        }
+        });
+    </script>
+
+    <script>
+        var swiper = new Swiper('#testimonials-swiper', {
+        slidesPerView: 3,
+        spaceBetween: 15,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            '@0.25': {
+            slidesPerView: 1,
+            },
+            '@0.65': {
+            slidesPerView: 2,
+            },
+            '@1.00': {
+            slidesPerView: 3,
+            },
+        }
+        });
+    </script>
+    <!-- / Swiper Slider -->
+
+    <script>
+        $('#requestBtn').on('click', function () {
+            var leadName = $('#leadName').val();
+            var leadEmail = $('#leadEmail').val();
+            var leadMessage = $('#leadMessage').val();
+            var leadPhone = '0';
+            if (leadName && leadEmail) {
+                $.ajax({
+                    contentType: 'application/json',
+                    url: 'https://secure.fiscalox.com/web/add_lead?name=' + leadName + '&email=' + leadEmail + '&phone=' + leadPhone + '&description=' + leadMessage,
+                    dataType: 'json',
+                    type: 'GET'
+                }).done(function (data) {
+                    $('#leadName').val('');
+                    $('#leadEmail').val('');
+                    $('#leadMessage').val('');
+                    $('#requestBtn').attr('disabled', '');
+                    $('#leadScreen1').hide();
+                    $('#leadScreen2').show();
+                }).fail(function (jqXHR, textStatus, error) {
+                    console.log("Post error: " + jqXHR);
+                    console.log("Post error: " + textStatus);
+                    console.log("Post error: " + error);
+                });
+            }
+        })
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+                target: "#navbar-example3",
+                offset: 200 // Adjust for navbar height
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.location.pathname.includes("getting-started.html")) {
+                document.querySelector(".nav-pills .nav-link.active").classList.add("custom-active");
+            }
+        });
+    </script>
+
+</body>
+</html>

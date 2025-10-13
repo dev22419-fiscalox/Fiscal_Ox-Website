@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-40W2JXLVDL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-40W2JXLVDL');
+  </script>
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Fiscal Ox offers a cloud software for Laboratory (LIMS), Clinical Research (CRO), Sales Cloud (CRM), HRMS and Manufacturing">
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/icons/icon.png">
+  <!-- Site Title -->
+  <title>Computer System Validation (CSV) | IQ • OQ • PQ | Fiscal Ox</title>
+  <!-- Bootstrap 5 Core CSS -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/animate.min.css">
+  <link rel="stylesheet" href="assets/css/aos.css">
+  <link rel="stylesheet" href="assets/css/glightbox.min.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Fonts -->
+  <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   <style>
+    :root{
+      --bg:#ffffff; 
+      --ink:#0f172a; 
+      --muted:#949597; 
+      --primary:#172554; 
+      --primary-ink:#ffffff;
+      --accent:#fbbf24; 
+      --border:#e2e8f0; 
+      --surface:#f8fafc; 
+      --radius:12px; 
+      --shadow:0 10px 24px rgba(2,6,23,0.08),0 2px 6px rgba(2,6,23,0.06);
+      --success:#16a34a;
+      --primary-color: #2f56a6;
+      --secondary-color: #61b2d8;
+      --theme-blue: #3f4ff8;
+      --accent-color: #f6921e;
+      --text-color: #333;
+      --light-gray: #f5f5f5;
+      --medium-gray: #e0e0e0;
+      --dark-gray: #555;
+      --white: #ffffff;
+      --primary: #2563eb;
+      --primary-dark: #1e40af;
+      --secondary: #10b981;
+      --dark: #1f2937;
+      --light: #f3f4f6;
+      --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+    *{box-sizing:border-box;font-family: 'Barlow', Tahoma, Geneva, Verdana, sans-serif;}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif}
+    a{color:var(--primary);text-decoration:none}
+    img{max-width:100%;display:block}
+    .wrap{max-width:1320px;margin-inline:auto;}
+    .grid{display:grid;gap:24px}
+    .row{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:calc(var(--radius) - 2px);border:1px solid transparent;font-weight:600;cursor:pointer}
+    .btn.primary{background:var(--primary);color:var(--primary-ink)}
+    .btn.ghost{border:1px solid var(--border);color:var(--ink);background:#fff}
+    .chip{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);padding:6px 10px;border-radius:999px;color:var(--muted);font-weight:600;background:#fff}
+
+    nav.topnav{background:#fff;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:10}
+    nav.topnav .wrap{display:flex;justify-content:space-between;align-items:center}
+    nav.topnav a.logo{font-weight:800;font-size:1.2rem;color:var(--primary)}
+    nav.topnav ul{display:flex;list-style:none;padding:0;margin:0;gap:20px}
+    nav.topnav li a{font-weight:600;color:var(--ink)}
+    nav.topnav li a:hover{color:var(--primary)}
+
+    #estForm label{font-size: 0.875;}
+    #estForm label input{width: 100%; padding: 15px 20px; border: 1px solid #c2c7cd; border-radius: 0.25rem; transition: all 0.3s ease;}
+    #estForm label input:focus{border-color: #3f4ff8 !important; }
+    #estForm label select{width: 100%; padding: 16px 20px; border: 1px solid #c2c7cd; border-radius: 0.25rem; transition: all 0.3s ease;}
+    #estForm label select:focus{border-color: #3f4ff8 !important; }
+
+    header.hero{background:linear-gradient(180deg,#f0f9ff 0,#ffffff 100%);border-bottom:1px solid var(--border)}
+    .hero-inner{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center}
+    .eyebrow{letter-spacing:.08em;text-transform:uppercase;color:black;font-size:.7rem;font-weight:700; background-color: #fdca40;width: max-content;padding: 5px 10px;}
+   
+    h1{font-size:clamp(2rem,4vw,3rem);line-height:1.1;margin:.25em 0}
+    .lead{font-size:20px;color:#111;font-weight: 400;}
+    .hero-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px}
+
+    .content{grid-template-columns:1.2fr .8fr}
+    .sticky{position:sticky;top:16px}
+    .card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);transition: all 0.2s ease;box-shadow:var(--shadow);}
+    .card:hover{ transform: translateY(-10px);}
+    .card .section{padding:20px;border-bottom:1px solid var(--border)}
+    .card .section:last-child{border-bottom:none}
+
+    .features{grid-template-columns:repeat(3,1fr)}
+    .feat{padding:18px;border:1px solid var(--border);border-radius:var(--radius);background:#fff;transition:transform .2s ease, box-shadow .2s ease;box-shadow:var(--shadow)}
+    .feat:hover{transform:translateY(-10px);}
+
+    .tabs{display:flex;gap:8px;flex-wrap:wrap;border-bottom:1px solid var(--border);margin-top:6px}
+    .tab{padding:10px 14px;border:1px solid var(--border);border-bottom:none;border-top-left-radius:10px;border-top-right-radius:10px;background:#fff;cursor:pointer;font-weight:600;color:var(--muted)}
+    .tab.active{color:var(--ink);background:#fefefe}
+    .tabpanes > section{display:none;padding:18px;border:1px solid var(--border);border-radius:0 0 var(--radius) var(--radius)}
+    .tabpanes > section.active{display:block}
+
+    table{width:100%;border-collapse:separate;border-spacing:0;overflow:hidden;border-radius:var(--radius);border:1px solid var(--border)}
+    th,td{padding:14px;border-bottom:1px solid var(--border);text-align:left}
+    thead th{background:#f1f5f9}
+    tr:last-child td{border-bottom:none}
+
+    .cta{background:linear-gradient(90deg,#172554,#1e293b);color:#fff;border-radius:var(--radius);padding:24px;display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center}
+    .cta .btn{background:#fff;color:#172554}
+    .cta h2{color:var(--light);}
+    .cta p{color: var(--muted);}
+
+    footer{border-top:1px solid var(--border);padding:30px 0;color:var(--muted)}
+
+    #faq details{background: white; border: 1px solid rgba(0, 0, 0, 0.1);padding: 10px; margin: 10px 0;}
+
+    #leadForm label{font-size: 0.875;}
+    #leadForm label input{width: 100%; padding: 15px 20px; border: 1px solid #c2c7cd; border-radius: 0.25rem; transition: all 0.3s ease;}
+    #leadForm label select{width: 100%; padding: 16px 20px; border: 1px solid #c2c7cd; border-radius: 0.25rem;}
+    #leadForm label input:focus{border-color: #3f4ff8 !important; }
+    #leadForm label textarea{width: 100%; height: 300px; padding: 15px 20px; border: 1px solid #c2c7cd; transition: all 0.3s ease;}
+    #leadForm label textarea:focus{border-color: #3f4ff8 !important;}
+    
+    article > section > *{max-width: 1320px; margin: 0 auto;}
+
+    .text-center{text-align: center;}
+    .title-highlight{color: var(--primary-color);}
+
+    @media (max-width: 1000px){.hero-inner,.content{grid-template-columns:1fr}}
+    @media (max-width: 900px){.features{grid-template-columns:1fr 1fr}}
+  </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#nav-scroll">
+
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+
+  <div id="home"></div>
+
+  <div id="navbar-container"></div>
+  <script src="assets/js/script.js"></script>
+
+  <header class="hero">
+    <div class="wrap hero-inner">
+      <div data-aos="fade-right">
+        <div class="eyebrow">Fiscal Ox Quality Services</div>
+        <h1 style="font-size: 44px; margin-bottom: 20px;">Computer System Validation (CSV) — <span style="color:var(--theme-blue)">IQ • OQ • PQ</span> for GxP Systems</h1>
+        <p class="lead">Risk‑based validation for pharma, life sciences and healthcare software, including SaaS and spreadsheets. We produce audit‑ready protocols, execution evidence, and validation reports aligned with GAMP 5, 21 CFR Part 11, and EU Annex 11.</p>
+        <div class="row" style="margin-top:18px">
+          <a class="btn btn-primary-light" href="#contact">Get a validation plan</a>
+          <a class="btn ghost" style="color: var(--theme-blue);" href="#deliverables">See deliverables</a>
+        </div>
+        <div class="row" style="margin-top:12px">
+          <span class="chip">📜 21 CFR Part 11 • EU Annex 11</span>
+          <span class="chip">📘 GAMP 5 guidance</span>
+          <span class="chip">🧭 Risk‑based, audit‑ready</span>
+        </div>
+      </div>
+      <div class="hero-card" data-aos="fade-left">
+        <h3 style="margin:0 0 8px" class="text-center">Scope Estimator</h3>
+        <p class="muted text-center" style="margin:0">Quick rough‑order estimate for planning.</p>
+        <form id="estForm" class="grid" style="grid-template-columns:1fr 1fr;gap:12px;margin-top:12px">
+          <label class="col">System Type<br>
+            <select name="type" required>
+              <option value="">Select…</option>
+              <option value="saas">SaaS</option>
+              <option value="cots">COTS / Configured</option>
+              <option value="custom">Custom / In‑house</option>
+              <option value="sheet">Spreadsheet</option>
+            </select>
+          </label>
+          <label class="col">GxP Impact<br>
+            <select name="impact" required>
+              <option value="">Select…</option>
+              <option value="low">Low</option>
+              <option value="med">Medium</option>
+              <option value="high">High</option>
+            </select>
+          </label>
+          <label class="col">Interfaces (#)<br><input type="number" min="0" step="1" name="ifx" value="1"></label>
+          <label class="col">Users (#)<br><input type="number" min="1" step="1" name="users" value="25"></label>
+          <label class="col">Data Criticality<br>
+            <select name="crit" required>
+              <option value="">Select…</option>
+              <option value="low">Low</option>
+              <option value="med">Medium</option>
+              <option value="high">High</option>
+            </select>
+          </label>
+          <label class="col">New vs Update<br>
+            <select name="mode" required>
+              <option value="new">New System</option>
+              <option value="upgrade">Upgrade / Change</option>
+            </select>
+          </label>
+          <div class="col" style="grid-column:1/-1; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <span id="estOut" class="muted" style="margin: 10px;"></span>
+            <button class="btn btn-primary-light" type="submit">Estimate scope</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <main class="" style="margin-top:24px">
+    <article class="" style="gap:24px">
+      <section style="background: var(--light-gray);">
+        <h2 class=" my-3" data-aos="fade-up" data-aos="fade-up">Why validate with Fiscal Ox</h2>
+        <div class="grid features" style="margin-top:12px" data-aos="fade-up" data-aos-delay="150" data-aos="fade-up" data-aos-delay="150">
+          <div class="feat"><h4 class="title-highlight">Risk‑based & right‑sized</h4><p class="muted">We tailor effort by impact and complexity to avoid over‑ or under‑validation.</p></div>
+          <div class="feat"><h4 class="title-highlight">End‑to‑end ownership</h4><p class="muted">From VMP and URS to IQ/OQ/PQ execution evidence and VSR sign‑off.</p></div>
+          <div class="feat"><h4 class="title-highlight">Audit‑ready evidence</h4><p class="muted">Traceability, deviations/CAPA, and raw data packaged for inspections.</p></div>
+          <div class="feat"><h4 class="title-highlight">SaaS & supplier assessments</h4><p class="muted">Vendor audits, SOC 2/ISO review, and Part 11 capability confirmation.</p></div>
+          <div class="feat"><h4 class="title-highlight">Data integrity (ALCOA+)</h4><p class="muted">Controls for attributable, legible, contemporaneous, original, accurate data.</p></div>
+          <div class="feat"><h4 class="title-highlight">Change & periodic review</h4><p class="muted">Release validation, impact assessments, and ongoing control.</p></div>
+        </div>
+      </section>
+
+      <section data-aos="fade-up">
+        <div class="tabs" role="tablist">
+          <button class="tab active" data-tab="deliverables" role="tab" aria-selected="true">Deliverables</button>
+          <button class="tab" data-tab="packages" role="tab" aria-selected="false">Service Packages</button>
+          <button class="tab" data-tab="standards" role="tab" aria-selected="false">Standards & Guidance</button>
+        </div>
+        <div class="tabpanes">
+          <section id="deliverables" class="active" role="tabpanel">
+            <div class="grid" style="grid-template-columns:1fr 1fr">
+              <ul style="list-style-type: disc">
+                <li>Validation Master Plan (VMP)</li>
+                <li>User Requirements Spec (URS)</li>
+                <li>Functional/Design Specs (FS/DS)</li>
+                <li>Risk Assessment / FMEA</li>
+                <li>Installation Qualification (IQ) Protocol & Report</li>
+                <li>Operational Qualification (OQ) Protocol & Report</li>
+              </ul>
+              <ul style="list-style-type: disc">
+                <li>Performance Qualification (PQ) Protocol & Report</li>
+                <li>Traceability Matrix (URS → Test Cases)</li>
+                <li>Deviation & CAPA logs</li>
+                <li>Training Records & SOP updates</li>
+                <li>Validation Summary Report (VSR)</li>
+                <li>Periodic Review Plan</li>
+              </ul>
+            </div>
+          </section>
+          <section id="packages" role="tabpanel">
+            <div class="grid features">
+              <div class="feat"><h4 class="title-highlight">New System CSV</h4><p class="muted">Full life‑cycle V‑model validation for COTS, SaaS, or custom solutions.</p></div>
+              <div class="feat"><h4 class="title-highlight">Upgrade / Change Control</h4><p class="muted">Impact assessment, targeted re‑validation, regression OQ, release report.</p></div>
+              <div class="feat"><h4 class="title-highlight">SaaS Supplier Assessment</h4><p class="muted">DQ/Supplier audit, SOC 2/ISO review, Part 11 matrix, and controls mapping.</p></div>
+              <div class="feat"><h4 class="title-highlight">Spreadsheet Validation</h4><p class="muted">Requirements, risk, test scripts, version control & access procedures.</p></div>
+            </div>
+          </section>
+          <section id="standards" role="tabpanel">
+            <ul style="list-style-type: disc;">
+              <li>GAMP 5: A Risk‑Based Approach to Compliant GxP Computerized Systems</li>
+              <li>FDA 21 CFR Part 11 (Electronic Records; Electronic Signatures)</li>
+              <li>EU GMP Annex 11 (Computerised Systems)</li>
+              <li>ISO 13485 / 21 CFR 820 context for medical devices (as applicable)</li>
+            </ul>
+            <p class="muted small">We align validation to applicable guidance and your internal QMS. We do not offer legal advice.</p>
+          </section>
+        </div>
+      </section>
+
+      <section id="process">
+        <h2 class="my-3" data-aos="fade-up">Our 5‑step CSV process</h2>
+        <div class="grid" style="grid-template-columns:repeat(5,1fr)" data-aos="fade-up" data-aos-delay="150">
+          <div class="card"><div class="section"><strong>1. Plan</strong></div><div class="section"><span class="muted">Scope, roles, environment & SOPs • VMP</span></div></div>
+          <div class="card"><div class="section"><strong>2. Specify</strong></div><div class="section"><span class="muted">URS/FS/DS • Part 11/Annex 11 controls</span></div></div>
+          <div class="card"><div class="section"><strong>3. Risk</strong></div><div class="section"><span class="muted">Risk Assessment • Test strategy • Traceability</span></div></div>
+          <div class="card"><div class="section"><strong>4. Qualify</strong></div><div class="section"><span class="muted">IQ • OQ • PQ execution with evidence</span></div></div>
+          <div class="card"><div class="section"><strong>5. Release</strong></div><div class="section"><span class="muted">VSR • Training • Periodic review & change control</span></div></div>
+        </div>
+      </section>
+
+      <section id="faq" style="max-width: 1320px; margin: 0 auto;" data-aos="fade-up">
+        <h2>FAQs</h2>
+        <details>
+          <summary>Can you validate SaaS systems?</summary>
+          <p>Yes. We perform supplier assessments and confirm Part 11/Annex 11 controls, then validate configuration, interfaces, and intended use.</p>
+        </details>
+        <details>
+          <summary>Do you provide templates?</summary>
+          <p>We provide right‑sized templates for VMP, URS, specs, risk, IQ/OQ/PQ, traceability, deviations/CAPA, and the VSR—aligned to your QMS.</p>
+        </details>
+        <details>
+          <summary>How long does CSV take?</summary>
+          <p>Simple spreadsheets may complete in 1–2 weeks. New COTS/SaaS systems with interfaces typically run 4–8 weeks depending on risk and resources.</p>
+        </details>
+        <details>
+          <summary>Can you support audits?</summary>
+          <p>Yes. We prepare evidence packs, walk through rationale and traceability, and support responses to findings.</p>
+        </details>
+      </section>
+
+      <section class="cta" id="contact" style="max-width: 1320px; margin: 0 auto;" data-aos="fade-up">
+        <div>
+          <h2 style="margin:.2em 0">Need IQ/OQ/PQ and validation reports?</h2>
+          <p class="muted" style="margin:0">Share the basics and we will send a tailored validation plan.</p>
+        </div>
+        <a class="btn" href="#contact-form">Get started</a>
+      </section>
+
+      <aside style="max-width: 1320px; margin: 20px auto;" data-aos="fade-up">
+        <div class="card" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+          <div class="section"><h3 style="margin:0">At a glance</h3></div>
+          <div class="section">
+            <ul class="small" style="margin:10px 0 0; padding-left:18px; list-style: disc;">
+              <li>VMP → URS/FS/DS → IQ/OQ/PQ → VSR</li>
+              <li>Traceability & deviations/CAPA</li>
+              <li>Part 11 / Annex 11 alignment</li>
+              <li>Supplier & SaaS assessments</li>
+            </ul>
+          </div>
+          <div class="section">
+            <h4 style="text-align: center;">Quick links</h4>
+            <div class="row">
+              <a class="btn ghost" href="#packages">Packages</a>
+              <a class="btn ghost" href="#process">Process</a>
+              <a class="btn ghost" href="#deliverables">Deliverables</a>
+            </div>
+          </div>
+        </div>
+    </aside>
+
+      <section id="contact-form" data-aos="fade-up">
+        <div class="card">
+          <div class="section text-center"><h3 style="margin:0">Request a validation plan</h3></div>
+          <div class="section">
+            <form id="leadForm" class="grid" style="grid-template-columns:1fr 1fr;gap:16px">
+              <label class="col">Full Name<br><input type="text" name="name" required></label>
+              <label class="col">Work Email<br><input type="email" name="email" required></label>
+              <label class="col">Company<br><input type="text" name="company" required></label>
+              <label class="col">System Name<br><input type="text" name="system" placeholder="e.g., LIMS v5 / eQMS / ERP"></label>
+              <label class="col" style="grid-column:1/-1">Scope & Notes <br />
+                <textarea name="notes" rows="3" placeholder="Intended use, modules, interfaces, Part 11, target dates"></textarea>
+              </label>
+              <div class="col" style="grid-column:1/-1; display:flex;justify-content: center; align-items:center; gap:10px;">
+              <input type="checkbox" id="nda" name="nda" />
+              <label for="nda" class="muted">I’d like to sign an NDA before sharing details</label>
+            </div>
+            <div class="col" style="grid-column:1/-1; display:flex; flex-direction:column; align-items:center;">
+              <span id="leadOut" class="muted" style="margin-bottom:10px; text-align:center;"></span>
+              <button class="btn btn-primary-light" type="submit">Send request</button>
+            </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </article>
+
+    
+  </main>
+
+  <div id="footer"></div>
+  <script> 
+      fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('footer').innerHTML = data;
+      });
+  </script>
+
+  <button type="button" id="back-top" class="btn btn-icon btn-circle btn-primary btn-floating raised-sm"
+    style="height: 40px;width: 40px;">
+    <i class="fas fa-chevron-up" style="margin-top: -8px;"></i>
+  </button>
+
+  <!-- jQuery -->
+  <script src="assets/js/jquery.min.js"></script>
+
+  <!-- Core JavaScript -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+
+  <!-- aos -->
+  <script src="assets/js/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+    })
+  </script>
+  <!-- / aos -->
+
+  <!-- Nav-Scroll -->
+  <script src="assets/js/nav-fixed.js"></script>
+  <script src="assets/js/scroll-top.js"></script>
+  <!-- / Nav-Scroll -->
+
+  <!-- Jarallax -->
+  <script src="assets/js/jarallax.min.js"></script>
+  <!-- / Jarallax -->
+
+  <!-- Rellax -->
+  <script src="assets/js/rellax.min.js"></script>
+  <script>
+    var rellax = new Rellax('.rellax');
+  </script>
+  <!-- / Rellax -->
+
+  <!-- GLightbox -->
+  <script src="assets/js/glightbox.min.js"></script>
+  <script>
+    var lightboxVideo = GLightbox({
+      selector: '.glightbox-video'
+    });
+  </script>
+  <!-- / GLightbox -->
+
+  <!-- Swiper Slider -->
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <!-- swiper-init -->
+  <script>
+    var swiper = new Swiper('#logo-swiper', {
+      slidesPerView: 5,
+      spaceBetween: 100,
+      loop: true,
+      speed: 1200,
+      pagination: false,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        '@0.25': {
+          slidesPerView: 2,
+        },
+        '@0.5': {
+          slidesPerView: 3,
+        },
+        '@1.00': {
+          slidesPerView: 5,
+        },
+      }
+    });
+  </script>
+
+  <!-- request Demo -->
+  <script>
+    $(document).ready(function () {
+      // Select the button and scroll trigger
+      var $requestDemoBtn = $('.requestDemo');
+      var $scrollTrigger = $('#scrollTrigger');
+
+      // Initially hide the button
+      $requestDemoBtn.hide();
+
+      // Detect scroll event and check the position of the scrollTrigger
+      $(window).on('scroll', function () {
+        // Get the position of the scroll trigger relative to the viewport
+        var scrollPosition = $scrollTrigger.offset().top - $(window).scrollTop();
+
+        // If the scrollTrigger is in view (threshold 50%)
+        if (scrollPosition <= $(window).height() / 2) {
+          // Show the button with fade-in effect
+          $requestDemoBtn.fadeIn();
+        } else {
+          // Hide the button if scrollTrigger is not in view
+          $requestDemoBtn.fadeOut();
+        }
+      });
+    });
+
+
+  </script>
+
+
+  <script>
+    var swiper = new Swiper('#testimonials-swiper', {
+      slidesPerView: 3,
+      spaceBetween: 15,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        '@0.25': {
+          slidesPerView: 1,
+        },
+        '@0.65': {
+          slidesPerView: 2,
+        },
+        '@1.00': {
+          slidesPerView: 3,
+        },
+      }
+    });
+  </script>
+  <!-- / Swiper Slider -->
+
+  <script>
+    $('#requestBtn').on('click', function () {
+      var leadName = $('#leadName').val();
+      var leadEmail = $('#leadEmail').val();
+      var leadMessage = $('#leadMessage').val();
+      var leadPhone = '0';
+      if (leadName && leadEmail) {
+        $.ajax({
+          contentType: 'application/json',
+          url: 'https://secure.fiscalox.com/web/add_lead?name=' + leadName + '&email=' + leadEmail + '&phone=' + leadPhone + '&description=' + leadMessage,
+          dataType: 'json',
+          type: 'GET'
+        }).done(function (data) {
+          $('#leadName').val('');
+          $('#leadEmail').val('');
+          $('#leadMessage').val('');
+          $('#requestBtn').attr('disabled', '');
+          $('#leadScreen1').hide();
+          $('#leadScreen2').show();
+        }).fail(function (jqXHR, textStatus, error) {
+          console.log("Post error: " + jqXHR);
+          console.log("Post error: " + textStatus);
+          console.log("Post error: " + error);
+        });
+      }
+    })
+  </script>
+
+   <script>
+    // Tabs
+    const tabButtons = document.querySelectorAll('.tab');
+    const panes = document.querySelectorAll('.tabpanes > section');
+    tabButtons.forEach(btn=>btn.addEventListener('click', ()=>{
+      tabButtons.forEach(b=>b.classList.remove('active')); btn.classList.add('active');
+      panes.forEach(p=>p.classList.remove('active'));
+      document.getElementById(btn.dataset.tab).classList.add('active');
+    }));
+
+    // Estimator
+    const estForm = document.getElementById('estForm');
+    const estOut = document.getElementById('estOut');
+    estForm.addEventListener('submit', (e)=>{
+      e.preventDefault();
+      const f = new FormData(estForm);
+      const type = f.get('type');
+      const impact = f.get('impact');
+      const ifx = +f.get('ifx');
+      const users = +f.get('users');
+      const crit = f.get('crit');
+      const mode = f.get('mode');
+      let base = 0;
+      if(type==='saas') base = 60;
+      if(type==='cots') base = 120;
+      if(type==='custom') base = 200;
+      if(type==='sheet') base = 40;
+      const impactMult = impact==='high' ? 1.5 : impact==='med' ? 1.2 : 1.0;
+      const critMult = crit==='high' ? 1.15 : crit==='med' ? 1.05 : 1.0;
+      const modeMult = mode==='upgrade' ? 0.6 : 1.0; // upgrades typically re-validate deltas
+      const userOver = users>100 ? 50 : users>25 ? 24 : 8;
+      const hours = Math.round((base * impactMult * critMult * modeMult) + (ifx*10) + userOver);
+      const rate = 140; // USD/hr
+      const price = Math.round(hours * rate);
+      estOut.textContent = `Est. effort ${hours} hrs • Rough budget $${price.toLocaleString()}`;
+    });
+
+    // Lead form demo
+    const leadForm = document.getElementById('leadForm');
+    const leadOut = document.getElementById('leadOut');
+    leadForm.addEventListener('submit', (e)=>{
+      e.preventDefault();
+      leadOut.textContent = 'Thanks! We\'ll send a tailored validation plan shortly.';
+      leadForm.reset();
+    });
+
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>

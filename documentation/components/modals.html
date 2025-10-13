@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Documentation">
+    <meta name="author" content="kingstudio.ro">
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/images/favicon.png">
+    <!-- Site Title -->
+    <title>Documentation</title>
+    <!-- Bootstrap 5 Core CSS -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../assets/css/animate.min.css">
+    <link rel="stylesheet" href="../assets/css/aos.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/prism.css">
+    <link rel="stylesheet" href="../assets/css/doc.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../assets/css/fontawesome-all.min.css" type="text/css">
+</head>
+
+<body class="doc-body doc-style2" data-bs-spy="scroll" data-bs-target="#nav-scroll">
+
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
+    <div id="#top"></div>
+
+    <nav class="side-nav left-nav navbar-expand-lg nav nav-style2 bg-body">
+
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggle" aria-controls="navbar-toggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+        </button><!-- / navbar-toggler -->
+
+        <div class="collapse navbar-collapse" id="navbar-toggle">
+            <ul class="pl-0" id="main-collapse">
+                <li class="sidenav-logo">
+                    <a href="../"><img src="../assets/images/logo.png" alt=""></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link has-collapse collapsed" href="#side-dropdown" data-bs-toggle="collapse" data-bs-target="#side-dropdown" aria-expanded="false" aria-controls="side-dropdown"><span>Getting Started</span></a>
+                    <div class="collapse" id="side-dropdown" data-bs-parent="#main-collapse">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="../#introduction">Introduction</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="../#file-structure">File Structure</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="../#starter-template">Starter Template</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="../#setup-sass">Setup Sass</a>
+                            </li><!-- / nav-item -->
+                        </ul><!-- nav -->
+                    </div><!-- / collapse -->
+                </li><!-- / nav-item -->
+
+                <li class="nav-item">
+                    <a class="nav-link has-collapse collapsed" href="#side-dropdown2" data-bs-toggle="collapse" data-bs-target="#side-dropdown2" aria-expanded="false" aria-controls="side-dropdown2"><span>Content</span></a>
+                    <div class="collapse" id="side-dropdown2" data-bs-parent="#main-collapse">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="../content.html#typography">Typography</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="../content.html#icons">Icons</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="../content.html#code">Code</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="../content.html#tables">Tables</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="../content.html#images">Images</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="../content.html#videos">Videos</a>
+                            </li><!-- / nav-item -->
+                        </ul><!-- nav -->
+                    </div><!-- / collapse -->
+                </li><!-- / nav-item -->
+
+                <li class="nav-item">
+                    <a class="nav-link has-collapse collapsed" href="#side-dropdown3" data-bs-toggle="collapse" data-bs-target="#side-dropdown3" aria-expanded="false" aria-controls="side-dropdown3"><span>Components</span></a>
+                    <div class="collapse" id="side-dropdown3" data-bs-parent="#main-collapse">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="accordions.html">Accordions</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="alerts.html">Alerts</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="buttons.html">Buttons</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="cards.html">Cards</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="modals.html">Modals</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="navigation.html">Navigation</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="progress.html">Progress</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="promo-box.html">Promo Box</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link sidenav-sub-item" href="widgets.html">Widgets</a>
+                            </li><!-- / nav-item -->
+                        </ul><!-- nav -->
+                    </div><!-- / collapse -->
+                </li><!-- / nav-item -->
+            </ul><!-- / main-collapse -->
+        </div><!-- / collapse -->
+    </nav><!-- / nav-scroll -->
+    <!-- / side-nav -->
+
+    <div class="doc-top-header">
+        <div class="doc-top-bar">
+            <div class="row">
+                <div class="col-lg-6">
+                    <a href="../" class="btn btn-icon btn-primary btn-doc"><i class="far fa-file fs-18"></i></a>
+                </div><!-- / column -->
+                <div class="col-lg-6 text-right">
+                    <a href="https://kingstudio.ro/contact.html" class="btn btn-primary top-page-button"><i class="far fa-envelope-open mr-5"></i> <span>Contact</span></a>
+                </div><!-- / column -->
+            </div><!-- / row -->
+        </div><!-- / top-header-nav -->
+    </div><!-- / doc-top-header -->
+
+    <div class="page-container">
+        <div class="doc-container container-fluid">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div id="modals" class="doc-wrapper">
+                        <h4 class="doc-main-title">Modals <a href="#modals"><i class="fas fa-link"></i></a></h4>
+
+                        <h6 id="modal-components" class="pt-30 doc-sub-title">Modal Components <a href="#modal-components"><i class="fas fa-link"></i></a></h6>
+                        <p>Below is a <em>static</em> modal example (meaning its <code class="highlighter-rouge">position</code> and <code class="highlighter-rouge">display</code> have been overridden). Included are the modal header, modal body (required for <code class="highlighter-rouge">padding</code>), and modal footer (optional). We ask that you include modal headers with dismiss actions whenever possible, or provide another explicit dismiss action.</p>
+
+                        <h6 id="modal-usage" class="doc-sub-title">Usage <a href="#modal-usage"><i class="fas fa-link"></i></a></h6>
+                        <p>The modal plugin toggles your hidden content on demand, via data attributes or JavaScript. It also adds <code class="highlighter-rouge">.modal-open</code> to the <code class="highlighter-rouge">&lt;body&gt;</code> to override default scrolling behavior and generates a <code class="highlighter-rouge">.modal-backdrop</code> to provide a click area for dismissing shown modals when clicking outside the modal.</p>
+
+                        <div class="doc-holder">
+                            <div class="doc-info">
+                                <div class="modal-example">
+                                    <div class="modal" tabindex="-1" role="dialog">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content text-center">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title">Modal Title</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">×</span>
+                                                    </button>
+                                                </div><!-- / modal-header -->
+                                                <div class="modal-body">
+                                                    <p>Modal body text goes here.</p>
+                                                </div><!-- / modal-body -->
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-sm btn-danger" data-bs-dismiss="modal"><i class="fas fa-times fs-14 mr-5"></i> <span>Close</span></button>
+                                                    <button type="button" class="btn btn-sm btn-success" data-bs-dismiss="modal"><i class="fas fa-check fs-14 mr-5"></i> <span>Save</span></button>
+                                                </div><!-- / modal-footer -->
+                                            </div><!-- / modal-content -->
+                                        </div><!-- / modal-dialog -->
+                                    </div><!-- / modal -->
+                                </div><!-- / modal-example -->
+                            </div><!-- / doc-info -->
+
+                            <div class="doc-result-footer text-center">
+                                <button class="btn btn-primary btn-code" type="button" data-bs-toggle="collapse" data-bs-target="#code-modal-collapse" aria-expanded="false" aria-controls="code-modal-collapse"><i class="fas fa-code va-middle mr-5"></i> <span>View Code</span></button>
+                            </div><!-- / doc-result-footer -->
+
+                            <div class="collapse" id="code-modal-collapse" style="">
+                                <div class="doc-code">
+                                    <pre class="language-markup"><button class="btn btn-copy" data-clipboard-action="copy" data-clipboard-target="#code-modal"><i class="far fa-clone mr-5"></i> Copy</button><code id="code-modal" class="language-markup" style="">&lt;div class="modal" tabindex="-1" role="dialog">
+    &lt;div class="modal-dialog" role="document">
+        &lt;div class="modal-content text-center">
+            &lt;div class="modal-header">
+                &lt;h5 class="modal-title">Modal Title&lt;/h5>
+                &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    &lt;span aria-hidden="true">×&lt;/span>
+                &lt;/button>
+            &lt;/div>&lt;!-- / modal-header -->
+            &lt;div class="modal-body">
+                &lt;p>Modal body text goes here.&lt;/p>
+            &lt;/div>&lt;!-- / modal-body -->
+            &lt;div class="modal-footer">
+                &lt;button type="button" class="btn btn-sm btn-danger" data-bs-dismiss="modal">&lt;i class="fas fa-times fs-14 mr-5">&lt;/i> &lt;span>Close&lt;/span>&lt;/button>
+                &lt;button type="button" class="btn btn-sm btn-success" data-bs-dismiss="modal">&lt;i class="fas fa-check fs-14 mr-5">&lt;/i> &lt;span>Save&lt;/span>&lt;/button>
+            &lt;/div>&lt;!-- / modal-footer -->
+        &lt;/div>&lt;!-- / modal-content -->
+    &lt;/div>&lt;!-- / modal-dialog -->
+&lt;/div>&lt;!-- / modal --></code></pre><!-- / code -->
+                                </div><!-- / doc-code -->
+                            </div><!-- / collapse -->
+                        </div><!-- / doc-holder -->
+
+                        <h6 id="live-modal-demos" class="pt-50 doc-sub-title">Live Modal Demos <a href="#live-modal-demos"><i class="fas fa-link"></i></a></h6>
+                        <p>Click on nay button to open the modal. All modals are centered on the screen usin the <code class="highlighter-rouge">modal-dialog-centered</code> helper class.</p>
+
+                        <div class="doc-holder">
+                            <div class="doc-info">
+                                <!--default modal -->
+                                <a href="#x" class="btn btn-primary mb-5 mr-10" data-bs-toggle="modal" data-bs-target=".default-modal">Default</a>
+                                <!-- modal -->
+                                <div class="modal fade default-modal" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content text-center">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Default Modal</h5>
+                                                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div><!-- / modal-header -->
+                                            <div class="modal-body">
+                                                <p>Modal body text goes here. Quisque a eros porta urna vulputate congue at in dui. Nulla sed sapien a velit vestibulum varius. Cras eu eros nibh commodo.</p>
+                                            </div><!-- / modal-body -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-sm btn-danger" data-bs-dismiss="modal"><i class="fas fa-times fs-14 mr-5"></i> <span>Close</span></button>
+                                                    <button type="button" class="btn btn-sm btn-success" data-bs-dismiss="modal"><i class="fas fa-check fs-14 mr-5"></i> <span>Save</span></button>
+                                            </div><!-- / modal-footer -->
+                                        </div><!-- / modal-content -->
+                                    </div><!-- / modal-dialog -->
+                                </div><!-- / modal -->
+                                <!-- / default-modal -->
+
+                                <!-- small-modal -->
+                                <a href="#x" class="btn btn-primary mb-5 mr-10" data-bs-toggle="modal" data-bs-target=".small-modal">Small</a>
+                                <!-- modal -->
+                                <div class="modal fade small-modal" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog modal-sm modal-dialog-centered">
+                                        <div class="modal-content text-center">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title text-center w-100">Small Modal</h5>
+                                                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div><!-- / modal-header -->
+                                            <div class="modal-body">
+                                                <p>Modal body text goes here. Quisque a eros porta urna vulputate congue at in.</p>
+                                            </div><!-- / modal-body -->
+                                            <div class="modal-footer">
+                                                <p class="text-center w-100 mb-0">
+                                                    <button type="button" class="btn btn-sm btn-icon btn-circle btn-danger m-x-5" data-bs-dismiss="modal"><i class="fas fa-times"></i></button>
+                                                    <button type="button" class="btn btn-sm btn-icon btn-circle btn-success m-x-5" data-bs-dismiss="modal"><i class="fas fa-check"></i></button>
+                                                </p>
+                                            </div><!-- / modal-footer -->
+                                        </div><!-- / modal-content -->
+                                    </div><!-- / modal-dialog -->
+                                </div><!-- / modal -->
+                                <!-- / small-modal -->
+
+                                <!-- large-modal -->
+                                <a href="#x" class="btn btn-primary mb-5 mr-10" data-bs-toggle="modal" data-bs-target=".large-modal">Large</a>
+                                <!-- modal -->
+                                <div class="modal fade large-modal" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                                        <div class="modal-content text-center">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Large Modal</h5>
+                                                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div><!-- / modal-header -->
+                                            <div class="modal-body">
+                                                <div class="container full-width">
+                                                    <!-- 2 column -->
+                                                    <div class="row text-center mb-30">
+                                                        <div class="col-sm-6">
+                                                            <div class="bg-grey rounded-sm p-15">Column 1</div>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="bg-grey rounded-sm p-15">Column 2</div>
+                                                        </div>
+                                                    </div><!-- / row -->
+
+                                                    <!-- 3 column -->
+                                                    <div class="row text-center mb-30">
+                                                        <div class="col-sm-4">
+                                                            <div class="bg-grey rounded-sm p-15">Column 1</div>
+                                                        </div>
+                                                        <div class="col-sm-4">
+                                                            <div class="bg-grey rounded-sm p-15">Column 2</div>
+                                                        </div>
+                                                        <div class="col-sm-4">
+                                                            <div class="bg-grey rounded-sm p-15">Column 3</div>
+                                                        </div>
+                                                    </div><!-- / row -->
+                                                    
+                                                    <!-- 4 column -->
+                                                    <div class="row text-center mb-30">
+                                                        <div class="col-sm-3">
+                                                            <div class="bg-grey rounded-sm p-15">Col 1</div>
+                                                        </div>
+                                                        <div class="col-sm-3">
+                                                            <div class="bg-grey rounded-sm p-15">Col 2</div>
+                                                        </div>
+                                                        <div class="col-sm-3">
+                                                            <div class="bg-grey rounded-sm p-15">Col 3</div>
+                                                        </div>
+                                                        <div class="col-sm-3">
+                                                            <div class="bg-grey rounded-sm p-15">Col 4</div>
+                                                        </div>
+                                                    </div><!-- / row -->
+
+                                                    <button type="button" class="btn btn-danger d-block w-100" data-bs-dismiss="modal">Close</button>
+                                                </div><!-- / container -->
+                                            </div><!-- / modal-body -->
+                                        </div><!-- / modal-content -->
+                                    </div><!-- / modal-dialog -->
+                                </div><!-- / modal -->
+                                <!-- / large-modal -->
+                            </div><!-- / doc-info -->
+
+                            <div class="doc-result-footer text-center">
+                                <button class="btn btn-primary btn-code" type="button" data-bs-toggle="collapse" data-bs-target="#code-modal-demo-collapse" aria-expanded="false" aria-controls="code-modal-demo-collapse"><i class="fas fa-code va-middle mr-5"></i> <span>View Code</span></button>
+                            </div><!-- / doc-result-footer -->
+
+                            <div class="collapse" id="code-modal-demo-collapse" style="">
+                                <div class="doc-code">
+                                    <pre class="language-markup"><button class="btn btn-copy" data-clipboard-action="copy" data-clipboard-target="#code-modal-demo"><i class="far fa-clone mr-5"></i> Copy</button><code id="code-modal-demo" class="language-markup" style="">&lt;!--default modal -->
+&lt;a href="#x" class="btn btn-primary mb-5 mr-10" data-bs-toggle="modal" data-bs-target=".default-modal">Default&lt;/a>
+&lt;!-- modal -->
+&lt;div class="modal fade default-modal" tabindex="-1" role="dialog">
+    &lt;div class="modal-dialog modal-dialog-centered">
+        &lt;div class="modal-content text-center">
+            &lt;div class="modal-header">
+                &lt;h5 class="modal-title">Default Modal&lt;/h5>
+                &lt;button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    &lt;span aria-hidden="true">&times;&lt;/span>
+                &lt;/button>
+            &lt;/div>&lt;!-- / modal-header -->
+            &lt;div class="modal-body">
+                &lt;p>Modal body text goes here. Quisque a eros porta urna vulputate congue at in dui. Nulla sed sapien a velit vestibulum varius. Cras eu eros nibh commodo.&lt;/p>
+            &lt;/div>&lt;!-- / modal-body -->
+            &lt;div class="modal-footer">
+                &lt;button type="button" class="btn btn-sm btn-danger" data-bs-dismiss="modal">&lt;i class="fas fa-times fs-14 mr-5">&lt;/i> &lt;span>Close&lt;/span>&lt;/button>
+                    &lt;button type="button" class="btn btn-sm btn-success" data-bs-dismiss="modal">&lt;i class="fas fa-check fs-14 mr-5">&lt;/i> &lt;span>Save&lt;/span>&lt;/button>
+            &lt;/div>&lt;!-- / modal-footer -->
+        &lt;/div>&lt;!-- / modal-content -->
+    &lt;/div>&lt;!-- / modal-dialog -->
+&lt;/div>&lt;!-- / modal -->
+&lt;!-- / default-modal --></code></pre><!-- / code -->
+                                </div><!-- / doc-code -->
+                            </div><!-- / collapse -->
+                        </div><!-- / doc-holder -->
+                    </div><!-- / doc-wrapper -->
+                    <!-- / modals -->
+                </div><!-- / column -->
+
+                <div class="col-lg-3">
+                    <div class="doc-sidebar">
+                        <ul id="nav-scroll" class="nav flex-column doc-sidebar-nav sticky-top top-25">
+                            <li class="nav-item">
+                                <a class="nav-link disabled nav-title" href="#x">On this page</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#modal-components">Modal Components</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#modal-usage">Usage</a>
+                            </li><!-- / nav-item -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#live-modal-demos">Live Modal Demos</a>
+                            </li><!-- / nav-item -->
+                        </ul>
+                    </div><!-- / sticky-top -->
+                </div><!-- / column -->
+            </div><!-- / row -->
+        </div><!-- / doc-container -->
+    </div><!-- / page-container -->
+
+    <!-- Core JavaScript -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/theme.js"></script>
+
+    <!-- aos -->
+    <script src="../assets/js/aos.js"></script>
+    <script>
+        AOS.init({
+          duration: 1200,
+        })
+    </script>
+    <!-- / aos -->
+
+    <!-- prism -->
+    <script src="../assets/js/prism.js"></script>
+    <!-- / prism -->
+
+    <!-- copy-to-clipboard -->
+    <script src="../assets/js/clipboard.min.js"></script>
+    <script>
+        var clipboard = new ClipboardJS('.btn');
+
+        clipboard.on('success', function(e) {
+            console.log(e);
+            e.clearSelection();
+        });
+
+        clipboard.on('error', function(e) {
+            console.log(e);
+            e.clearSelection();
+        });
+    </script>
+    <!-- / copy-to-clipboard -->
+
+</body>
+</html>

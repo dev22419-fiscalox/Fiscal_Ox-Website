@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-40W2JXLVDL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-40W2JXLVDL');
+  </script>
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Fiscal Ox offers a cloud software for Laboratory (LIMS), Clinical Research (CRO), Sales Cloud (CRM), HRMS and Manufacturing">
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/icons/icon.png">
+  <!-- Site Title -->
+  <title>Staff Augmentation: QA, Developers, PMs & Product Owners | Fiscal Ox</title>
+  <!-- Bootstrap 5 Core CSS -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/animate.min.css">
+  <link rel="stylesheet" href="assets/css/aos.css">
+  <link rel="stylesheet" href="assets/css/glightbox.min.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Fonts -->
+  <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    :root{
+      --bg:#ffffff; 
+      --ink:#0f172a; 
+      --muted:#949597; 
+      --primary:#172554; 
+      --primary-ink:#ffffff;
+      --accent:#fbbf24; 
+      --border:#e2e8f0; 
+      --surface:#f8fafc; 
+      --radius:12px; 
+      --shadow:0 10px 24px rgba(2,6,23,0.08),0 2px 6px rgba(2,6,23,0.06);
+      --success:#16a34a;
+      --primary-color: #2f56a6;
+      --theme-blue: #3f4ff8;
+      --secondary-color: #61b2d8;
+      --accent-color: #f6921e;
+      --text-color: #333;
+      --light-gray: #f5f5f5;
+      --medium-gray: #e0e0e0;
+      --dark-gray: #555;
+      --white: #ffffff;
+      --primary: #2563eb;
+      --primary-dark: #1e40af;
+      --secondary: #10b981;
+      --dark: #1f2937;
+      --light: #f3f4f6;
+      --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+    *{box-sizing:border-box;font-family: 'Barlow', Tahoma, Geneva, Verdana, sans-serif;}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif}
+    a{color:var(--primary);text-decoration:none}
+    img{max-width:100%;display:block}
+    .wrap{max-width:1320px;margin-inline:auto;}
+    .grid{display:grid;gap:24px}
+    .row{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:calc(var(--radius) - 2px);border:1px solid transparent;font-weight:600;cursor:pointer}
+    .btn.primary{background:var(--primary);color:var(--primary-ink)}
+    .btn.ghost{border:1px solid var(--border);color:var(--ink);background:#fff}
+    .chip{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);padding:6px 10px;border-radius:999px;color:var(--muted);font-weight:600;background:#fff; transition: all 0.2s ease;}
+    .chip:hover{background-color: rgba(0, 0, 0, 0.1);}
+
+    nav.topnav{background:#fff;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:10}
+    nav.topnav .wrap{display:flex;justify-content:space-between;align-items:center}
+    nav.topnav a.logo{font-weight:800;font-size:1.2rem;color:var(--primary)}
+    nav.topnav ul{display:flex;list-style:none;padding:0;margin:0;gap:20px}
+    nav.topnav li a{font-weight:600;color:var(--ink)}
+    nav.topnav li a:hover{color:var(--primary)}
+
+    header.hero{background:linear-gradient(180deg,#f0f9ff 0,#ffffff 100%);}
+    .hero-inner{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center}
+    .eyebrow{letter-spacing:.08em;text-transform:uppercase;color:black;font-size:.7rem;font-weight:700; background-color: #fdca40;width: max-content;padding: 5px 10px;}
+    h1{font-size:clamp(2rem,4vw,3rem);line-height:1.1;margin:.25em 0}
+    .lead{font-size:20px;color:#111;font-weight: 400;}
+
+    .features{grid-template-columns:repeat(4,1fr)}
+    .feat{padding:18px;border:1px solid var(--border);border-radius:var(--radius);background:#fff;transition:transform .2s ease, box-shadow .2s ease;box-shadow:var(--shadow)}
+    .feat:hover{transform:translateY(-10px);}
+    .feat h4{margin:10px 0 6px}
+    .feat p{color:var(--muted);margin:0}
+
+    .cards{grid-template-columns:repeat(4,1fr)}
+    .card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);transition: all 0.2s ease;box-shadow:var(--shadow)}
+    .card:hover{transform: translateY(-10px);cursor: pointer;}
+    .card .section{padding:20px;border-bottom:1px solid var(--border)}
+    .card .section:last-child{border-bottom:none}
+
+    table{width:100%;border-collapse:separate;border-spacing:0;overflow:hidden;border-radius:var(--radius);border:1px solid var(--border)}
+    th,td{padding:14px;border-bottom:1px solid var(--border);text-align:left}
+    thead th{background:#dfeeff}
+    tr:last-child td{border-bottom:none}
+
+    #faq details{background: white; border: 1px solid rgba(0, 0, 0, 0.1);padding: 10px; margin: 10px 0;}
+
+    .cta{background:linear-gradient(90deg,#172554,#1e293b);color:#fff;border-radius:var(--radius);padding:24px;display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center}
+    .cta .btn{background:#fff;color:#172554}
+    .cta h2{color:var(--light);}
+    .cta p{color: var(--muted);}
+
+    footer{border-top:1px solid var(--border);padding:30px 0;color:var(--muted)}
+
+    #capForm label{font-size: 0.875;}
+    #capForm label input{width: 100%; padding: 15px 20px; border: 1px solid #c2c7cd; border-radius: 0.25rem; transition: all 0.3s ease;}
+    #capForm label input:focus{border-color: #3f4ff8 !important; }
+    #capForm label select{width: 100%; padding: 16px 20px; border: 1px solid #c2c7cd; border-radius: 0.25rem; transition: all 0.3s ease;}
+
+    #reqForm label{font-size: 0.875;}
+    #reqForm label input{width: 100%; padding: 15px 20px; border: 1px solid #c2c7cd; border-radius: 0.25rem; transition: all 0.3s ease;}
+    #reqForm input:focus{border-color: #3f4ff8 !important; }
+    #reqForm label select{width: 100%; padding: 16px 20px; border: 1px solid #c2c7cd; border-radius: 0.25rem; transition: all 0.3s ease;}
+    #reqForm label textarea{width: 100%; height: 300px; padding: 15px 20px; border: 1px solid #c2c7cd; transition: all 0.3s ease;}
+    #reqForm label textarea:focus{border-color: #3f4ff8 !important; }
+
+    main > section > * {max-width: 1320px; margin: 0 auto;}
+
+    .text-center{text-align: center;}
+    .title-highlight{color: var(--primary-color);}
+
+    @media (max-width: 1100px){.cards{grid-template-columns:1fr 1fr}}
+    @media (max-width: 900px){.hero-inner{grid-template-columns:1fr}.features{grid-template-columns:1fr 1fr}.cards{grid-template-columns:1fr}}
+  </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#nav-scroll">
+
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+
+  <div id="home"></div>
+
+  <div id="navbar-container"></div>
+  <script src="assets/js/script.js"></script>
+
+  <header class="hero">
+    <div class="wrap hero-inner">
+      <div data-aos="fade-right">
+        <div class="eyebrow">Fiscal Ox Talent</div>
+        <h1 style="font-size: 44px;">Staff Augmentation — <span style="color:var(--theme-blue)">QA</span>, Developers, PMs & Product Owners</h1>
+        <p class="lead">Embed vetted engineers and product leaders into your teams. Choose on‑demand specialists, dedicated full‑time talent, or sprint pods that deliver outcomes with clear SLAs and easy scaling.</p>
+        <div class="row" style="margin-top:18px">
+          <a class="btn btn-primary-light" href="#contact">Request profiles</a>
+          <a class="btn ghost" style="color: var(--theme-blue);" href="#roles">See roles</a>
+        </div>
+        <div class="row" style="margin-top:12px">
+          <span class="chip">⏱️ Start in 1‑3 weeks</span>
+          <span class="chip">🛡️ NDAs & background checks</span>
+          <span class="chip">🌍 Time‑zone coverage (US/EU/APAC)</span>
+        </div>
+      </div>
+      <div data-aos="fade-left">
+        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=600&q=80" alt="Product team collaborating" style="border-radius:var(--radius);box-shadow:var(--shadow)">
+      </div>
+    </div>
+  </header>
+
+  <main class="grid" style="margin-top:24px" data-aos="fade-up">
+    <section id="roles" style="background: var(--light-gray);">
+      <h2 class="my-3">Roles we provide</h2>
+      <div class="grid cards">
+        <div class="card">
+          <div class="section"><h3 style="margin:0" class="title-highlight">QA Engineer</h3></div>
+          <div class="section">
+            <ul class="muted">
+              <li>Manual & automation (Selenium, Playwright, Cypress)</li>
+              <li>API & data validation, E2E, performance testing</li>
+              <li>CI/CD test pipelines, quality gates</li>
+              <li>Regulated testing (CSV / GxP) available</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="section"><h3 style="margin:0" class="title-highlight">Software Developer</h3></div>
+          <div class="section">
+            <ul class="muted">
+              <li>Backend (Node, Python, Java, .NET), Frontend (React, Vue)</li>
+              <li>Data & ML (Python, SQL, Spark, RAG apps)</li>
+              <li>Cloud‑native (AWS/Azure/GCP), containers & Kubernetes</li>
+              <li>Security‑first coding, code reviews, SAST/DAST</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="section"><h3 style="margin:0" class="title-highlight">Project Manager</h3></div>
+          <div class="section">
+            <ul class="muted">
+              <li>Agile/Scrum/Kanban, stakeholder management</li>
+              <li>Risk, RAID logs, budgets & vendor coordination</li>
+              <li>Compliance gateways & change control</li>
+              <li>Hybrid delivery across time zones</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="section"><h3 style="margin:0" class="title-highlight">Product Owner</h3></div>
+          <div class="section">
+            <ul class="muted">
+              <li>Backlog strategy, discovery & user research</li>
+              <li>Data‑informed prioritization, OKRs & success metrics</li>
+              <li>Specs, acceptance criteria, UAT orchestration</li>
+              <li>Regulated domains (pharma/healthcare) ready</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class=" my-3" data-aos="fade-up">Engagement models</h2>
+      <div class="grid features" data-aos="fade-up" data-aos-delay="150">
+        <div class="feat"><h4 class="title-highlight">On‑Demand Specialists</h4><p class="muted">Flexible hours for spikes. Ideal for audits, sprints, and launches.</p></div>
+        <div class="feat"><h4 class="title-highlight">Dedicated Talent (FTE)</h4><p class="muted">Embedded engineers or PM/POs who operate as part of your team.</p></div>
+        <div class="feat"><h4 class="title-highlight">Sprint Pods</h4><p class="muted">2–6 person squads delivering scoped outcomes with lead/QA.</p></div>
+        <div class="feat"><h4 class="title-highlight">Managed Capacity</h4><p class="muted">Monthly capacity with SLAs, predictable throughput & reporting.</p></div>
+      </div>
+    </section>
+
+    <section id="rates" style="background: var(--light-gray);"data-aos="fade-up">
+      <h2 class="" >Transparent rate bands</h2>
+      <table aria-label="Rate bands by region">
+        <thead>
+          <tr><th>Region</th><th>QA</th><th>Developer</th><th>Project Manager</th><th>Product Owner</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Offshore (India)</td><td>$25–$45/hr</td><td>$35–$65/hr</td><td>$45–$75/hr</td><td>$45–$85/hr</td></tr>
+          <tr><td>Nearshore (EU/ME)</td><td>$40–$70/hr</td><td>$55–$95/hr</td><td>$70–$110/hr</td><td>$70–$120/hr</td></tr>
+          <tr><td>Onsite (US/UK/EU)</td><td>$70–$110/hr</td><td>$90–$150/hr</td><td>$110–$170/hr</td><td>$110–$180/hr</td></tr>
+        </tbody>
+      </table>
+      <p class="muted" style="margin-top:6px">Exact rates depend on seniority, domain experience, and engagement length.</p>
+    </section>
+
+    <section id="calc">
+      <h2 class="" data-aos="fade-up">Quick capacity calculator</h2>
+      <div class="card" style="margin: 20px auto;" data-aos="fade-up" data-aos-delay="150">
+        <div class="section">
+         <form id="capForm" class="grid" style="grid-template-columns:repeat(3,1fr);gap:12px">
+          
+          <label>QA (count)<br>
+            <input type="number" min="0" step="1" name="qa" value="2">
+          </label>
+          <label>Devs (count)<br>
+            <input type="number" min="0" step="1" name="dev" value="3">
+          </label>
+          <label>PMs (count)<br>
+            <input type="number" min="0" step="1" name="pm" value="1">
+          </label>
+
+          <label>POs (count)<br>
+            <input type="number" min="0" step="1" name="po" value="1">
+          </label>
+          <label>Region<br>
+            <select name="region">
+              <option value="offshore">Offshore (India)</option>
+              <option value="nearshore">Nearshore (EU/ME)</option>
+              <option value="onsite">Onsite (US/UK/EU)</option>
+            </select>
+          </label>
+          <label>Duration (months)<br>
+            <input type="number" min="1" step="1" name="months" value="3">
+          </label>
+
+          <div style="grid-column:1/-1; display:flex; flex-direction:column; align-items:center;">
+            <span id="capOut" class="muted" style="margin-bottom:10px; text-align:center;"></span>
+            <button class="btn btn-primary-light" type="submit">Estimate budget</button>
+          </div>
+        </form>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="" data-aos="fade-up">How we ensure quality</h2>
+      <div class="grid features my-5" data-aos="fade-up" data-aos-delay="150">
+        <div class="feat"><h4 class="title-highlight">Vetting & Trials</h4><p class="muted">Multistage technical & soft‑skill screens; 2‑week replacement guarantee.</p></div>
+        <div class="feat"><h4 class="title-highlight">Delivery Guardrails</h4><p class="muted">Definition of Done, code standards, test coverage, and secure SDLC.</p></div>
+        <div class="feat"><h4 class="title-highlight">Security & Compliance</h4><p class="muted">Background checks, NDAs, SSO, least‑privilege, and audit trails.</p></div>
+        <div class="feat"><h4 class="title-highlight">Reporting</h4><p class="muted">Weekly burn‑down/burn‑up, risk logs, and stakeholder updates.</p></div>
+      </div>
+    </section>
+
+    <section id="faq" style="min-width: 1320px; margin: 0 auto;" data-aos="fade-up">
+      <h2>FAQs</h2>
+      <details>
+        <summary>How quickly can talent start?</summary>
+        <p>Most roles start within 1–3 weeks depending on notice periods and compliance checks.</p>
+      </details>
+      <details>
+        <summary>Can we scale up or down?</summary>
+        <p>Yes. We support ramp‑ups and backfills with 2–4 week notice and prorated billing.</p>
+      </details>
+      <details>
+        <summary>Do you sign NDAs and MSAs?</summary>
+        <p>Absolutely. We support NDAs, MSAs, SLAs, and industry‑specific addenda.</p>
+      </details>
+    </section>
+
+    <section class="cta" id="contact" style="min-width: 1320px; margin: 0 auto;" data-aos="fade-up">
+      <div>
+        <h2 style="margin:.2em 0">Get vetted profiles this week</h2>
+        <p class="muted" style="margin:0">Tell us the roles, seniority, and start date. We'll share matches fast.</p>
+      </div>
+      <a class="btn" href="#contact-form">Share requirements</a>
+    </section>
+
+    <section id="contact-form" data-aos="fade-up">
+      <div class="card">
+        <div class="section"><h3 style="margin:0" class="text-center my-3">Request profiles</h3></div>
+        <div class="section">
+          <form id="reqForm" class="grid" style="grid-template-columns:1fr 1fr;gap:16px">
+            <label class="col">Your Name<br><input type="text" name="name" required></label>
+            <label class="col">Work Email<br><input type="email" name="email" required></label>
+            <label class="col">Company<br><input type="text" name="company" required></label>
+            <label class="col">Time Zone<br><input type="text" name="tz" placeholder="e.g., IST / CET / EST"></label>
+            <label class="col">Target Start<br><input type="date" name="start"></label>
+            <label class="col">Duration <br />
+              <select name="duration">
+                <option>3 months</option>
+                <option>6 months</option>
+                <option>12 months</option>
+                <option>Ongoing</option>
+              </select>
+            </label>
+            <label class="col" style="grid-column:1/-1">Roles & Seniority <br />
+              <textarea name="roles" rows="3" placeholder="e.g., 2× QA (mid), 3× React dev (senior), 1× PM (senior)"></textarea>
+            </label>
+            <div class="col" style="grid-column:1/-1; display:flex; flex-direction:column; align-items:center;">
+              <span id="reqOut" class="muted" style="margin-bottom:10px; text-align:center;"></span>
+              <button class="btn btn-primary-light" type="submit">Send request</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer"></div>
+  <script> 
+      fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('footer').innerHTML = data;
+      });
+  </script>
+
+  <button type="button" id="back-top" class="btn btn-icon btn-circle btn-primary btn-floating raised-sm"
+    style="height: 40px;width: 40px;">
+    <i class="fas fa-chevron-up" style="margin-top: -8px;"></i>
+  </button>
+
+  <!-- jQuery -->
+  <script src="assets/js/jquery.min.js"></script>
+
+  <!-- Core JavaScript -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+
+  <!-- aos -->
+  <script src="assets/js/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+    })
+  </script>
+  <!-- / aos -->
+
+  <!-- Nav-Scroll -->
+  <script src="assets/js/nav-fixed.js"></script>
+  <script src="assets/js/scroll-top.js"></script>
+  <!-- / Nav-Scroll -->
+
+  <!-- Jarallax -->
+  <script src="assets/js/jarallax.min.js"></script>
+  <!-- / Jarallax -->
+
+  <!-- Rellax -->
+  <script src="assets/js/rellax.min.js"></script>
+  <script>
+    var rellax = new Rellax('.rellax');
+  </script>
+  <!-- / Rellax -->
+
+  <!-- GLightbox -->
+  <script src="assets/js/glightbox.min.js"></script>
+  <script>
+    var lightboxVideo = GLightbox({
+      selector: '.glightbox-video'
+    });
+  </script>
+  <!-- / GLightbox -->
+
+  <!-- Swiper Slider -->
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <!-- swiper-init -->
+  <script>
+    var swiper = new Swiper('#logo-swiper', {
+      slidesPerView: 5,
+      spaceBetween: 100,
+      loop: true,
+      speed: 1200,
+      pagination: false,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        '@0.25': {
+          slidesPerView: 2,
+        },
+        '@0.5': {
+          slidesPerView: 3,
+        },
+        '@1.00': {
+          slidesPerView: 5,
+        },
+      }
+    });
+  </script>
+
+  <!-- request Demo -->
+  <script>
+    $(document).ready(function () {
+      // Select the button and scroll trigger
+      var $requestDemoBtn = $('.requestDemo');
+      var $scrollTrigger = $('#scrollTrigger');
+
+      // Initially hide the button
+      $requestDemoBtn.hide();
+
+      // Detect scroll event and check the position of the scrollTrigger
+      $(window).on('scroll', function () {
+        // Get the position of the scroll trigger relative to the viewport
+        var scrollPosition = $scrollTrigger.offset().top - $(window).scrollTop();
+
+        // If the scrollTrigger is in view (threshold 50%)
+        if (scrollPosition <= $(window).height() / 2) {
+          // Show the button with fade-in effect
+          $requestDemoBtn.fadeIn();
+        } else {
+          // Hide the button if scrollTrigger is not in view
+          $requestDemoBtn.fadeOut();
+        }
+      });
+    });
+
+
+  </script>
+
+
+  <script>
+    var swiper = new Swiper('#testimonials-swiper', {
+      slidesPerView: 3,
+      spaceBetween: 15,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        '@0.25': {
+          slidesPerView: 1,
+        },
+        '@0.65': {
+          slidesPerView: 2,
+        },
+        '@1.00': {
+          slidesPerView: 3,
+        },
+      }
+    });
+  </script>
+  <!-- / Swiper Slider -->
+
+  <script>
+    $('#requestBtn').on('click', function () {
+      var leadName = $('#leadName').val();
+      var leadEmail = $('#leadEmail').val();
+      var leadMessage = $('#leadMessage').val();
+      var leadPhone = '0';
+      if (leadName && leadEmail) {
+        $.ajax({
+          contentType: 'application/json',
+          url: 'https://secure.fiscalox.com/web/add_lead?name=' + leadName + '&email=' + leadEmail + '&phone=' + leadPhone + '&description=' + leadMessage,
+          dataType: 'json',
+          type: 'GET'
+        }).done(function (data) {
+          $('#leadName').val('');
+          $('#leadEmail').val('');
+          $('#leadMessage').val('');
+          $('#requestBtn').attr('disabled', '');
+          $('#leadScreen1').hide();
+          $('#leadScreen2').show();
+        }).fail(function (jqXHR, textStatus, error) {
+          console.log("Post error: " + jqXHR);
+          console.log("Post error: " + textStatus);
+          console.log("Post error: " + error);
+        });
+      }
+    })
+  </script>
+    <script>
+    // Capacity calculator (rough estimate using mid‑range rates)
+    const capForm = document.getElementById('capForm');
+    const capOut = document.getElementById('capOut');
+    capForm.addEventListener('submit', (e)=>{
+      e.preventDefault();
+      const f = new FormData(capForm);
+      const qa = +f.get('qa');
+      const dev = +f.get('dev');
+      const pm = +f.get('pm');
+      const po = +f.get('po');
+      const months = +f.get('months');
+      const region = f.get('region');
+      const rates = {
+        offshore: {qa:35, dev:50, pm:60, po:65},
+        nearshore:{qa:55, dev:75, pm:90, po:95},
+        onsite:  {qa:90, dev:120, pm:140, po:145}
+      }[region];
+      const hoursPerMonth = 160;
+      const monthly = (qa*rates.qa + dev*rates.dev + pm*rates.pm + po*rates.po) * hoursPerMonth;
+      const total = monthly * months;
+      capOut.textContent = `Est. monthly $${Math.round(monthly).toLocaleString()} • ${months}‑month total ≈ $${Math.round(total).toLocaleString()}`;
+    });
+
+    // Lead form demo
+    const reqForm = document.getElementById('reqForm');
+    const reqOut = document.getElementById('reqOut');
+    reqForm.addEventListener('submit', (e)=>{
+      e.preventDefault();
+      reqOut.textContent = 'Thanks! We\'ll send curated profiles shortly.';
+      reqForm.reset();
+    });
+
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
