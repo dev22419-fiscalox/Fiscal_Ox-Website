@@ -33,286 +33,339 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+      <style>
+     :root{
+      --bg: #ffffff;
+      --ink: #0f172a;
+      --muted: #475569;
+      --primary: #172554; /* Fiscal Ox navy */
+      --primary-ink: #ffffff;
+      --accent: #fbbf24; /* Fiscal Ox yellow */
+      --success: #16a34a;
+      --danger: #dc2626;
+      --surface: #f8fafc;
+      --border: #e2e8f0;
+      --radius: 12px;
+      --shadow: 0 10px 24px rgba(2,6,23,0.08), 0 2px 6px rgba(2,6,23,0.06);
+      --primary-color: #2f56a6;
+      --secondary-color: #61b2d8;
+      --accent-color: #f6921e;
+      --theme-blue: #3f4ff8;
+      --text-color: #333;
+      --light-gray: #f5f5f5;
+      --medium-gray: #e0e0e0;
+      --dark-gray: #555;
+      --white: #ffffff;
+      --primary: #2563eb;
+      --primary-dark: #1e40af;
+      --secondary: #10b981;
+      --dark: #1f2937;
+      --light: #f3f4f6;
+      --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+
+     .eyebrow{letter-spacing:.08em;text-transform:uppercase;color:black;font-size:.7rem;font-weight:700; background-color: #fdca40;width: max-content;padding: 5px 10px;}
+    
+  </style>
 </head>
 <body class="bgCustom sales-page">
   <div id="navbar-container"></div>
   <script src="assets/js/script.js"></script>
-  <header class="topleft-rounded" style="background-color: #023cbf;">
+  <header style="background: var(--light-gray);">
       <div class="container">
           <div class="row">
               <div class="col-lg-6 col-md-12 z-index-1 my-auto">
-                  <h1 class="text-start text-white"> Sales Cloud</h1>
-                  <p class="lead mx-auto" data-aos="fade-in" data-aos-delay="100" style="color: #afbdff;font-weight: 600;">Streamlined Sales, Purchase, Inventory Management & CRM for Smarter Business Growth</p>
-                  <p class="lead mx-auto text-white" data-aos="fade-in" data-aos-delay="100">Providing Premium Support Since 2017</p>
-                  <a href="#contact" class="btn mt-4 ml-3" style="background-color: #fdca40;">
+                  <h1 class="text-start" data-aos="fade-in"> Sales Cloud</h1>
+                  <p class="lead mx-auto" data-aos="fade-in" data-aos-delay="100" style="color: #111;">Streamlined Sales, Purchase, Inventory Management & CRM for Smarter Business Growth</p>
+                  <p class="lead mx-auto" data-aos="fade-in" data-aos-delay="200" style="color: #111;">Providing Premium Support Since 2017</p>
+                  <a href="#contact" class="btn btn-primary-light" data-aos="fade-in" data-aos-delay="300">
                       <i class="fas fa-briefcase mr-5"></i> <span>Request Demo</span>
                   </a>
               </div>
-              <div class="col-lg-6 col-md-12">
+              <div class="col-lg-6 col-md-12"  data-aos="fade-left" data-aos-delay="400">
                   <img src="assets/images/illustrations/Frame 6.png" class="me-0 w-100 h-auto salesCloudBox">
               </div>
           </div>
       </div>
   </header>
     <main>
-
     
-        <!-- <img src="assets/images/illustrations/Frame 4.svg" class="w-100"> -->
-
-        <section class="bgCustom xl">
-            <div class="container">
-                <h1 class="text-center mx-auto heading">Everything You Need, All in One
-                    <mark style="color: #DC124C; background-color: transparent;">
-                        Powerful
-                    </mark> 
-                Platform.</h1>
-                    <div class="features-container">
-                      <div class="features-box" style="background-color: #013A63; width: 45em;">
-                        <div class="description">
-                          <h4 style="color:#f3ece4">Quotations & Invoices</h4>
-                          <div class="description-list pt-4">
-                            <ul class="bullet">
-                              <li style="color:#f3ece4">Create professional and precise quotations instantly.</li>
-                              <li style="color:#f3ece4">Utilize pre-built templates and custom fields.</li>
-                              <li style="color:#f3ece4">Automatically apply pricing rules, discounts, and taxes.</li>
-                              <li style="color:#f3ece4">Ensure accurate and error-free quotes every time.</li>
-                              <li style="color:#f3ece4">Speed up the quotation process for quick delivery.</li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="productImg1" style="height: 10px;">
-                           <img src="assets/images/illustrations/invoice.png" style="width: 20em;"> 
-                        </div>
-                      </div>
-                      <div class="features-box" style="background-color:#fdca40; width: 350px;">
-                        <h4>Purchasing Workflow</h4>
-                        <div class="description-list">
-                          <ul class="bullet">
-                            <li>Generate and customize invoices effortlessly.</li>
-                            <li>Automatically include product info, pricing, and due dates.</li>
-                            <li>Track invoice status and receive overdue payment alerts.</li>
-                            <li>Ensure timely payments and better financial management.</li>
-                            <li>Simplify billing processes for efficiency and accuracy.</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="features-box" style="background-color:#c7e4ff; width: 350px;">
-                        <h4>Inventory Management</h4>
-                        <div class="description-list">
-                          <ul class="bullet">
-                            <li>Monitor inventory levels, stock movements, and updates in real time.</li>
-                            <li>Auto-update inventory with every purchase order and sales invoice.</li>
-                            <li>Speed up stock identification and reduce manual errors.</li>
-                            <li>Track stock across multiple warehouses, stores, or locations.</li>
-                            <li>Gain insights into stock trends, slow-moving items, and inventory valuation.</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="features-box" style="background-color:#dadddd; width: 350px;">
-                        <h4>GST Support</h4>
-                        <div class="description-list">
-                          <ul class="bullet">
-                            <li>Create professional GST-compliant invoices in seconds.</li>
-                            <li>Support for government-mandated e-invoicing compliance.</li>
-                            <li>Add payment links for quick and hassle-free transactions.</li>
-                            <li>Automatically apply CGST, SGST, or IGST based on customer location.</li>
-                            <li>Send payment reminders to customers for overdue invoices.</li>
-                            <li>Generate and manage multiple invoices seamlessly.</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="features-box" style="background-color:#FFCDB2; width: 350px;">
-                        <div class="feature-title">
-                          <h4>Reminders & Notifications</h4>
-                          <img src="assets/images/illustrations/bell-notif.svg" style="width: 2.3em;">
-                        </div>
-                        <div class="description-list">
-                          <ul class="bullet">
-                            <li>Get alerts for due invoices, pending approvals, low stock, and more.</li>
-                            <li>Notify customers about upcoming due payments and GST invoices.</li>
-                            <li>Stay updated with instant alerts on mobile, email, or dashboard.</li>
-                            <li>Get notified when inventory levels drop below threshold limits.</li>
-                            <li>Set priority-based alerts for different users and departments.</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="features-box" style="background-color:#3A1772; width: 350px;">
-                        <h4 style="color:#f3ece4">Reports & Dashboards</h4>
-                        <div class="description-list">
-                          <ul class="bullet">
-                            <li style="color:#f3ece4">Generate detailed reports for sales, purchases, inventory, finance, and production.</li>
-                            <li style="color:#f3ece4">Track revenue, expenses, profit margins, and tax calculations effortlessly.</li>
-                            <li style="color:#f3ece4">Download reports in multiple formats (PDF, Excel, CSV) and share with stakeholders.</li>
-                            <li style="color:#f3ece4">View stock levels, reorder points, and material movement trends.</li>
-                            <li style="color:#f3ece4">Analyze manufacturing efficiency and track production timelines.</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="features-box" style="background-color: #faedcd; width: 45em;">
-                        <div class="description">
-                          <h4>Integrated Accounting</h4>
-                          <div class="description-list">
-                            <ul class="bullet">
-                              <li>Generate, send, and track invoices with automatic tax calculations.</li>
-                              <li>Automate GST calculations, filing, and return tracking.</li>
-                              <li>Simplify tax calculations, deductions, and compliance reporting.</li>
-                              <li>Monitor financial health with real-time P&L reports.</li>
-                              <li>Record and categorize expenses for better financial control.</li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="productImg2">
-                           <img src="assets/images/illustrations/accounting.png" style="width: 20em;"> 
-                        </div>
-                      </div>          
-                    </div>       
+    
+      <!-- <img src="assets/images/illustrations/Frame 4.svg" class="w-100"> -->
+    
+      <section class="bgCustom xl">
+        <div class="container">
+          <h1 data-aos="fade-in">Everything You Need, All in One
+            <span
+              style="background:-webkit-linear-gradient(-35deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%); -webkit-text-fill-color: transparent; background-clip: text;">
+              Powerful
+            </span>
+            Platform.
+          </h1>
+          <div class="features-container" data-aos="fade-in" data-aos-delay="100">
+            <div class="features-box" style="background-color: #013A63; width: 45em;">
+              <div class="description">
+                <h4 style="color:#f3ece4">Quotations & Invoices</h4>
+                <div class="description-list pt-4">
+                  <ul class="bullet">
+                    <li style="color:#f3ece4">Create professional and precise quotations instantly.</li>
+                    <li style="color:#f3ece4">Utilize pre-built templates and custom fields.</li>
+                    <li style="color:#f3ece4">Automatically apply pricing rules, discounts, and taxes.</li>
+                    <li style="color:#f3ece4">Ensure accurate and error-free quotes every time.</li>
+                    <li style="color:#f3ece4">Speed up the quotation process for quick delivery.</li>
+                  </ul>
                 </div>
+              </div>
+              <div class="productImg1" style="height: 10px;">
+                <img src="assets/images/illustrations/invoice.png" style="width: 20em;">
+              </div>
             </div>
-        </section>
-
-        <section class="pricing-section py-5 sales-page">
-          <div class="container xl">
-            <h2 class="text-center mx-auto heading"> 
-              <span class="red-highlight"> Flexible </span>
-              Plans for Every Business 
-            </h2>
-            <div class="pricing-container">
-              <div class="pricing-card">
-                <div class="pricing-card-info">
-                  <p class="pricing-text-title">Standard</p>
-                  <span class="pricing-text-title">₹499/mo</span>
-                  <p style="font-weight: 500;">per user</p>
-                  <p class="pricing-text-body">Perfect for small businesses</p>
-                </div>
-                <div class="pricing-card-footer">
-                  <a href="#contact" class="demo-btn" style="text-decoration: none;">
-                    Request a Demo
-                  </a>
-                  <!-- <button type="button" class="buy-btn">Buy Now</button> -->
-                </div>             
+            <div class="features-box" style="background-color:#fdca40; width: 350px;">
+              <h4>Purchasing Workflow</h4>
+              <div class="description-list">
+                <ul class="bullet">
+                  <li>Generate and customize invoices effortlessly.</li>
+                  <li>Automatically include product info, pricing, and due dates.</li>
+                  <li>Track invoice status and receive overdue payment alerts.</li>
+                  <li>Ensure timely payments and better financial management.</li>
+                  <li>Simplify billing processes for efficiency and accuracy.</li>
+                </ul>
               </div>
-            
-              <div class="pricing-card">
-                <div class="pricing-card-info">
-                  <p class="pricing-text-title">Annual Saver</p>
-                  <span class="pricing-text-title">₹9999 / annually</span>
-                  <p style="font-weight: 500;">per 5 users</p>
-                  <p class="pricing-text-body">For growing teams and businesses</p>
-                </div>
-                <div class="pricing-card-footer">
-                  <a href="#contact" class="demo-btn" style="text-decoration: none;">
-                    Request a Demo
-                  </a>
-                  <!-- <button type="button" class="buy-btn">Buy Now</button> -->
+            </div>
+            <div class="features-box" style="background-color:#c7e4ff; width: 350px;">
+              <h4>Inventory Management</h4>
+              <div class="description-list">
+                <ul class="bullet">
+                  <li>Monitor inventory levels, stock movements, and updates in real time.</li>
+                  <li>Auto-update inventory with every purchase order and sales invoice.</li>
+                  <li>Speed up stock identification and reduce manual errors.</li>
+                  <li>Track stock across multiple warehouses, stores, or locations.</li>
+                  <li>Gain insights into stock trends, slow-moving items, and inventory valuation.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="features-box" style="background-color:#dadddd; width: 350px;">
+              <h4>GST Support</h4>
+              <div class="description-list">
+                <ul class="bullet">
+                  <li>Create professional GST-compliant invoices in seconds.</li>
+                  <li>Support for government-mandated e-invoicing compliance.</li>
+                  <li>Add payment links for quick and hassle-free transactions.</li>
+                  <li>Automatically apply CGST, SGST, or IGST based on customer location.</li>
+                  <li>Send payment reminders to customers for overdue invoices.</li>
+                  <li>Generate and manage multiple invoices seamlessly.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="features-box" style="background-color:#FFCDB2; width: 350px;">
+              <div class="feature-title">
+                <h4>Reminders & Notifications</h4>
+                <img src="assets/images/illustrations/bell-notif.svg" style="width: 2.3em;">
+              </div>
+              <div class="description-list">
+                <ul class="bullet">
+                  <li>Get alerts for due invoices, pending approvals, low stock, and more.</li>
+                  <li>Notify customers about upcoming due payments and GST invoices.</li>
+                  <li>Stay updated with instant alerts on mobile, email, or dashboard.</li>
+                  <li>Get notified when inventory levels drop below threshold limits.</li>
+                  <li>Set priority-based alerts for different users and departments.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="features-box" style="background-color:#3A1772; width: 350px;">
+              <h4 style="color:#f3ece4">Reports & Dashboards</h4>
+              <div class="description-list">
+                <ul class="bullet">
+                  <li style="color:#f3ece4">Generate detailed reports for sales, purchases, inventory, finance, and
+                    production.</li>
+                  <li style="color:#f3ece4">Track revenue, expenses, profit margins, and tax calculations effortlessly.</li>
+                  <li style="color:#f3ece4">Download reports in multiple formats (PDF, Excel, CSV) and share with
+                    stakeholders.</li>
+                  <li style="color:#f3ece4">View stock levels, reorder points, and material movement trends.</li>
+                  <li style="color:#f3ece4">Analyze manufacturing efficiency and track production timelines.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="features-box" style="background-color: #faedcd; width: 45em;">
+              <div class="description">
+                <h4>Integrated Accounting</h4>
+                <div class="description-list">
+                  <ul class="bullet">
+                    <li>Generate, send, and track invoices with automatic tax calculations.</li>
+                    <li>Automate GST calculations, filing, and return tracking.</li>
+                    <li>Simplify tax calculations, deductions, and compliance reporting.</li>
+                    <li>Monitor financial health with real-time P&L reports.</li>
+                    <li>Record and categorize expenses for better financial control.</li>
+                  </ul>
                 </div>
               </div>
-            
-              <div class="pricing-card">
-                <div class="pricing-card-info">
-                  <p class="pricing-text-title">Custom</p>
-                  <span class="pricing-text-title">Let's Discuss!</span>
-                  <p class="pricing-text-body" style="margin-top: 40px;">Best for enterprises and large-scale users</p>
-                </div>
-                <div class="pricing-card-footer">
-                  <a href="#contact" class="demo-btn" style="text-decoration: none;">
-                    Request a Quotation
-                  </a>
-                </div>
+              <div class="productImg2">
+                <img src="assets/images/illustrations/accounting.png" style="width: 20em;">
               </div>
             </div>
           </div>
+        </div>
+        </div>
       </section>
-
+    
+      <section class="pricing-section py-5 sales-page" style="background: var(--light-gray);">
+        <div class="container xl">
+          <h1 data-aos="fade-in">
+            <span class="red-highlight"> Flexible </span>
+            Plans for Every Business
+          </h1>
+          <div class="pricing-container">
+            <div class="pricing-card standard" data-aos="fade-in" data-aos-delay="100">
+              <p class="pricing-text-title">Standard</p>
+              <div class="pricing-card-info">
+                <div>
+                  <span class="pricing-text-title">₹499</span>
+                </div>
+                <div style="display: flex; flex-direction: column; justify-content: center;">
+                  <p style="font-weight: 900; text-align: left; color: #11111180;">per month</p>
+                  <p style="font-weight: 900; text-align: left; color: #11111180;">per user</p>
+                </div>
+              </div>
+              <p class="pricing-text-body">Perfect for small businesses</p>
+              <div class="pricing-card-footer">
+                <a href="#contact" class="demo-btn" style="text-decoration: none;">
+                  Request a Demo
+                </a>
+                <!-- <button type="button" class="buy-btn">Buy Now</button> -->
+              </div>
+            </div>
+    
+            <div class="pricing-card annual" data-aos="fade-in" data-aos-delay="200">
+              <p class="pricing-text-title">Annual Saver</p>
+              <div class="pricing-card-info">
+                <div>
+                  <span class="pricing-text-title">₹9999</span>
+                </div>
+                <div style="display: flex; flex-direction: column; justify-content: center;">
+                  <p style="font-weight: 900; text-align: left; color: #11111180;">per</p>
+                  <p style="font-weight: 900; text-align: left; color: #11111180;">per 5 users</p>
+                </div>
+              </div>
+              <p class="pricing-text-body">For growing teams and businesses</p>
+              <div class="pricing-card-footer">
+                <a href="#contact" class="demo-btn" style="text-decoration: none;">
+                  Request a Demo
+                </a>
+                <!-- <button type="button" class="buy-btn">Buy Now</button> -->
+              </div>
+            </div>
+    
+            <div class="pricing-card custom" data-aos="fade-in" data-aos-delay="300">
+              <p class="pricing-text-title">Custom</p>
+              <div class="pricing-card-info" style="display: block;">
+    
+                <span class="pricing-text-title">Let's Discuss!</span>
+    
+                <div style="display: flex; flex-direction: column; justify-content: center;">
+                  <p class="pricing-text-body" style="margin-top: 25px;font-size: 1.2em;">Best for enterprises and
+                    large-scale users</p>
+                </div>
+              </div>
+              <div class="pricing-card-footer">
+                <a href="#contact" class="demo-btn" style="text-decoration: none;">
+                  Request a Quotation
+                </a>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </section>
+    
       <section id="contact" class="xl">
         <div class="container relative">
-            <div class="w-100 text-center">
-                <h2 class="mb-15 ">Contact Us</h2>
-                <div class="spacer-line border-primary mb-3"></div>
-                <p>Send us an email or a WhatsApp message for fastest response.</p>
-            </div><!-- / w-80 -->
-            <div class="row v-center">
-                <div class="col-lg-6 tablet-lg-top-45">
-
-                    <div class="promo-box p-y-12 p-x-0 promo-left bg-transparent mb-4 no-shadow no-blur relative"
-                        data-aos="fade-up" data-aos-delay="300">
-                        <div class="promo-container-big-sm">
-                            <div class="promo-big icon-sm promo-icon-bg circle b-0 bg-primary raised-sm mb-25">
-                                <i class="far fa-envelope-open promo-icon text-white"></i>
-                            </div><!-- / promo-icon-bg -->
-                            <h6 class="box-title mb-4">Contact Info</h6>
-                            <p class="box-description mb-5">
-                                <span>Phone | Whatsapp: </span> <a href="https://wa.me/917778091350"
-                                    class="title-link primary-hover">+91 7778091350</a>
-                            </p>
-                            <p class="box-description mb-5">
-                                <span>Email: </span> <a href="javascript:void(0)"
-                                    class="title-link primary-hover">info@fiscalox.com</a>
-                            </p>
-                            <p class="box-description mb-5">
-                                <span>Innovation Center (Head Office): </span> <a href="javascript:void(0)"
-                                    class="title-link primary-hover">341 SWC Hub, Vasna-Bhayli Main Road, Bhayli,
-                                    Vadodara, Gujarat 391412</a>
-                            </p>
-                            <br>
-                            <p class="box-description">
-                                <span>Regional Office (Goa): </span> <a href="javascript:void(0)"
-                                    class="title-link primary-hover">TF/11, Third floor, Janaki Sadan 3, Valshi,
-                                    Mapusa Road, Bicholim, Goa 403504</a>
-                            </p>
-                            <br> 
-                            <p class="box-description">
-                              <span>Regional Office (Hyderabad): </span> <a href="javascript:void(0)"
-                                  class="title-link primary-hover">T-Hub, Plot No 1/C, Sy No 83/1, Raidurgam, Knowledge City Rd, panmaktha, Hyderabad, Serilingampalle (M), Telangana 500081</a>
-                            </p>
-                            <br>
-                            <p class="box-description">
-                                <span>Regional Office (Chennai): </span> <a href="javascript:void(0)"
-                                    class="title-link primary-hover">Coming Soon</a>
-                            </p>
-                        </div><!-- / promo-container -->
-                    </div><!-- / promo-box -->
-                </div><!-- / column -->
-                <div class="col-lg-6">
-                  <div class="promo-box bg-glass p-40" data-aos="fade-up" data-aos-delay="400" id="leadScreen1">
-                      <form class="needs-validation" id="form-validation3" novalidate="novalidate" name="recordObj"
-                          action="https://secure.fiscalox.com/web/create_lead" method="post">
-                          <div class="row">
-                              <div class="col-md-12">
-                                  <div class="form-group">
-                                      <input type="text" class="form-control" id="leadName" name="inputName3"
-                                          placeholder="Company Name" required="">
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="row">
-                              <div class="col-md-6">
-                                  <div class="form-group">
-                                      <input type="text" class="form-control" id="leadPhone" name="inputPhone3"
-                                          placeholder="Phone" required="">
-                                  </div><!-- / form-group -->
-                              </div><!-- / column -->
-                              <div class="col-md-6">
-                                  <div class="form-group">
-                                      <input type="email" class="form-control" id="leadEmail" name="inputEmail3"
-                                          placeholder="Email" required="">
-                                  </div><!-- / form-group -->
-                              </div><!-- / column -->
-                          </div><!-- / row -->
-                          <div class="form-group">
-                              <textarea id="leadMessage" class="form-control" name="inputMessage3" rows="5"
-                                  placeholder="Message - Include details about your requirements"
-                                  required=""></textarea>
-                          </div>
-                          <button type="button" class="btn btn-primary btn-submit" id="requestBtn">Book A
-                              Demo</button>
-                      </form><!-- / form-group -->
-                  </div><!-- / promo-box -->
-                  <div class="promo-box bg-glass p-40" data-aos="fade-up" data-aos-delay="400" id="leadScreen2"
-                      style="display: none;">
-                      <h5 class="text-center"> Thank you! We will get back to you. </h5>
+          <div class="w-100 text-center">
+            <h2 class="mb-15" data-aos="fade-in">Contact Us</h2>
+            <div class="spacer-line border-primary mb-3" data-aos="fade-in" data-aos-delay="100"></div>
+            <p data-aos="fade-in" data-aos-delay="100">Send us an email or a WhatsApp message for fastest response.</p>
+          </div><!-- / w-80 -->
+          <div class="row v-center">
+            <div class="col-lg-6 tablet-lg-top-45">
+    
+              <div class="promo-box p-y-12 p-x-0 promo-left bg-transparent mb-4 no-shadow no-blur relative"
+                data-aos="fade-up" data-aos-delay="300">
+                <div class="promo-container-big-sm">
+                  <div class="promo-big icon-sm promo-icon-bg circle b-0 bg-primary raised-sm mb-25">
+                    <i class="far fa-envelope-open promo-icon text-white"></i>
+                  </div><!-- / promo-icon-bg -->
+                  <h6 class="box-title mb-4">Contact Info</h6>
+                  <p class="box-description mb-5">
+                    <span>Phone | Whatsapp: </span> <a href="https://wa.me/917778091350"
+                      class="title-link primary-hover">+91 7778091350</a>
+                  </p>
+                  <p class="box-description mb-5">
+                    <span>Email: </span> <a href="javascript:void(0)" class="title-link primary-hover">info@fiscalox.com</a>
+                  </p>
+                  <p class="box-description mb-5">
+                    <span>Innovation Center (Head Office): </span> <a href="javascript:void(0)"
+                      class="title-link primary-hover">341 SWC Hub, Vasna-Bhayli Main Road, Bhayli,
+                      Vadodara, Gujarat 391412</a>
+                  </p>
+                  <br>
+                  <p class="box-description">
+                    <span>Regional Office (Goa): </span> <a href="javascript:void(0)"
+                      class="title-link primary-hover">TF/11, Third floor, Janaki Sadan 3, Valshi,
+                      Mapusa Road, Bicholim, Goa 403504</a>
+                  </p>
+                  <br>
+                  <p class="box-description">
+                    <span>Regional Office (Hyderabad): </span> <a href="javascript:void(0)"
+                      class="title-link primary-hover">T-Hub, Plot No 1/C, Sy No 83/1, Raidurgam, Knowledge City Rd,
+                      panmaktha, Hyderabad, Serilingampalle (M), Telangana 500081</a>
+                  </p>
+                  <br>
+                  <p class="box-description">
+                    <span>Regional Office (Chennai): </span> <a href="javascript:void(0)"
+                      class="title-link primary-hover">Coming Soon</a>
+                  </p>
+                </div><!-- / promo-container -->
+              </div><!-- / promo-box -->
+            </div><!-- / column -->
+            <div class="col-lg-6">
+              <div class="promo-box bg-glass p-40" data-aos="fade-up" data-aos-delay="400" id="leadScreen1">
+                <form class="needs-validation" id="form-validation3" novalidate="novalidate" name="recordObj"
+                  action="https://secure.fiscalox.com/web/create_lead" method="post">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="leadName" name="inputName3" placeholder="Company Name"
+                          required="">
+                      </div>
+                    </div>
                   </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="leadPhone" name="inputPhone3" placeholder="Phone"
+                          required="">
+                      </div><!-- / form-group -->
+                    </div><!-- / column -->
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input type="email" class="form-control" id="leadEmail" name="inputEmail3" placeholder="Email"
+                          required="">
+                      </div><!-- / form-group -->
+                    </div><!-- / column -->
+                  </div><!-- / row -->
+                  <div class="form-group">
+                    <textarea id="leadMessage" class="form-control" name="inputMessage3" rows="5"
+                      placeholder="Message - Include details about your requirements" required=""></textarea>
+                  </div>
+                  <button type="button" class="btn btn-primary btn-submit" id="requestBtn">Book A
+                    Demo</button>
+                </form><!-- / form-group -->
+              </div><!-- / promo-box -->
+              <div class="promo-box bg-glass p-40" data-aos="fade-up" data-aos-delay="400" id="leadScreen2"
+                style="display: none;">
+                <h5 class="text-center"> Thank you! We will get back to you. </h5>
               </div>
-            </div><!-- / row -->
+            </div>
+          </div><!-- / row -->
         </div><!-- / container -->
       </section><!-- / contact -->
     </main>
