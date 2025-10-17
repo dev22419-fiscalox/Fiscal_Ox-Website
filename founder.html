@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-40W2JXLVDL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-40W2JXLVDL');
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17380296158"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'AW-17380296158');
+    </script>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+        content="Fiscal Ox - Enterprise Solutions Portfolio showcasing 29+ projects across healthcare, government, and financial services">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/icons/icon.png">
+    <!-- Site Title -->
+    <title>Project Portfolio - Fiscal Ox</title>
+    <!-- Bootstrap 5 Core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/glightbox.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2f56a6;
+            --secondary-color: #61b2d8;
+            --accent-color: #f6921e;
+            --text-color: #333;
+            --light-gray: #f8fbfd;
+            --medium-gray: #e0e0e0;
+            --dark-gray: #555;
+            --white: #ffffff;
+            --dark-bg: #1f364b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .portfolio-header {
+            background: var(--dark-bg);
+            padding: 100px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            margin-top: 70px;
+        }
+
+        .portfolio-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: repeating-linear-gradient(45deg,
+                    transparent,
+                    transparent 10px,
+                    rgba(255, 255, 255, .03) 10px,
+                    rgba(255, 255, 255, .03) 20px);
+        }
+
+        .portfolio-header h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            color: var(--white);
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .portfolio-header .subtitle {
+            font-size: clamp(1.2rem, 2vw, 1.5rem);
+            color: var(--secondary-color);
+            font-weight: 300;
+            position: relative;
+            z-index: 1;
+        }
+
+        .stats-section-portfolio {
+            background: var(--white);
+            padding: 60px 0;
+        }
+
+        .stats-portfolio {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            flex-wrap: wrap;
+        }
+
+        .stat-item-portfolio {
+            text-align: center;
+            background: var(--light-gray);
+            padding: 30px 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 2px solid var(--medium-gray);
+        }
+
+        .stat-item-portfolio:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(47, 86, 166, 0.15);
+            border-color: var(--primary-color);
+        }
+
+        .stat-number-portfolio {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            display: block;
+            line-height: 1;
+        }
+
+        .stat-label-portfolio {
+            color: var(--dark-gray);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 8px;
+            font-weight: 600;
+        }
+
+        .filters-section {
+            background: var(--light-gray);
+            padding: 40px 0;
+        }
+
+        .filters {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 12px 24px;
+            background: var(--white);
+            border: 2px solid var(--medium-gray);
+            color: var(--text-color);
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        .filter-btn:hover {
+            background: var(--light-gray);
+            border-color: var(--primary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(47, 86, 166, 0.2);
+            color: var(--primary-color);
+        }
+
+        .filter-btn.active {
+            background: var(--primary-color);
+            border-color: var(--primary-color);
+            color: var(--white);
+            box-shadow: 0 5px 15px rgba(47, 86, 166, 0.3);
+        }
+
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 16px 50px 16px 20px;
+            background: var(--white);
+            border: 2px solid var(--medium-gray);
+            border-radius: 50px;
+            color: var(--text-color);
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 20px rgba(47, 86, 166, 0.15);
+        }
+
+        .search-icon {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--dark-gray);
+            font-size: 1.2rem;
+        }
+
+        .projects-section {
+            background: var(--white);
+            padding: 60px 0 100px;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card {
+            background: var(--white);
+            border: 1px solid var(--medium-gray);
+            border-radius: 15px;
+            padding: 30px;
+            position: relative;
+            transition: all 0.3s ease;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(47, 86, 166, 0.15);
+            border-color: var(--primary-color);
+        }
+
+        .project-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 20px;
+        }
+
+        .project-number {
+            color: var(--accent-color);
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .project-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            line-height: 1.3;
+            color: var(--primary-color);
+        }
+
+        .client-info {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        .client-info i {
+            color: var(--accent-color);
+        }
+
+        .project-description {
+            color: var(--dark-gray);
+            line-height: 1.6;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            padding: 6px 14px;
+            background: var(--light-gray);
+            border: 1px solid var(--medium-gray);
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+        }
+
+        .special-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--accent-color);
+            color: var(--white);
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            box-shadow: 0 3px 10px rgba(246, 146, 30, 0.3);
+        }
+
+        .project-url {
+            color: var(--secondary-color);
+            font-size: 0.85rem;
+            margin-bottom: 15px;
+            word-break: break-all;
+            font-weight: 500;
+        }
+
+        .project-url i {
+            margin-right: 5px;
+            color: var(--accent-color);
+        }
+
+        @media (max-width: 768px) {
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-portfolio {
+                gap: 30px;
+            }
+
+            .stat-item-portfolio {
+                padding: 20px 30px;
+            }
+
+            .filter-btn {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+
+            .portfolio-header {
+                padding: 80px 0 60px;
+            }
+        }
+    </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#nav-scroll">
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
+    <div id="navbar-container"></div>
+
+    <header class="fh p-0 v-center bg-secondary-light" style="height: 30vh; position: relative; overflow: hidden;background-color: #deeff9 !important;">
+        <div class="container" align="center">
+            <h1 data-aos="fade-up">Founder's Portfolio</h1>
+            <!-- <hr> -->
+        </div>
+    </header>
+
+    <section class="stats-section-portfolio" style="background-color: #f8fbfd;">
+        <div class="container">
+            <div class="stats-portfolio">
+                <div class="stat-item-portfolio" data-aos="fade-up" data-aos-delay="100">
+                    <span class="stat-number-portfolio" id="projectCount">29</span>
+                    <span class="stat-label-portfolio">Projects Delivered</span>
+                </div>
+                <div class="stat-item-portfolio" data-aos="fade-up" data-aos-delay="200">
+                    <span class="stat-number-portfolio" id="clientCount">28+</span>
+                    <span class="stat-label-portfolio">Enterprise Clients</span>
+                </div>
+                <div class="stat-item-portfolio" data-aos="fade-up" data-aos-delay="300">
+                    <span class="stat-number-portfolio" id="industryCount">8+</span>
+                    <span class="stat-label-portfolio">Industries Served</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="filters-section">
+        <div class="container">
+            <div class="search-container" data-aos="fade-up">
+                <input type="text" class="search-input" id="searchInput"
+                    placeholder="Search projects, clients, or technologies...">
+                <span class="search-icon"><i class="fas fa-search"></i></span>
+            </div>
+            <br>
+            <div class="filters" data-aos="fade-up" data-aos-delay="200">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="healthcare">Healthcare</button>
+                <button class="filter-btn" data-filter="government">Government</button>
+                <button class="filter-btn" data-filter="financial">Financial Services</button>
+                <button class="filter-btn" data-filter="technology">Technology</button>
+                <button class="filter-btn" data-filter="saas">SaaS Products</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-section">
+        <div class="container">
+            <div class="projects-grid" id="projectsGrid"></div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <button type="button" id="back-top" class="btn btn-icon btn-circle btn-primary btn-floating raised-sm"
+        style="height: 40px; width: 40px;margin-right: 50px">
+        <i class="fas fa-chevron-up" style="margin-top: -8px; "></i>
+    </button>
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <!-- Core JavaScript -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+
+    <!-- aos -->
+    <script src="assets/js/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        })
+    </script>
+
+    <!-- Nav-Scroll -->
+    <script src="assets/js/nav-fixed.js"></script>
+    <script src="assets/js/scroll-top.js"></script>
+
+    <!-- Rellax -->
+    <script src="assets/js/rellax.min.js"></script>
+    <script>
+        var rellax = new Rellax('.rellax');
+    </script>
+
+    <!-- GLightbox -->
+    <script src="assets/js/glightbox.min.js"></script>
+
+    <!-- Swiper Slider -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <script>
+        $("#footer").load("footer.html");
+        $("#navbar-container").load("navbar.html");
+
+        const projects = [
+            {
+                id: 1,
+                title: "Long term Services and Supports (LTSS) Worker Portal",
+                client: "Texas Health and Human Services Commission (HHSC)",
+                location: "State of Texas, TX, USA",
+                description: "A secure, web-based tool used by designated staff at agencies such as Aging and Disability Resource Centers (ADRCs) to screen and refer individuals seeking long term services and supports.",
+                tags: ["Portal", "Healthcare", "Government"],
+                category: ["healthcare", "government"]
+            },
+            {
+                id: 2,
+                title: "Employee Self-Service Human Resources (HR) Portal",
+                client: "MARS Inc.",
+                location: "Chicago IL, USA",
+                description: "A global Employee Self-Service HR Portal designed to unify and streamline HR operations across international workforce in the USA, China, and Europe, empowering employees to manage their HR information independently.",
+                tags: ["HR", "Global", "Portal"],
+                category: ["enterprise"]
+            },
+            {
+                id: 3,
+                title: "Financial Budgeting Tool",
+                client: "Deloitte LLP",
+                location: "USA",
+                description: "A custom Financial Budgeting Tool designed to support internal teams in managing project budgets and financial planning more efficiently with a user-friendly interface for creating, tracking, and adjusting budgets.",
+                tags: ["Finance", "Budgeting", "Internal Tool"],
+                category: ["financial"]
+            },
+            {
+                id: 4,
+                title: "State of Ohio e-Licensing Portal",
+                client: "State of Ohio",
+                location: "Columbus, OH, USA",
+                description: "Lead Architect for the end-to-end architecture and delivery of a centralized digital platform streamlining professional licensing and regulatory processes across multiple state boards and agencies.",
+                tags: ["Government", "Licensing", "Portal"],
+                category: ["government"],
+                url: "https://elicense.ohio.gov"
+            },
+            {
+                id: 5,
+                title: "Ohio Child Licensing and Quality System (OCLQS)",
+                client: "State of Ohio",
+                location: "Columbus, OH, USA",
+                description: "Architected and built a web-based portal providing Ohio's Early Care and Education programs with secure access to manage licensing, compliance, and quality initiatives.",
+                tags: ["Education", "Compliance", "Government"],
+                category: ["government", "education"],
+                url: "https://oclqs.my.site.com"
+            },
+            {
+                id: 6,
+                title: "HR Recruitment Application",
+                client: "Uber",
+                location: "San Francisco",
+                description: "Led the architecture and development of an HR Recruitment Application designed to optimize the end-to-end hiring lifecycle, enabling efficient management of candidate pipelines with real-time data access.",
+                tags: ["HR", "Recruitment", "Tech"],
+                category: ["technology", "enterprise"]
+            },
+            {
+                id: 7,
+                title: "Clinical Drug Sourcing Tool",
+                client: "McKesson CTS",
+                location: "San Francisco",
+                description: "Architected and delivered a Clinical Drug Sourcing Tool to streamline procurement and management of clinical trial drugs across multiple research sites, ensuring regulatory compliance.",
+                tags: ["Healthcare", "Clinical Trials", "Compliance"],
+                category: ["healthcare"]
+            },
+            {
+                id: 8,
+                title: "Weekly Opportunity Management Tool",
+                client: "McKesson's Generics OneStop Division",
+                location: "USA",
+                description: "Architected a centralized digital workspace for sales teams to identify, track, and act on revenue opportunities, prioritize high-value deals, and align strategies across teams.",
+                tags: ["Sales", "CRM", "Healthcare"],
+                category: ["healthcare", "sales"]
+            },
+            {
+                id: 9,
+                title: "Vetforce (Integrations)",
+                client: "Salesforce Inc.",
+                location: "San Francisco",
+                description: "Designed and streamlined integrations between Salesforce Certification systems, Vetforce, and Trailhead to create a seamless experience for learners, veterans, and professionals.",
+                tags: ["Integration", "Salesforce", "Veterans"],
+                category: ["technology"]
+            },
+            {
+                id: 10,
+                title: "Vendor Oversight Tool (Clinical Research)",
+                client: "Genentech (Roche)",
+                location: "South San Francisco",
+                description: "Designed and built a Vendor Oversight Tool to strengthen governance, compliance, and performance monitoring of third-party vendors in clinical research operations, later adopted globally by Roche.",
+                tags: ["Clinical Research", "Compliance", "Healthcare"],
+                category: ["healthcare"]
+            },
+            {
+                id: 11,
+                title: "Vetforce Community Portal",
+                client: "Salesforce Inc.",
+                location: "San Francisco",
+                description: "Lead Architect for Vetforce, a Salesforce-powered community portal connecting U.S. military veterans with training, career resources, and employment opportunities in technology.",
+                tags: ["Veterans", "Community", "Award-Winning"],
+                category: ["technology"],
+                url: "https://veterans.my.site.com",
+                special: "SF Design Week Award Winner"
+            },
+            {
+                id: 12,
+                title: "Sales & Service Cloud Implementation",
+                client: "Coinbase",
+                location: "San Francisco",
+                description: "Led end-to-end implementation of Salesforce Sales Cloud and Service Cloud, enabling the company to scale customer engagement, sales operations, and support functions globally.",
+                tags: ["Salesforce", "CRM", "Crypto"],
+                category: ["technology", "financial"]
+            },
+            {
+                id: 13,
+                title: "Service Cloud Implementation",
+                client: "Twitch",
+                location: "San Francisco",
+                description: "Designed and implemented Salesforce Service Cloud to modernize customer support processes, creating a strategic bridge between Twitch and Amazon ecosystems for Prime membership benefits.",
+                tags: ["Salesforce", "Support", "Gaming"],
+                category: ["technology"]
+            },
+            {
+                id: 14,
+                title: "Customer Lending Portal & Internal Operations",
+                client: "Live Oak Bank",
+                location: "Wilmington, NC, USA",
+                description: "Architected and delivered a Customer Lending Portal and Internal Operations Platform modernizing the lending lifecycle from application to servicing for one of the largest small-business lenders in the U.S.",
+                tags: ["Banking", "Lending", "Portal"],
+                category: ["financial"]
+            },
+            {
+                id: 15,
+                title: "Visualizations for Higher Education",
+                client: "Evisions",
+                location: "Houston, TX, USA",
+                description: "Designed and delivered data visualization solutions for higher education institutions using Salesforce integrated with Evision's datasets, supporting academic planning and student success.",
+                tags: ["Education", "Analytics", "Visualization"],
+                category: ["education"]
+            },
+            {
+                id: 16,
+                title: "IQVIA Engage",
+                client: "IQVIA",
+                location: "USA",
+                description: "Architected a global HCP/HCO engagement management platform enabling life sciences organizations to compliantly manage healthcare professional interactions while adhering to transparency regulations.",
+                tags: ["Healthcare", "Compliance", "SaaS"],
+                category: ["healthcare", "saas"]
+            },
+            {
+                id: 17,
+                title: "IQVIA CRA Central",
+                client: "IQVIA",
+                location: "USA",
+                description: "Led design and implementation of CRA Central, a cloud-based SaaS platform within IQVIA's Digital Trial Management Suite, streamlining and modernizing clinical trial monitoring.",
+                tags: ["Clinical Trials", "SaaS", "Healthcare"],
+                category: ["healthcare", "saas"]
+            },
+            {
+                id: 18,
+                title: "IQVIA Clinical Trial Management System (CTMS)",
+                client: "IQVIA",
+                location: "USA",
+                description: "Architected and delivered a cloud-based SaaS solution engineered to manage both traditional and decentralized clinical trials with enhanced operational insight and efficiency.",
+                tags: ["Clinical Trials", "SaaS", "Healthcare"],
+                category: ["healthcare", "saas"]
+            },
+            {
+                id: 19,
+                title: "InterQual Connect",
+                client: "Change Healthcare (Now Optum)",
+                location: "Nashville TN, USA",
+                description: "Spearheaded architecture of an integrated SaaS-based medical review and authorization connectivity platform automating prior authorization workflows including medical necessity reviews.",
+                tags: ["Healthcare", "Authorization", "SaaS"],
+                category: ["healthcare", "saas"]
+            },
+            {
+                id: 20,
+                title: "InterQual Coordinated Care",
+                client: "Change Healthcare (Now Optum)",
+                location: "Nashville TN, USA",
+                description: "Architected a cloud-based care coordination solution managing high-risk patients through unified clinical, behavioral, and social determinants of health data for patient-centered care.",
+                tags: ["Healthcare", "Care Coordination", "SaaS"],
+                category: ["healthcare", "saas"]
+            },
+            {
+                id: 21,
+                title: "Healthcare Plan Integrations",
+                client: "Highroads",
+                location: "Burlington MA, USA",
+                description: "Designed and delivered integration solutions streamlining health plan data management and sharing, improving healthcare plan management and compliance workflows.",
+                tags: ["Healthcare", "Integration", "Compliance"],
+                category: ["healthcare"]
+            },
+            {
+                id: 22,
+                title: "Payment & Accounting Integration",
+                client: "Clariti Financial",
+                location: "USA",
+                description: "Designed Salesforce-based payment solution enabling seamless processing of application, permit, and license fees with integrated accounting workflows for government agencies.",
+                tags: ["Finance", "Government", "Integration"],
+                category: ["financial", "government"]
+            },
+            {
+                id: 23,
+                title: "VIIZR",
+                client: "Ford",
+                location: "USA",
+                description: "Lead Architect for VIIZR, a SaaS platform jointly developed by Ford and Salesforce, helping tradespeople digitally manage their businesses through scheduling, invoicing, and customer management.",
+                tags: ["SaaS", "Automotive", "Small Business"],
+                category: ["saas", "technology"]
+            },
+            {
+                id: 24,
+                title: "Business Financial Scoring Application",
+                client: "Moody's",
+                location: "USA",
+                description: "Principal architect for a financial scoring application evaluating creditworthiness and financial health of businesses using advanced analytics for risk assessment and investment decisions.",
+                tags: ["Finance", "Analytics", "Risk Assessment"],
+                category: ["financial"]
+            },
+            {
+                id: 25,
+                title: "Manufacturing Planning & Scheduling",
+                client: "TrakCel",
+                location: "USA",
+                description: "Architected manufacturing planning and scheduling application for specialized patient treatment workflows in cell and gene therapy sector, ensuring regulatory compliance.",
+                tags: ["Healthcare", "Manufacturing", "Biotech"],
+                category: ["healthcare", "manufacturing"]
+            },
+            {
+                id: 26,
+                title: "Salesforce ISV App - Validis to nCino",
+                client: "Validis",
+                location: "USA",
+                description: "Architected Salesforce ISV app bringing normalized accounting ledger data from Validis into nCino, enabling faster and more accurate loan decisions within the banking operating system.",
+                tags: ["Banking", "Integration", "ISV"],
+                category: ["financial"]
+            },
+            {
+                id: 27,
+                title: "TrackWise Migration Tool",
+                client: "Sparta Systems (Now Honeywell)",
+                location: "Hamilton NJ, USA",
+                description: "Architected migration tool helping customers transition from legacy on-premise solution to TrackWise Digital cloud-based Quality Management System, preserving critical compliance data.",
+                tags: ["QMS", "Migration", "Compliance"],
+                category: ["healthcare", "manufacturing"]
+            },
+            {
+                id: 28,
+                title: "Performance Testing & Architecture Review",
+                client: "TractionRec",
+                location: "USA",
+                description: "Performed architectural review and high-volume performance testing for Salesforce-native solution managing community program registrations, donations, and membership operations.",
+                tags: ["Performance", "Architecture", "Nonprofit"],
+                category: ["technology"]
+            },
+            {
+                id: 29,
+                title: "Rootstock ERP Assessment",
+                client: "Rootstock Software",
+                location: "San Ramon CA, USA",
+                description: "Conducted architectural review of Salesforce-native cloud ERP platform, evaluating system design, scalability, and recommending best practices for long-term stability and performance.",
+                tags: ["ERP", "Architecture", "Assessment"],
+                category: ["technology"]
+            }
+        ];
+
+        let currentFilter = 'all';
+        let searchTerm = '';
+
+        function initializeProjects() {
+            renderProjects();
+            setupEventListeners();
+            animateStats();
+        }
+
+        function renderProjects() {
+            const grid = document.getElementById('projectsGrid');
+            const filteredProjects = filterProjects();
+
+            grid.innerHTML = filteredProjects.map((project, index) => `
+            <div class="project-card" data-aos="fade-up" data-aos-delay="${index * 50}">
+                ${project.special ? `<div class="special-badge"><i class="fas fa-trophy"></i> ${project.special}</div>` : ''}
+                <div class="project-header">
+                    <!-- <span class="project-number">PROJECT ${String(project.id).padStart(2, '0')}</span> -->
+                </div>
+                <h3 class="project-title">${project.title}</h3>
+                <div class="client-info">
+                    <i class="fas fa-building"></i>
+                    ${project.client} ${project.location ? `• ${project.location}` : ''}
+                </div>
+                <p class="project-description">${project.description}</p>
+                ${project.url ? `<p class="project-url"><i class="fas fa-link"></i> ${project.url}</p>` : ''}
+                <div class="project-tags">
+                    ${project.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                </div>
+            </div>
+        `).join('');
+        }
+
+        function filterProjects() {
+            return projects.filter(project => {
+                const matchesFilter = currentFilter === 'all' || project.category.includes(currentFilter);
+                const matchesSearch = searchTerm === '' ||
+                    project.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                    project.client.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                    project.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                    project.tags.some(tag => tag.toLowerCase().includes(searchTerm.toLowerCase()));
+
+                return matchesFilter && matchesSearch;
+            });
+        }
+
+        function setupEventListeners() {
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    currentFilter = btn.dataset.filter;
+                    renderProjects();
+                    updateProjectCount();
+                });
+            });
+
+            document.getElementById('searchInput').addEventListener('input', (e) => {
+                searchTerm = e.target.value;
+                renderProjects();
+                updateProjectCount();
+            });
+        }
+
+        function updateProjectCount() {
+            const count = filterProjects().length;
+            document.getElementById('projectCount').textContent = count;
+        }
+
+        function animateStats() {
+            const animateValue = (element, start, end, duration) => {
+                const range = end - start;
+                const increment = range / (duration / 16);
+                let current = start;
+
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= end) {
+                        element.textContent = end + (element.id === 'projectCount' ? '' : '+');
+                        clearInterval(timer);
+                    } else {
+                        element.textContent = Math.floor(current) + (element.id === 'projectCount' ? '' : '+');
+                    }
+                }, 16);
+            };
+
+            setTimeout(() => {
+                animateValue(document.getElementById('projectCount'), 0, 29, 1500);
+                animateValue(document.getElementById('clientCount'), 0, 28, 1500);
+                animateValue(document.getElementById('industryCount'), 0, 8, 1500);
+            }, 500);
+        }
+
+        document.addEventListener('DOMContentLoaded', initializeProjects);
+    </script>
+</body>
+
+</html>
